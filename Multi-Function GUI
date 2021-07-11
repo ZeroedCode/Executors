@@ -3695,7 +3695,7 @@ local function GBKVLHL_fake_script() -- InfiniteJump.LocalScript
 			Text = "To disable it, press the [T] key again."
 		})
 	end)
-	_G.infinjump = false
+	_G.infinjump = true
 	
 	local Player = game:GetService("Players").LocalPlayer
 	local Mouse = Player:GetMouse()
