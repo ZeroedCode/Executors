@@ -1,8 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local MultiFunctionGUI = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local X = Instance.new("TextButton")
@@ -34,19 +29,20 @@ local Version = Instance.new("TextLabel")
 local InfiniteJump = Instance.new("TextButton")
 local UICorner_9 = Instance.new("UICorner")
 local UIGradient_9 = Instance.new("UIGradient")
-local OpenGUI = Instance.new("TextButton")
+local Noclip = Instance.new("TextButton")
 local UICorner_10 = Instance.new("UICorner")
 local UIGradient_10 = Instance.new("UIGradient")
-local RemoveGUI = Instance.new("TextButton")
+local OpenGUI = Instance.new("TextButton")
 local UICorner_11 = Instance.new("UICorner")
 local UIGradient_11 = Instance.new("UIGradient")
+local RemoveGUI = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local UIGradient_12 = Instance.new("UIGradient")
 
 --Properties:
 
 MultiFunctionGUI.Name = "Multi-Function GUI"
 MultiFunctionGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
-MultiFunctionGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-MultiFunctionGUI.ResetOnSpawn = false
 
 Frame.Parent = MultiFunctionGUI
 Frame.Active = true
@@ -216,14 +212,15 @@ Version.Parent = Frame
 Version.BackgroundColor3 = Color3.fromRGB(0, 230, 0)
 Version.BackgroundTransparency = 1.000
 Version.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Version.BorderSizePixel = 3
+Version.BorderSizePixel = 0
 Version.Position = UDim2.new(0.767554462, 0, 0.837748468, 0)
 Version.Size = UDim2.new(0, 81, 0, 34)
 Version.Font = Enum.Font.Nunito
-Version.Text = "v1.03.6"
-Version.TextColor3 = Color3.fromRGB(0, 0, 0)
+Version.Text = "v1.03.9"
+Version.TextColor3 = Color3.fromRGB(0, 170, 0)
 Version.TextScaled = true
 Version.TextSize = 14.000
+Version.TextStrokeTransparency = 0.140
 Version.TextWrapped = true
 
 InfiniteJump.Name = "Infinite Jump"
@@ -243,6 +240,23 @@ UICorner_9.Parent = InfiniteJump
 UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 85, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(85, 0, 255))}
 UIGradient_9.Parent = InfiniteJump
 
+Noclip.Name = "Noclip"
+Noclip.Parent = Frame
+Noclip.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Noclip.Position = UDim2.new(0.719128251, 0, 0.566225171, 0)
+Noclip.Size = UDim2.new(0, 98, 0, 32)
+Noclip.Font = Enum.Font.Nunito
+Noclip.Text = "Noclip"
+Noclip.TextColor3 = Color3.fromRGB(0, 0, 0)
+Noclip.TextScaled = true
+Noclip.TextSize = 14.000
+Noclip.TextWrapped = true
+
+UICorner_10.Parent = Noclip
+
+UIGradient_10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(95, 143, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(85, 255, 255))}
+UIGradient_10.Parent = Noclip
+
 OpenGUI.Name = "OpenGUI"
 OpenGUI.Parent = MultiFunctionGUI
 OpenGUI.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
@@ -257,11 +271,11 @@ OpenGUI.TextScaled = true
 OpenGUI.TextSize = 14.000
 OpenGUI.TextWrapped = true
 
-UICorner_10.CornerRadius = UDim.new(0.0399999991, 8)
-UICorner_10.Parent = OpenGUI
+UICorner_11.CornerRadius = UDim.new(0.0399999991, 8)
+UICorner_11.Parent = OpenGUI
 
-UIGradient_10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(62, 0, 94)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 41, 98))}
-UIGradient_10.Parent = OpenGUI
+UIGradient_11.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(62, 0, 94)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 41, 98))}
+UIGradient_11.Parent = OpenGUI
 
 RemoveGUI.Name = "RemoveGUI"
 RemoveGUI.Parent = MultiFunctionGUI
@@ -277,15 +291,15 @@ RemoveGUI.TextScaled = true
 RemoveGUI.TextSize = 14.000
 RemoveGUI.TextWrapped = true
 
-UICorner_11.CornerRadius = UDim.new(0.0399999991, 8)
-UICorner_11.Parent = RemoveGUI
+UICorner_12.CornerRadius = UDim.new(0.0399999991, 8)
+UICorner_12.Parent = RemoveGUI
 
-UIGradient_11.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(62, 0, 94)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 41, 98))}
-UIGradient_11.Parent = RemoveGUI
+UIGradient_12.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(62, 0, 94)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 41, 98))}
+UIGradient_12.Parent = RemoveGUI
 
 -- Scripts:
 
-local function VAXXSG_fake_script() -- X.LocalScript 
+local function AGMISU_fake_script() -- X.LocalScript 
 	local script = Instance.new('LocalScript', X)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -297,8 +311,8 @@ local function VAXXSG_fake_script() -- X.LocalScript
 	end)
 	
 end
-coroutine.wrap(VAXXSG_fake_script)()
-local function UIXD_fake_script() -- Smolbean.LocalScript 
+coroutine.wrap(AGMISU_fake_script)()
+local function EVEKAI_fake_script() -- Smolbean.LocalScript 
 	local script = Instance.new('LocalScript', Smolbean)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -314,14 +328,14 @@ local function UIXD_fake_script() -- Smolbean.LocalScript
 	end)
 	
 end
-coroutine.wrap(UIXD_fake_script)()
-local function VCCNWL_fake_script() -- Frame.LocalScript 
+coroutine.wrap(EVEKAI_fake_script)()
+local function ZOUX_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	script.Parent.Draggable = true
 end
-coroutine.wrap(VCCNWL_fake_script)()
-local function FPYCD_fake_script() -- TPSky.LocalScript 
+coroutine.wrap(ZOUX_fake_script)()
+local function UIEL_fake_script() -- TPSky.LocalScript 
 	local script = Instance.new('LocalScript', TPSky)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -337,8 +351,8 @@ local function FPYCD_fake_script() -- TPSky.LocalScript
 	
 		end)
 end
-coroutine.wrap(FPYCD_fake_script)()
-local function QPODWEU_fake_script() -- SPEED.LocalScript 
+coroutine.wrap(UIEL_fake_script)()
+local function ZONO_fake_script() -- SPEED.LocalScript 
 	local script = Instance.new('LocalScript', SPEED)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -379,8 +393,8 @@ local function QPODWEU_fake_script() -- SPEED.LocalScript
 	end)
 	
 end
-coroutine.wrap(QPODWEU_fake_script)()
-local function QGBQK_fake_script() -- RevizAdmin.LocalScript 
+coroutine.wrap(ZONO_fake_script)()
+local function SCBGGQN_fake_script() -- RevizAdmin.LocalScript 
 	local script = Instance.new('LocalScript', RevizAdmin)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -3584,8 +3598,8 @@ local function QGBQK_fake_script() -- RevizAdmin.LocalScript
 		return {}
 	end)
 end
-coroutine.wrap(QGBQK_fake_script)()
-local function ZYOK_fake_script() -- Rejoin.LocalScript 
+coroutine.wrap(SCBGGQN_fake_script)()
+local function JNIFQ_fake_script() -- Rejoin.LocalScript 
 	local script = Instance.new('LocalScript', Rejoin)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -3593,8 +3607,8 @@ local function ZYOK_fake_script() -- Rejoin.LocalScript
 		end)
 	
 end
-coroutine.wrap(ZYOK_fake_script)()
-local function BEIQZD_fake_script() -- Lagreducer.LocalScript 
+coroutine.wrap(JNIFQ_fake_script)()
+local function ZVUVAG_fake_script() -- Lagreducer.LocalScript 
 	local script = Instance.new('LocalScript', Lagreducer)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -3635,8 +3649,8 @@ local function BEIQZD_fake_script() -- Lagreducer.LocalScript
 			end
 		end)
 end
-coroutine.wrap(BEIQZD_fake_script)()
-local function VPPEL_fake_script() -- AntiAfk.LocalScript 
+coroutine.wrap(ZVUVAG_fake_script)()
+local function HDYQGG_fake_script() -- AntiAfk.LocalScript 
 	local script = Instance.new('LocalScript', AntiAfk)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -3665,8 +3679,8 @@ local function VPPEL_fake_script() -- AntiAfk.LocalScript
 			ab.Text="You didn't get kicked, don't worry :3"wait(5)ab.Text="Status : Active"end)
 		end)
 end
-coroutine.wrap(VPPEL_fake_script)()
-local function YCPBV_fake_script() -- InfiniteJump.LocalScript 
+coroutine.wrap(HDYQGG_fake_script)()
+local function XILTEYS_fake_script() -- InfiniteJump.LocalScript 
 	local script = Instance.new('LocalScript', InfiniteJump)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -3675,7 +3689,7 @@ local function YCPBV_fake_script() -- InfiniteJump.LocalScript
 			Text = "To disable it, press the [R] key again."
 		})
 	end)
-	_G.infinjump = true
+	_G.infinjump = false
 	
 	local Player = game:GetService("Players").LocalPlayer
 	local Mouse = Player:GetMouse()
@@ -3701,8 +3715,34 @@ local function YCPBV_fake_script() -- InfiniteJump.LocalScript
 		end
 	end)
 end
-coroutine.wrap(YCPBV_fake_script)()
-local function AHAJ_fake_script() -- OpenGUI.LocalScript 
+coroutine.wrap(XILTEYS_fake_script)()
+local function VPJSIH_fake_script() -- Noclip.LocalScript 
+	local script = Instance.new('LocalScript', Noclip)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "[P] key = Enable noclipping",
+			Text = "To disable it, press the [P] key again."
+		})
+	end)
+	noclip = false
+	game:GetService('RunService').Stepped:connect(function()
+		if noclip then
+			game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+		end
+	end)
+	plr = game.Players.LocalPlayer
+	mouse = plr:GetMouse()
+	mouse.KeyDown:connect(function(key)
+	
+		if key == "p" then
+			noclip = not noclip
+			game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+		end
+	end)
+end
+coroutine.wrap(VPJSIH_fake_script)()
+local function ZCIJXSS_fake_script() -- OpenGUI.LocalScript 
 	local script = Instance.new('LocalScript', OpenGUI)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -3713,8 +3753,8 @@ local function AHAJ_fake_script() -- OpenGUI.LocalScript
 		script.Parent.Parent.Frame.Visible = true
 	end)
 end
-coroutine.wrap(AHAJ_fake_script)()
-local function DJOPJ_fake_script() -- RemoveGUI.LocalScript 
+coroutine.wrap(ZCIJXSS_fake_script)()
+local function NSJEU_fake_script() -- RemoveGUI.LocalScript 
 	local script = Instance.new('LocalScript', RemoveGUI)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -3728,4 +3768,4 @@ local function DJOPJ_fake_script() -- RemoveGUI.LocalScript
 		script.Parent.MouseButton1Click:connect(OnClicked)
 	end)
 end
-coroutine.wrap(DJOPJ_fake_script)()
+coroutine.wrap(NSJEU_fake_script)()
