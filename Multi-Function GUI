@@ -1,3 +1,8 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
 local MultiFunctionGUI = Instance.new("ScreenGui")
 local Frame = Instance.new("Frame")
 local X = Instance.new("TextButton")
@@ -43,6 +48,7 @@ local UIGradient_12 = Instance.new("UIGradient")
 
 MultiFunctionGUI.Name = "Multi-Function GUI"
 MultiFunctionGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+MultiFunctionGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Frame.Parent = MultiFunctionGUI
 Frame.Active = true
@@ -299,7 +305,7 @@ UIGradient_12.Parent = RemoveGUI
 
 -- Scripts:
 
-local function AGMISU_fake_script() -- X.LocalScript 
+local function EWZRCL_fake_script() -- X.LocalScript 
 	local script = Instance.new('LocalScript', X)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -311,8 +317,8 @@ local function AGMISU_fake_script() -- X.LocalScript
 	end)
 	
 end
-coroutine.wrap(AGMISU_fake_script)()
-local function EVEKAI_fake_script() -- Smolbean.LocalScript 
+coroutine.wrap(EWZRCL_fake_script)()
+local function XDEVLVL_fake_script() -- Smolbean.LocalScript 
 	local script = Instance.new('LocalScript', Smolbean)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -328,14 +334,14 @@ local function EVEKAI_fake_script() -- Smolbean.LocalScript
 	end)
 	
 end
-coroutine.wrap(EVEKAI_fake_script)()
-local function ZOUX_fake_script() -- Frame.LocalScript 
+coroutine.wrap(XDEVLVL_fake_script)()
+local function BYRX_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	script.Parent.Draggable = true
 end
-coroutine.wrap(ZOUX_fake_script)()
-local function UIEL_fake_script() -- TPSky.LocalScript 
+coroutine.wrap(BYRX_fake_script)()
+local function NRDNW_fake_script() -- TPSky.LocalScript 
 	local script = Instance.new('LocalScript', TPSky)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -351,8 +357,8 @@ local function UIEL_fake_script() -- TPSky.LocalScript
 	
 		end)
 end
-coroutine.wrap(UIEL_fake_script)()
-local function ZONO_fake_script() -- SPEED.LocalScript 
+coroutine.wrap(NRDNW_fake_script)()
+local function PNVZP_fake_script() -- SPEED.LocalScript 
 	local script = Instance.new('LocalScript', SPEED)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -393,8 +399,8 @@ local function ZONO_fake_script() -- SPEED.LocalScript
 	end)
 	
 end
-coroutine.wrap(ZONO_fake_script)()
-local function SCBGGQN_fake_script() -- RevizAdmin.LocalScript 
+coroutine.wrap(PNVZP_fake_script)()
+local function DEPSYYN_fake_script() -- RevizAdmin.LocalScript 
 	local script = Instance.new('LocalScript', RevizAdmin)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -3598,8 +3604,8 @@ local function SCBGGQN_fake_script() -- RevizAdmin.LocalScript
 		return {}
 	end)
 end
-coroutine.wrap(SCBGGQN_fake_script)()
-local function JNIFQ_fake_script() -- Rejoin.LocalScript 
+coroutine.wrap(DEPSYYN_fake_script)()
+local function EZEUH_fake_script() -- Rejoin.LocalScript 
 	local script = Instance.new('LocalScript', Rejoin)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -3607,8 +3613,8 @@ local function JNIFQ_fake_script() -- Rejoin.LocalScript
 		end)
 	
 end
-coroutine.wrap(JNIFQ_fake_script)()
-local function ZVUVAG_fake_script() -- Lagreducer.LocalScript 
+coroutine.wrap(EZEUH_fake_script)()
+local function VAADYGB_fake_script() -- Lagreducer.LocalScript 
 	local script = Instance.new('LocalScript', Lagreducer)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -3649,8 +3655,8 @@ local function ZVUVAG_fake_script() -- Lagreducer.LocalScript
 			end
 		end)
 end
-coroutine.wrap(ZVUVAG_fake_script)()
-local function HDYQGG_fake_script() -- AntiAfk.LocalScript 
+coroutine.wrap(VAADYGB_fake_script)()
+local function UNCIKQ_fake_script() -- AntiAfk.LocalScript 
 	local script = Instance.new('LocalScript', AntiAfk)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -3679,8 +3685,8 @@ local function HDYQGG_fake_script() -- AntiAfk.LocalScript
 			ab.Text="You didn't get kicked, don't worry :3"wait(5)ab.Text="Status : Active"end)
 		end)
 end
-coroutine.wrap(HDYQGG_fake_script)()
-local function XILTEYS_fake_script() -- InfiniteJump.LocalScript 
+coroutine.wrap(UNCIKQ_fake_script)()
+local function HCWZY_fake_script() -- InfiniteJump.LocalScript 
 	local script = Instance.new('LocalScript', InfiniteJump)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -3715,8 +3721,8 @@ local function XILTEYS_fake_script() -- InfiniteJump.LocalScript
 		end
 	end)
 end
-coroutine.wrap(XILTEYS_fake_script)()
-local function VPJSIH_fake_script() -- Noclip.LocalScript 
+coroutine.wrap(HCWZY_fake_script)()
+local function SIQIFI_fake_script() -- Noclip.LocalScript 
 	local script = Instance.new('LocalScript', Noclip)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -3741,8 +3747,8 @@ local function VPJSIH_fake_script() -- Noclip.LocalScript
 		end
 	end)
 end
-coroutine.wrap(VPJSIH_fake_script)()
-local function ZCIJXSS_fake_script() -- OpenGUI.LocalScript 
+coroutine.wrap(SIQIFI_fake_script)()
+local function FBFX_fake_script() -- OpenGUI.LocalScript 
 	local script = Instance.new('LocalScript', OpenGUI)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -3753,8 +3759,8 @@ local function ZCIJXSS_fake_script() -- OpenGUI.LocalScript
 		script.Parent.Parent.Frame.Visible = true
 	end)
 end
-coroutine.wrap(ZCIJXSS_fake_script)()
-local function NSJEU_fake_script() -- RemoveGUI.LocalScript 
+coroutine.wrap(FBFX_fake_script)()
+local function MOPK_fake_script() -- RemoveGUI.LocalScript 
 	local script = Instance.new('LocalScript', RemoveGUI)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -3768,4 +3774,4 @@ local function NSJEU_fake_script() -- RemoveGUI.LocalScript
 		script.Parent.MouseButton1Click:connect(OnClicked)
 	end)
 end
-coroutine.wrap(NSJEU_fake_script)()
+coroutine.wrap(MOPK_fake_script)()
