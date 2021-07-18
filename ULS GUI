@@ -43,12 +43,16 @@ local UIGradient_11 = Instance.new("UIGradient")
 local Removepopups = Instance.new("TextButton")
 local UICorner_12 = Instance.new("UICorner")
 local UIGradient_12 = Instance.new("UIGradient")
-local OpenGUI = Instance.new("TextButton")
+local ULSAutopunch = Instance.new("TextButton")
 local UICorner_13 = Instance.new("UICorner")
 local UIGradient_13 = Instance.new("UIGradient")
-local RemoveGUI = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local OpenGUI = Instance.new("TextButton")
 local UICorner_14 = Instance.new("UICorner")
 local UIGradient_14 = Instance.new("UIGradient")
+local RemoveGUI = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local UIGradient_15 = Instance.new("UIGradient")
 
 --Properties:
 
@@ -63,8 +67,7 @@ Frame.BackgroundColor3 = Color3.fromRGB(164, 16, 255)
 Frame.BorderSizePixel = 3
 Frame.Position = UDim2.new(0.346101671, 0, 0.334694922, 0)
 Frame.Selectable = true
-Frame.Size = UDim2.new(0, 413, 0, 302)
-Frame.Visible = false
+Frame.Size = UDim2.new(0, 462, 0, 338)
 
 X.Name = "X"
 X.Parent = Frame
@@ -109,7 +112,7 @@ MultiFunctionGUI_2.Parent = Frame
 MultiFunctionGUI_2.BackgroundColor3 = Color3.fromRGB(0, 230, 0)
 MultiFunctionGUI_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
 MultiFunctionGUI_2.BorderSizePixel = 3
-MultiFunctionGUI_2.Position = UDim2.new(0.16707021, 0, 0.0231788084, 0)
+MultiFunctionGUI_2.Position = UDim2.new(0.212524757, 0, 0.0231788084, 0)
 MultiFunctionGUI_2.Size = UDim2.new(0, 274, 0, 34)
 MultiFunctionGUI_2.Font = Enum.Font.Nunito
 MultiFunctionGUI_2.Text = "Ultimate Lifting GUI"
@@ -172,7 +175,7 @@ UIGradient_5.Parent = RevizAdmin
 Rejoin.Name = "Rejoin"
 Rejoin.Parent = Frame
 Rejoin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Rejoin.Position = UDim2.new(0.0823243707, 0, 0.483443707, 0)
+Rejoin.Position = UDim2.new(0.0823243707, 0, 0.501195192, 0)
 Rejoin.Size = UDim2.new(0, 98, 0, 32)
 Rejoin.Font = Enum.Font.Nunito
 Rejoin.Text = "Rejoin"
@@ -229,7 +232,7 @@ Version.BorderSizePixel = 0
 Version.Position = UDim2.new(0.779661, 0, 0.887417316, 0)
 Version.Size = UDim2.new(0, 81, 0, 34)
 Version.Font = Enum.Font.Nunito
-Version.Text = "v1.05b"
+Version.Text = "v1.06a"
 Version.TextColor3 = Color3.fromRGB(0, 170, 0)
 Version.TextScaled = true
 Version.TextSize = 14.000
@@ -239,7 +242,7 @@ Version.TextWrapped = true
 InfiniteJump.Name = "Infinite Jump"
 InfiniteJump.Parent = Frame
 InfiniteJump.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-InfiniteJump.Position = UDim2.new(0.404358268, 0, 0.483443707, 0)
+InfiniteJump.Position = UDim2.new(0.404358268, 0, 0.501195192, 0)
 InfiniteJump.Size = UDim2.new(0, 98, 0, 32)
 InfiniteJump.Font = Enum.Font.Nunito
 InfiniteJump.Text = "Infinite Jump"
@@ -256,7 +259,7 @@ UIGradient_9.Parent = InfiniteJump
 Noclip.Name = "Noclip"
 Noclip.Parent = Frame
 Noclip.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Noclip.Position = UDim2.new(0.719128251, 0, 0.483443707, 0)
+Noclip.Position = UDim2.new(0.719128251, 0, 0.501195192, 0)
 Noclip.Size = UDim2.new(0, 98, 0, 32)
 Noclip.Font = Enum.Font.Nunito
 Noclip.Text = "Noclip"
@@ -273,7 +276,7 @@ UIGradient_10.Parent = Noclip
 ProteinSpammer.Name = "Protein Spammer"
 ProteinSpammer.Parent = Frame
 ProteinSpammer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ProteinSpammer.Position = UDim2.new(0.0823243856, 0, 0.645695388, 0)
+ProteinSpammer.Position = UDim2.new(0.0823243856, 0, 0.68711549, 0)
 ProteinSpammer.Size = UDim2.new(0, 98, 0, 32)
 ProteinSpammer.Font = Enum.Font.Nunito
 ProteinSpammer.Text = "Protein Bars!"
@@ -290,7 +293,7 @@ UIGradient_11.Parent = ProteinSpammer
 Removepopups.Name = "Remove popups"
 Removepopups.Parent = Frame
 Removepopups.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Removepopups.Position = UDim2.new(0.401936978, 0, 0.645695388, 0)
+Removepopups.Position = UDim2.new(0.401936978, 0, 0.68711549, 0)
 Removepopups.Size = UDim2.new(0, 98, 0, 32)
 Removepopups.Font = Enum.Font.Nunito
 Removepopups.Text = "No popups"
@@ -303,6 +306,38 @@ UICorner_12.Parent = Removepopups
 
 UIGradient_12.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 170, 0))}
 UIGradient_12.Parent = Removepopups
+
+ULSAutopunch.Name = "ULS Autopunch"
+ULSAutopunch.Parent = Frame
+ULSAutopunch.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ULSAutopunch.Position = UDim2.new(0.717954278, 0, 0.68711549, 0)
+ULSAutopunch.Size = UDim2.new(0, 98, 0, 32)
+ULSAutopunch.Font = Enum.Font.Nunito
+ULSAutopunch.Text = ""
+ULSAutopunch.TextColor3 = Color3.fromRGB(0, 0, 0)
+ULSAutopunch.TextScaled = true
+ULSAutopunch.TextSize = 15.000
+ULSAutopunch.TextStrokeTransparency = 0.890
+ULSAutopunch.TextWrapped = true
+
+UICorner_13.Parent = ULSAutopunch
+
+UIGradient_13.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(85, 0, 255))}
+UIGradient_13.Parent = ULSAutopunch
+
+TextLabel.Parent = ULSAutopunch
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0204081647, 0, -0.03125, 0)
+TextLabel.Size = UDim2.new(0, 96, 0, 33)
+TextLabel.Font = Enum.Font.Nunito
+TextLabel.Text = "Autopunch"
+TextLabel.TextColor3 = Color3.fromRGB(170, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextStrokeTransparency = 0.230
+TextLabel.TextWrapped = true
 
 OpenGUI.Name = "OpenGUI"
 OpenGUI.Parent = MultiFunctionGUI
@@ -318,11 +353,11 @@ OpenGUI.TextScaled = true
 OpenGUI.TextSize = 14.000
 OpenGUI.TextWrapped = true
 
-UICorner_13.CornerRadius = UDim.new(0.0399999991, 8)
-UICorner_13.Parent = OpenGUI
+UICorner_14.CornerRadius = UDim.new(0.0399999991, 8)
+UICorner_14.Parent = OpenGUI
 
-UIGradient_13.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(62, 0, 94)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 41, 98))}
-UIGradient_13.Parent = OpenGUI
+UIGradient_14.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(62, 0, 94)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 41, 98))}
+UIGradient_14.Parent = OpenGUI
 
 RemoveGUI.Name = "RemoveGUI"
 RemoveGUI.Parent = MultiFunctionGUI
@@ -338,15 +373,15 @@ RemoveGUI.TextScaled = true
 RemoveGUI.TextSize = 14.000
 RemoveGUI.TextWrapped = true
 
-UICorner_14.CornerRadius = UDim.new(0.0399999991, 8)
-UICorner_14.Parent = RemoveGUI
+UICorner_15.CornerRadius = UDim.new(0.0399999991, 8)
+UICorner_15.Parent = RemoveGUI
 
-UIGradient_14.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(62, 0, 94)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 41, 98))}
-UIGradient_14.Parent = RemoveGUI
+UIGradient_15.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(62, 0, 94)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 41, 98))}
+UIGradient_15.Parent = RemoveGUI
 
 -- Scripts:
 
-local function BGEO_fake_script() -- X.LocalScript 
+local function IQOLZQ_fake_script() -- X.LocalScript 
 	local script = Instance.new('LocalScript', X)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -358,8 +393,8 @@ local function BGEO_fake_script() -- X.LocalScript
 	end)
 	
 end
-coroutine.wrap(BGEO_fake_script)()
-local function IOWN_fake_script() -- Smolbean.LocalScript 
+coroutine.wrap(IQOLZQ_fake_script)()
+local function NAIPHV_fake_script() -- Smolbean.LocalScript 
 	local script = Instance.new('LocalScript', Smolbean)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -375,14 +410,14 @@ local function IOWN_fake_script() -- Smolbean.LocalScript
 	end)
 	
 end
-coroutine.wrap(IOWN_fake_script)()
-local function GYANNH_fake_script() -- Frame.LocalScript 
+coroutine.wrap(NAIPHV_fake_script)()
+local function LISGUQU_fake_script() -- Frame.LocalScript 
 	local script = Instance.new('LocalScript', Frame)
 
 	script.Parent.Draggable = true
 end
-coroutine.wrap(GYANNH_fake_script)()
-local function CLLKCMC_fake_script() -- TPSky.LocalScript 
+coroutine.wrap(LISGUQU_fake_script)()
+local function HUYW_fake_script() -- TPSky.LocalScript 
 	local script = Instance.new('LocalScript', TPSky)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -398,8 +433,8 @@ local function CLLKCMC_fake_script() -- TPSky.LocalScript
 	
 		end)
 end
-coroutine.wrap(CLLKCMC_fake_script)()
-local function SVCXAEO_fake_script() -- SPEED.LocalScript 
+coroutine.wrap(HUYW_fake_script)()
+local function VMGP_fake_script() -- SPEED.LocalScript 
 	local script = Instance.new('LocalScript', SPEED)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -440,8 +475,8 @@ local function SVCXAEO_fake_script() -- SPEED.LocalScript
 	end)
 	
 end
-coroutine.wrap(SVCXAEO_fake_script)()
-local function QLLLFF_fake_script() -- RevizAdmin.LocalScript 
+coroutine.wrap(VMGP_fake_script)()
+local function SEGCH_fake_script() -- RevizAdmin.LocalScript 
 	local script = Instance.new('LocalScript', RevizAdmin)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -3645,8 +3680,8 @@ local function QLLLFF_fake_script() -- RevizAdmin.LocalScript
 		return {}
 	end)
 end
-coroutine.wrap(QLLLFF_fake_script)()
-local function LHBJFQT_fake_script() -- Rejoin.LocalScript 
+coroutine.wrap(SEGCH_fake_script)()
+local function FZNPYGY_fake_script() -- Rejoin.LocalScript 
 	local script = Instance.new('LocalScript', Rejoin)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -3654,8 +3689,8 @@ local function LHBJFQT_fake_script() -- Rejoin.LocalScript
 		end)
 	
 end
-coroutine.wrap(LHBJFQT_fake_script)()
-local function MWMRIN_fake_script() -- Lagreducer.LocalScript 
+coroutine.wrap(FZNPYGY_fake_script)()
+local function ANJRTPL_fake_script() -- Lagreducer.LocalScript 
 	local script = Instance.new('LocalScript', Lagreducer)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -3696,8 +3731,8 @@ local function MWMRIN_fake_script() -- Lagreducer.LocalScript
 			end
 		end)
 end
-coroutine.wrap(MWMRIN_fake_script)()
-local function SONO_fake_script() -- AntiAfk.LocalScript 
+coroutine.wrap(ANJRTPL_fake_script)()
+local function AJXQP_fake_script() -- AntiAfk.LocalScript 
 	local script = Instance.new('LocalScript', AntiAfk)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -3726,8 +3761,8 @@ local function SONO_fake_script() -- AntiAfk.LocalScript
 			ab.Text="You didn't get kicked, don't worry :3"wait(5)ab.Text="Status : Active"end)
 		end)
 end
-coroutine.wrap(SONO_fake_script)()
-local function GQBCALL_fake_script() -- InfiniteJump.LocalScript 
+coroutine.wrap(AJXQP_fake_script)()
+local function GFVTJ_fake_script() -- InfiniteJump.LocalScript 
 	local script = Instance.new('LocalScript', InfiniteJump)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -3762,8 +3797,8 @@ local function GQBCALL_fake_script() -- InfiniteJump.LocalScript
 		end
 	end)
 end
-coroutine.wrap(GQBCALL_fake_script)()
-local function DKALZH_fake_script() -- Noclip.LocalScript 
+coroutine.wrap(GFVTJ_fake_script)()
+local function JIRHFX_fake_script() -- Noclip.LocalScript 
 	local script = Instance.new('LocalScript', Noclip)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -3788,8 +3823,8 @@ local function DKALZH_fake_script() -- Noclip.LocalScript
 		end
 	end)
 end
-coroutine.wrap(DKALZH_fake_script)()
-local function EIXQP_fake_script() -- ProteinSpammer.LocalScript 
+coroutine.wrap(JIRHFX_fake_script)()
+local function ODGKL_fake_script() -- ProteinSpammer.LocalScript 
 	local script = Instance.new('LocalScript', ProteinSpammer)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -3801,8 +3836,8 @@ local function EIXQP_fake_script() -- ProteinSpammer.LocalScript
 			end 
 		end)
 end
-coroutine.wrap(EIXQP_fake_script)()
-local function KKTEG_fake_script() -- Removepopups.LocalScript 
+coroutine.wrap(ODGKL_fake_script)()
+local function LXYWSUL_fake_script() -- Removepopups.LocalScript 
 	local script = Instance.new('LocalScript', Removepopups)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -3817,8 +3852,186 @@ local function KKTEG_fake_script() -- Removepopups.LocalScript
 	end)	
 	
 end
-coroutine.wrap(KKTEG_fake_script)()
-local function SPPGTEN_fake_script() -- OpenGUI.LocalScript 
+coroutine.wrap(LXYWSUL_fake_script)()
+local function POAEEB_fake_script() -- ULSAutopunch.LocalScript 
+	local script = Instance.new('LocalScript', ULSAutopunch)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "ULS Autopunch GUI enabled.",
+			Text = "To begin using it, click the open button."
+		})
+	
+		local Player = game.Players.LocalPlayer
+	
+		local BoxingSimulatorGUI = Instance.new("ScreenGui")
+		local Base = Instance.new("Frame")
+		local Title = Instance.new("TextLabel")
+		local Value = Instance.new("TextBox")
+		local Kill = Instance.new("TextButton")
+		local WalkSpeed = Instance.new("TextButton")
+		local Btools = Instance.new("TextButton")
+		local credits = Instance.new("TextLabel")
+		local OpenClose = Instance.new("TextButton")
+	
+		-- Properties
+	
+		BoxingSimulatorGUI.Name = "BoxingSimulatorGUI"
+		BoxingSimulatorGUI.Parent = game.CoreGui
+	
+		Base.Name = "Base"
+		Base.Parent = BoxingSimulatorGUI
+		Base.Active = true
+		Base.BackgroundColor3 = Color3.new(0.27451, 0.627451, 1)
+		Base.BorderColor3 = Color3.new(0.188235, 0.309804, 0.584314)
+		Base.BorderSizePixel = 5
+		Base.Position = UDim2.new(0.300000012, 0, 0.224000007, 0)
+		Base.Size = UDim2.new(0, 228, 0, 417)
+		Base.Visible = false
+	
+		Title.Name = "Title"
+		Title.Parent = Base
+		Title.BackgroundColor3 = Color3.new(0.298039, 0.498039, 0.921569)
+		Title.BorderColor3 = Color3.new(0.188235, 0.309804, 0.580392)
+		Title.BorderSizePixel = 5
+		Title.Size = UDim2.new(0, 228, 0, 47)
+		Title.Font = Enum.Font.Nunito
+		Title.Text = "Ultimate Lifting Autopunch"
+		Title.TextColor3 = Color3.new(0.32549, 0.772549, 0.0823529)
+		Title.TextScaled = true
+		Title.TextSize = 14
+		Title.TextWrapped = true
+	
+		Value.Name = "Value"
+		Value.Parent = Base
+		Value.BackgroundColor3 = Color3.new(1, 1, 1)
+		Value.BorderColor3 = Color3.new(0.188235, 0.309804, 0.580392)
+		Value.BorderSizePixel = 3
+		Value.Position = UDim2.new(0.197368428, 0, 0.302158266, 0)
+		Value.Size = UDim2.new(0, 141, 0, 36)
+		Value.Font = Enum.Font.Nunito
+		Value.Text = "Type the target"
+		Value.TextScaled = true
+		Value.TextColor3 = Color3.new(0, 0, 0)
+		Value.TextSize = 20
+	
+		Kill.Name = "Kill"
+		Kill.Parent = Base
+		Kill.BackgroundColor3 = Color3.new(0.321569, 0.545098, 0.992157)
+		Kill.BorderColor3 = Color3.new(0.188235, 0.309804, 0.580392)
+		Kill.BorderSizePixel = 3
+		Kill.Position = UDim2.new(0.100877196, 0, 0.561151087, 0)
+		Kill.Size = UDim2.new(0, 86, 0, 40)
+		Kill.Font = Enum.Font.Nunito
+		Kill.Text = "Kill Player"
+		Kill.TextColor3 = Color3.new(0.219608, 0.729412, 0.129412)
+		Kill.TextScaled = true
+		Kill.TextSize = 24
+		Kill.TextWrapped = true
+	
+		WalkSpeed.Name = "WalkSpeed"
+		WalkSpeed.Parent = Base
+		WalkSpeed.BackgroundColor3 = Color3.new(0.321569, 0.545098, 0.992157)
+		WalkSpeed.BorderColor3 = Color3.new(0.188235, 0.309804, 0.580392)
+		WalkSpeed.BorderSizePixel = 3
+		WalkSpeed.Position = UDim2.new(0.521929801, 0, 0.561151087, 0)
+		WalkSpeed.Size = UDim2.new(0, 85, 0, 40)
+		WalkSpeed.Font = Enum.Font.Nunito
+		WalkSpeed.Text = "Walk Speed"
+		WalkSpeed.TextColor3 = Color3.new(0.219608, 0.729412, 0.129412)
+		WalkSpeed.TextScaled = true
+		WalkSpeed.TextSize = 24
+		WalkSpeed.TextWrapped = true
+	
+		Btools.Name = "Btools"
+		Btools.Parent = Base
+		Btools.BackgroundColor3 = Color3.new(0.321569, 0.545098, 0.992157)
+		Btools.BorderColor3 = Color3.new(0.188235, 0.309804, 0.580392)
+		Btools.BorderSizePixel = 3
+		Btools.Position = UDim2.new(0.101000004, 0, 0.822203875, 0)
+		Btools.Size = UDim2.new(0, 181, 0, 40)
+		Btools.Font = Enum.Font.Nunito
+		Btools.Text = "Btools"
+		Btools.TextColor3 = Color3.new(0.219608, 0.729412, 0.129412)
+		Btools.TextSize = 24
+		Btools.TextWrapped = true
+	
+		credits.Name = "credits"
+		credits.Parent = Base
+		credits.BackgroundColor3 = Color3.new(1, 1, 1)
+		credits.BackgroundTransparency = 1
+		credits.Position = UDim2.new(0, 0, 0.16546762, 0)
+		credits.Size = UDim2.new(0, 228, 0, 38)
+		credits.Font = Enum.Font.Nunito
+		credits.Text = "Modded by Glitchy_Eternal"
+		credits.TextColor3 = Color3.new(0, 0, 0)
+		credits.TextSize = 24
+		credits.TextScaled = true
+		credits.TextWrapped = true
+	
+		OpenClose.Name = "OpenClose"
+		OpenClose.Parent = BoxingSimulatorGUI
+		OpenClose.BackgroundColor3 = Color3.new(0.298039, 0.498039, 0.921569)
+		OpenClose.BorderColor3 = Color3.new(0.164706, 0.270588, 0.509804)
+		OpenClose.BorderSizePixel = 5
+		OpenClose.Position = UDim2.new(0.321428567, 0, 0.0983606577, 0)
+		OpenClose.Size = UDim2.new(0, 205, 0, 35)
+		OpenClose.Font = Enum.Font.Nunito
+		OpenClose.Text = "Boxing GUI"
+		OpenClose.TextColor3 = Color3.new(0.32549, 0.772549, 0.0823529)
+		OpenClose.TextScaled = true
+		OpenClose.TextSize = 14
+		OpenClose.TextWrapped = true
+	
+		OpenClose.Draggable = true
+		Base.Draggable = true
+	
+		local open = false
+		OpenClose.Text = "Open"
+	
+		OpenClose.MouseButton1Click:connect(function(click)
+			if OpenClose.Text == "Open" then
+				Base.Visible = true
+				OpenClose.Text = "Close"
+			elseif OpenClose.Text == "Close" then
+				Base.Visible = false
+				OpenClose.Text = "Open"
+			end
+		end)
+	
+		Btools.MouseButton1Click:connect(function()
+			for a = 1, 4 do
+				local HopperBin = Instance.new("HopperBin", game.Players.LocalPlayer.Backpack)
+				HopperBin.BinType = a
+			end
+		end)
+	
+		Kill.MouseButton1Click:connect(function()
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "You need to get close to your target.",
+			Text = ""
+		})
+	
+			local field = Value.Text
+	
+			local LocalUser = game.Players.LocalPlayer
+			local ENEMY = field
+	
+			for i=1,200 do
+				wait(0.2)
+				game.ReplicatedStorage.Events.Dee:FireServer(game.Workspace[ENEMY].LeftHand, 5, true)
+			end
+	
+		end)
+	
+		WalkSpeed.MouseButton1Click:connect(function()
+		end)
+			print(game.Players.LocalPlayer.Character.Humanoid.WalkSpeed)
+			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value.Text
+		end)
+end
+coroutine.wrap(POAEEB_fake_script)()
+local function YNOPT_fake_script() -- OpenGUI.LocalScript 
 	local script = Instance.new('LocalScript', OpenGUI)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -3829,8 +4042,8 @@ local function SPPGTEN_fake_script() -- OpenGUI.LocalScript
 		script.Parent.Parent.Frame.Visible = true
 	end)
 end
-coroutine.wrap(SPPGTEN_fake_script)()
-local function AVNRL_fake_script() -- RemoveGUI.LocalScript 
+coroutine.wrap(YNOPT_fake_script)()
+local function TIIIMT_fake_script() -- RemoveGUI.LocalScript 
 	local script = Instance.new('LocalScript', RemoveGUI)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -3844,4 +4057,4 @@ local function AVNRL_fake_script() -- RemoveGUI.LocalScript
 		script.Parent.MouseButton1Click:connect(OnClicked)
 	end)
 end
-coroutine.wrap(AVNRL_fake_script)()
+coroutine.wrap(TIIIMT_fake_script)()
