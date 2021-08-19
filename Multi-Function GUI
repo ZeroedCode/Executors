@@ -3915,7 +3915,7 @@ local function IAZV_fake_script() -- SPEED.LocalScript
 		function x_walkspeed(key)
 			if (key == "x") then
 				if walkspeedenabled == false then
-					_G.WS = 400;
+					_G.WS = 160;
 					local Humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid;
 					Humanoid:GetPropertyChangedSignal("WalkSpeed"):Connect(function()
 						Humanoid.WalkSpeed = _G.WS;
@@ -3924,7 +3924,7 @@ local function IAZV_fake_script() -- SPEED.LocalScript
 	
 					walkspeedenabled = true
 				elseif walkspeedenabled == true then
-					_G.WS = 120;
+					_G.WS = 100;
 					local Humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid;
 					Humanoid:GetPropertyChangedSignal("WalkSpeed"):Connect(function()
 						Humanoid.WalkSpeed = _G.WS;
