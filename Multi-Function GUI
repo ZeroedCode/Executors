@@ -4,264 +4,74 @@
 -- Instances:
 
 local MultiFunctionGUI = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
-local X = Instance.new("TextButton")
+local OpenGUI = Instance.new("TextButton")
 local UICorner = Instance.new("UICorner")
 local UIGradient = Instance.new("UIGradient")
-local Smolbean = Instance.new("TextButton")
+local RemoveGUI = Instance.new("TextButton")
 local UICorner_2 = Instance.new("UICorner")
 local UIGradient_2 = Instance.new("UIGradient")
-local MultiFunctionGUI_2 = Instance.new("TextLabel")
-local TPSky = Instance.new("TextButton")
+local Main1 = Instance.new("Frame")
+local Rejoin = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
 local UIGradient_3 = Instance.new("UIGradient")
-local SPEED = Instance.new("TextButton")
+local X = Instance.new("TextButton")
+local Version = Instance.new("TextLabel")
+local MultiFunctionGUI_2 = Instance.new("TextLabel")
+local Noclip = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
 local UIGradient_4 = Instance.new("UIGradient")
-local RevizAdmin = Instance.new("TextButton")
+local InfiniteJump = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
 local UIGradient_5 = Instance.new("UIGradient")
-local Rejoin = Instance.new("TextButton")
+local Lagreducer = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
 local UIGradient_6 = Instance.new("UIGradient")
-local Lagreducer = Instance.new("TextButton")
+local AntiAfk = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
 local UIGradient_7 = Instance.new("UIGradient")
-local AntiAfk = Instance.new("TextButton")
-local UICorner_8 = Instance.new("UICorner")
 local UIGradient_8 = Instance.new("UIGradient")
-local Version = Instance.new("TextLabel")
-local InfiniteJump = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local Next = Instance.new("TextButton")
 local UICorner_9 = Instance.new("UICorner")
 local UIGradient_9 = Instance.new("UIGradient")
-local Noclip = Instance.new("TextButton")
+local RevizAdmin = Instance.new("TextButton")
 local UICorner_10 = Instance.new("UICorner")
 local UIGradient_10 = Instance.new("UIGradient")
-local OpenGUI = Instance.new("TextButton")
-local UICorner_11 = Instance.new("UICorner")
+local Main2 = Instance.new("Frame")
 local UIGradient_11 = Instance.new("UIGradient")
-local RemoveGUI = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local CloudNuker = Instance.new("TextButton")
 local UICorner_12 = Instance.new("UICorner")
 local UIGradient_12 = Instance.new("UIGradient")
+local SPEED = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local UIGradient_13 = Instance.new("UIGradient")
+local Smolbean = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local UIGradient_14 = Instance.new("UIGradient")
+local TPSky = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local UIGradient_15 = Instance.new("UIGradient")
+local ToolDeleter = Instance.new("TextButton")
+local UIGradient_16 = Instance.new("UIGradient")
+local UICorner_16 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local MultiFunctionGUI_3 = Instance.new("TextLabel")
+local Version_2 = Instance.new("TextLabel")
+local X_2 = Instance.new("TextButton")
+local Back = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local UIGradient_17 = Instance.new("UIGradient")
+local FEInvisibleFling = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local UIGradient_18 = Instance.new("UIGradient")
 
 --Properties:
 
 MultiFunctionGUI.Name = "Multi-Function GUI"
 MultiFunctionGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 MultiFunctionGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-
-Frame.Parent = MultiFunctionGUI
-Frame.Active = true
-Frame.BackgroundColor3 = Color3.fromRGB(164, 16, 255)
-Frame.BorderSizePixel = 3
-Frame.Position = UDim2.new(0.346101671, 0, 0.334694922, 0)
-Frame.Selectable = true
-Frame.Size = UDim2.new(0, 413, 0, 302)
-Frame.Visible = false
-
-X.Name = "X"
-X.Parent = Frame
-X.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-X.BorderColor3 = Color3.fromRGB(0, 0, 0)
-X.BorderSizePixel = 2
-X.Position = UDim2.new(0.89104116, 0, 0.043046359, 0)
-X.Size = UDim2.new(0, 35, 0, 28)
-X.Font = Enum.Font.Nunito
-X.LineHeight = 3.000
-X.Text = "X"
-X.TextColor3 = Color3.fromRGB(0, 0, 0)
-X.TextSize = 31.000
-X.TextWrapped = true
-X.TextYAlignment = Enum.TextYAlignment.Bottom
-
-UICorner.CornerRadius = UDim.new(0.0399999991, 8)
-UICorner.Parent = Frame
-
-UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 85, 255)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(255, 85, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(177, 177, 177))}
-UIGradient.Parent = Frame
-
-Smolbean.Name = "Smol bean!"
-Smolbean.Parent = Frame
-Smolbean.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Smolbean.Position = UDim2.new(0.0823244527, 0, 0.19205299, 0)
-Smolbean.Size = UDim2.new(0, 98, 0, 32)
-Smolbean.Font = Enum.Font.Nunito
-Smolbean.Text = "Smol beano!"
-Smolbean.TextColor3 = Color3.fromRGB(0, 0, 0)
-Smolbean.TextScaled = true
-Smolbean.TextSize = 14.000
-Smolbean.TextWrapped = true
-
-UICorner_2.Parent = Smolbean
-
-UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 0))}
-UIGradient_2.Parent = Smolbean
-
-MultiFunctionGUI_2.Name = "Multi-Function GUI"
-MultiFunctionGUI_2.Parent = Frame
-MultiFunctionGUI_2.BackgroundColor3 = Color3.fromRGB(0, 230, 0)
-MultiFunctionGUI_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
-MultiFunctionGUI_2.BorderSizePixel = 3
-MultiFunctionGUI_2.Position = UDim2.new(0.16707021, 0, 0.0231788084, 0)
-MultiFunctionGUI_2.Size = UDim2.new(0, 274, 0, 34)
-MultiFunctionGUI_2.Font = Enum.Font.Nunito
-MultiFunctionGUI_2.Text = "Multi-Function GUI"
-MultiFunctionGUI_2.TextColor3 = Color3.fromRGB(0, 0, 0)
-MultiFunctionGUI_2.TextScaled = true
-MultiFunctionGUI_2.TextSize = 14.000
-MultiFunctionGUI_2.TextWrapped = true
-
-TPSky.Name = "TPSky"
-TPSky.Parent = Frame
-TPSky.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TPSky.Position = UDim2.new(0.404358298, 0, 0.367549688, 0)
-TPSky.Size = UDim2.new(0, 98, 0, 32)
-TPSky.Font = Enum.Font.Nunito
-TPSky.Text = "Tp to the sky"
-TPSky.TextColor3 = Color3.fromRGB(0, 0, 0)
-TPSky.TextScaled = true
-TPSky.TextSize = 14.000
-TPSky.TextWrapped = true
-
-UICorner_3.Parent = TPSky
-
-UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(170, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 255))}
-UIGradient_3.Parent = TPSky
-
-SPEED.Name = "S P E E D"
-SPEED.Parent = Frame
-SPEED.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SPEED.Position = UDim2.new(0.719128251, 0, 0.19205299, 0)
-SPEED.Size = UDim2.new(0, 98, 0, 32)
-SPEED.Font = Enum.Font.Nunito
-SPEED.Text = "S P E E D"
-SPEED.TextColor3 = Color3.fromRGB(0, 0, 0)
-SPEED.TextScaled = true
-SPEED.TextSize = 14.000
-SPEED.TextWrapped = true
-
-UICorner_4.Parent = SPEED
-
-UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 255))}
-UIGradient_4.Parent = SPEED
-
-RevizAdmin.Name = "Reviz Admin"
-RevizAdmin.Parent = Frame
-RevizAdmin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-RevizAdmin.Position = UDim2.new(0.404358327, 0, 0.19205299, 0)
-RevizAdmin.Size = UDim2.new(0, 98, 0, 32)
-RevizAdmin.Font = Enum.Font.Nunito
-RevizAdmin.Text = "Reviz"
-RevizAdmin.TextColor3 = Color3.fromRGB(0, 0, 0)
-RevizAdmin.TextScaled = true
-RevizAdmin.TextSize = 14.000
-RevizAdmin.TextWrapped = true
-
-UICorner_5.Parent = RevizAdmin
-
-UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 255))}
-UIGradient_5.Parent = RevizAdmin
-
-Rejoin.Name = "Rejoin"
-Rejoin.Parent = Frame
-Rejoin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Rejoin.Position = UDim2.new(0.0823243707, 0, 0.566225171, 0)
-Rejoin.Size = UDim2.new(0, 98, 0, 32)
-Rejoin.Font = Enum.Font.Nunito
-Rejoin.Text = "Rejoin"
-Rejoin.TextColor3 = Color3.fromRGB(0, 0, 0)
-Rejoin.TextScaled = true
-Rejoin.TextSize = 14.000
-Rejoin.TextWrapped = true
-
-UICorner_6.Parent = Rejoin
-
-UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 255))}
-UIGradient_6.Parent = Rejoin
-
-Lagreducer.Name = "Lag reducer"
-Lagreducer.Parent = Frame
-Lagreducer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Lagreducer.Position = UDim2.new(0.0823243856, 0, 0.367549688, 0)
-Lagreducer.Size = UDim2.new(0, 98, 0, 32)
-Lagreducer.Font = Enum.Font.Nunito
-Lagreducer.Text = "Lag reducer"
-Lagreducer.TextColor3 = Color3.fromRGB(0, 0, 0)
-Lagreducer.TextScaled = true
-Lagreducer.TextSize = 14.000
-Lagreducer.TextWrapped = true
-
-UICorner_7.Parent = Lagreducer
-
-UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 170, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
-UIGradient_7.Parent = Lagreducer
-
-AntiAfk.Name = "AntiAfk"
-AntiAfk.Parent = Frame
-AntiAfk.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AntiAfk.Position = UDim2.new(0.719128251, 0, 0.367549688, 0)
-AntiAfk.Size = UDim2.new(0, 98, 0, 32)
-AntiAfk.Font = Enum.Font.Nunito
-AntiAfk.Text = "Anti-Afk"
-AntiAfk.TextColor3 = Color3.fromRGB(0, 0, 0)
-AntiAfk.TextScaled = true
-AntiAfk.TextSize = 14.000
-AntiAfk.TextWrapped = true
-
-UICorner_8.Parent = AntiAfk
-
-UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 127)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(170, 170, 255))}
-UIGradient_8.Parent = AntiAfk
-
-Version.Name = "Version"
-Version.Parent = Frame
-Version.BackgroundColor3 = Color3.fromRGB(0, 230, 0)
-Version.BackgroundTransparency = 1.000
-Version.BorderColor3 = Color3.fromRGB(0, 0, 0)
-Version.BorderSizePixel = 0
-Version.Position = UDim2.new(0.767554462, 0, 0.837748468, 0)
-Version.Size = UDim2.new(0, 81, 0, 34)
-Version.Font = Enum.Font.Nunito
-Version.Text = "v1.03.9"
-Version.TextColor3 = Color3.fromRGB(0, 170, 0)
-Version.TextScaled = true
-Version.TextSize = 14.000
-Version.TextStrokeTransparency = 0.140
-Version.TextWrapped = true
-
-InfiniteJump.Name = "Infinite Jump"
-InfiniteJump.Parent = Frame
-InfiniteJump.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-InfiniteJump.Position = UDim2.new(0.404358268, 0, 0.566225171, 0)
-InfiniteJump.Size = UDim2.new(0, 98, 0, 32)
-InfiniteJump.Font = Enum.Font.Nunito
-InfiniteJump.Text = "Infinite Jump"
-InfiniteJump.TextColor3 = Color3.fromRGB(0, 0, 0)
-InfiniteJump.TextScaled = true
-InfiniteJump.TextSize = 14.000
-InfiniteJump.TextWrapped = true
-
-UICorner_9.Parent = InfiniteJump
-
-UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 85, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(85, 0, 255))}
-UIGradient_9.Parent = InfiniteJump
-
-Noclip.Name = "Noclip"
-Noclip.Parent = Frame
-Noclip.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Noclip.Position = UDim2.new(0.719128251, 0, 0.566225171, 0)
-Noclip.Size = UDim2.new(0, 98, 0, 32)
-Noclip.Font = Enum.Font.Nunito
-Noclip.Text = "Noclip"
-Noclip.TextColor3 = Color3.fromRGB(0, 0, 0)
-Noclip.TextScaled = true
-Noclip.TextSize = 14.000
-Noclip.TextWrapped = true
-
-UICorner_10.Parent = Noclip
-
-UIGradient_10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(95, 143, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(85, 255, 255))}
-UIGradient_10.Parent = Noclip
+MultiFunctionGUI.ResetOnSpawn = false
 
 OpenGUI.Name = "OpenGUI"
 OpenGUI.Parent = MultiFunctionGUI
@@ -277,11 +87,11 @@ OpenGUI.TextScaled = true
 OpenGUI.TextSize = 14.000
 OpenGUI.TextWrapped = true
 
-UICorner_11.CornerRadius = UDim.new(0.0399999991, 8)
-UICorner_11.Parent = OpenGUI
+UICorner.CornerRadius = UDim.new(0.0399999991, 8)
+UICorner.Parent = OpenGUI
 
-UIGradient_11.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(62, 0, 94)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 41, 98))}
-UIGradient_11.Parent = OpenGUI
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(62, 0, 94)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 41, 98))}
+UIGradient.Parent = OpenGUI
 
 RemoveGUI.Name = "RemoveGUI"
 RemoveGUI.Parent = MultiFunctionGUI
@@ -297,15 +107,431 @@ RemoveGUI.TextScaled = true
 RemoveGUI.TextSize = 14.000
 RemoveGUI.TextWrapped = true
 
-UICorner_12.CornerRadius = UDim.new(0.0399999991, 8)
-UICorner_12.Parent = RemoveGUI
+UICorner_2.CornerRadius = UDim.new(0.0399999991, 8)
+UICorner_2.Parent = RemoveGUI
 
-UIGradient_12.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(62, 0, 94)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 41, 98))}
-UIGradient_12.Parent = RemoveGUI
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(62, 0, 94)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 41, 98))}
+UIGradient_2.Parent = RemoveGUI
+
+Main1.Name = "Main1"
+Main1.Parent = MultiFunctionGUI
+Main1.Active = true
+Main1.BackgroundColor3 = Color3.fromRGB(164, 16, 255)
+Main1.BorderSizePixel = 3
+Main1.Position = UDim2.new(0.327842772, 0, 0.340518624, 0)
+Main1.Selectable = true
+Main1.Size = UDim2.new(0, 462, 0, 338)
+Main1.Visible = false
+Next.MouseButton1Down:connect(function()
+Main2.Visible = true
+Main1.Visible = false	
+end)
+
+Rejoin.Name = "Rejoin"
+Rejoin.Parent = Main1
+Rejoin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Rejoin.Position = UDim2.new(0.115773447, 0, 0.239649713, 0)
+Rejoin.Size = UDim2.new(0, 123, 0, 39)
+Rejoin.Font = Enum.Font.Nunito
+Rejoin.Text = "Rejoin"
+Rejoin.TextColor3 = Color3.fromRGB(0, 0, 0)
+Rejoin.TextScaled = true
+Rejoin.TextSize = 14.000
+Rejoin.TextWrapped = true
+
+UICorner_3.Parent = Rejoin
+
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 255))}
+UIGradient_3.Parent = Rejoin
+
+X.Name = "X"
+X.Parent = Main1
+X.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+X.BorderColor3 = Color3.fromRGB(0, 0, 0)
+X.BorderSizePixel = 2
+X.Position = UDim2.new(0.885782599, 0, 0.0448032059, 0)
+X.Size = UDim2.new(0, 35, 0, 28)
+X.Font = Enum.Font.Nunito
+X.LineHeight = 3.000
+X.Text = "X"
+X.TextColor3 = Color3.fromRGB(0, 0, 0)
+X.TextSize = 31.000
+X.TextWrapped = true
+X.TextYAlignment = Enum.TextYAlignment.Bottom
+
+Version.Name = "Version"
+Version.Parent = Main1
+Version.BackgroundColor3 = Color3.fromRGB(0, 230, 0)
+Version.BackgroundTransparency = 1.000
+Version.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Version.BorderSizePixel = 0
+Version.Position = UDim2.new(0.785255671, 0, 0.899778128, 0)
+Version.Size = UDim2.new(0, 81, 0, 34)
+Version.Font = Enum.Font.Nunito
+Version.Text = "v1.13a"
+Version.TextColor3 = Color3.fromRGB(0, 170, 0)
+Version.TextScaled = true
+Version.TextSize = 14.000
+Version.TextStrokeTransparency = 0.140
+Version.TextWrapped = true
+
+MultiFunctionGUI_2.Name = "Multi-Function GUI"
+MultiFunctionGUI_2.Parent = Main1
+MultiFunctionGUI_2.BackgroundColor3 = Color3.fromRGB(0, 230, 0)
+MultiFunctionGUI_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MultiFunctionGUI_2.BorderSizePixel = 3
+MultiFunctionGUI_2.Position = UDim2.new(0.202893808, 0, 0.0379088446, 0)
+MultiFunctionGUI_2.Size = UDim2.new(0, 273, 0, 34)
+MultiFunctionGUI_2.Font = Enum.Font.Nunito
+MultiFunctionGUI_2.Text = "Multi-Function GUI"
+MultiFunctionGUI_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+MultiFunctionGUI_2.TextScaled = true
+MultiFunctionGUI_2.TextSize = 14.000
+MultiFunctionGUI_2.TextWrapped = true
+
+Noclip.Name = "Noclip"
+Noclip.Parent = Main1
+Noclip.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Noclip.Position = UDim2.new(0.600677669, 0, 0.651405156, 0)
+Noclip.Size = UDim2.new(0, 122, 0, 40)
+Noclip.Font = Enum.Font.Nunito
+Noclip.Text = "Noclip"
+Noclip.TextColor3 = Color3.fromRGB(0, 0, 0)
+Noclip.TextScaled = true
+Noclip.TextSize = 14.000
+Noclip.TextWrapped = true
+
+UICorner_4.Parent = Noclip
+
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(95, 143, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(85, 255, 255))}
+UIGradient_4.Parent = Noclip
+
+InfiniteJump.Name = "Infinite Jump"
+InfiniteJump.Parent = Main1
+InfiniteJump.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InfiniteJump.Position = UDim2.new(0.5955742, 0, 0.239649758, 0)
+InfiniteJump.Size = UDim2.new(0, 125, 0, 38)
+InfiniteJump.Font = Enum.Font.Nunito
+InfiniteJump.Text = "Infinite Jump"
+InfiniteJump.TextColor3 = Color3.fromRGB(0, 0, 0)
+InfiniteJump.TextScaled = true
+InfiniteJump.TextSize = 14.000
+InfiniteJump.TextWrapped = true
+
+UICorner_5.Parent = InfiniteJump
+
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 85, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(85, 0, 255))}
+UIGradient_5.Parent = InfiniteJump
+
+Lagreducer.Name = "Lag reducer"
+Lagreducer.Parent = Main1
+Lagreducer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Lagreducer.Position = UDim2.new(0.114877149, 0, 0.655572772, 0)
+Lagreducer.Size = UDim2.new(0, 125, 0, 39)
+Lagreducer.Font = Enum.Font.Nunito
+Lagreducer.Text = "Lag reducer"
+Lagreducer.TextColor3 = Color3.fromRGB(0, 0, 0)
+Lagreducer.TextScaled = true
+Lagreducer.TextSize = 14.000
+Lagreducer.TextWrapped = true
+
+UICorner_6.Parent = Lagreducer
+
+UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 170, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+UIGradient_6.Parent = Lagreducer
+
+AntiAfk.Name = "AntiAfk"
+AntiAfk.Parent = Main1
+AntiAfk.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AntiAfk.Position = UDim2.new(0.115059458, 0, 0.441260606, 0)
+AntiAfk.Size = UDim2.new(0, 125, 0, 39)
+AntiAfk.Font = Enum.Font.Nunito
+AntiAfk.Text = "Anti-Afk"
+AntiAfk.TextColor3 = Color3.fromRGB(0, 0, 0)
+AntiAfk.TextScaled = true
+AntiAfk.TextSize = 14.000
+AntiAfk.TextWrapped = true
+
+UICorner_7.Parent = AntiAfk
+
+UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 127)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(170, 170, 255))}
+UIGradient_7.Parent = AntiAfk
+
+UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 85, 255)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(255, 85, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(177, 177, 177))}
+UIGradient_8.Parent = Main1
+
+UICorner_8.CornerRadius = UDim.new(0.0399999991, 8)
+UICorner_8.Parent = Main1
+
+Next.Name = "Next"
+Next.Parent = Main1
+Next.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Next.Position = UDim2.new(0.422077894, 0, 0.869665742, 0)
+Next.Size = UDim2.new(0, 70, 0, 33)
+Next.Font = Enum.Font.Nunito
+Next.Text = "Next"
+Next.TextColor3 = Color3.fromRGB(0, 0, 0)
+Next.TextSize = 14.000
+
+UICorner_9.CornerRadius = UDim.new(0.0399999991, 8)
+UICorner_9.Parent = Next
+
+UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 85, 255)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(255, 85, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(177, 177, 177))}
+UIGradient_9.Parent = Next
+
+RevizAdmin.Name = "Reviz Admin"
+RevizAdmin.Parent = Main1
+RevizAdmin.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RevizAdmin.Position = UDim2.new(0.596742153, 0, 0.438457608, 0)
+RevizAdmin.Size = UDim2.new(0, 122, 0, 43)
+RevizAdmin.Font = Enum.Font.Nunito
+RevizAdmin.Text = "Reviz"
+RevizAdmin.TextColor3 = Color3.fromRGB(0, 0, 0)
+RevizAdmin.TextScaled = true
+RevizAdmin.TextSize = 14.000
+RevizAdmin.TextWrapped = true
+
+UICorner_10.Parent = RevizAdmin
+
+UIGradient_10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 255))}
+UIGradient_10.Parent = RevizAdmin
+
+Main2.Name = "Main2"
+Main2.Parent = MultiFunctionGUI
+Main2.Active = true
+Main2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Main2.Position = UDim2.new(0.327353925, 0, 0.340518624, 0)
+Main2.Selectable = true
+Main2.Size = UDim2.new(0, 462, 0, 338)
+Main2.Visible = false
+Back.MouseButton1Down:connect(function()
+Main1.Visible = true
+Main2.Visible = false	
+end)
+
+UIGradient_11.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 170, 255)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(0, 85, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(85, 0, 127))}
+UIGradient_11.Parent = Main2
+
+UICorner_11.CornerRadius = UDim.new(0.0399999991, 8)
+UICorner_11.Parent = Main2
+
+CloudNuker.Name = "Cloud Nuker"
+CloudNuker.Parent = Main2
+CloudNuker.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloudNuker.Position = UDim2.new(0.12055169, 0, 0.675281107, 0)
+CloudNuker.Size = UDim2.new(0, 123, 0, 36)
+CloudNuker.Font = Enum.Font.Nunito
+CloudNuker.Text = "Cloud Nuker"
+CloudNuker.TextColor3 = Color3.fromRGB(0, 0, 0)
+CloudNuker.TextScaled = true
+CloudNuker.TextSize = 15.000
+CloudNuker.TextWrapped = true
+
+UICorner_12.Parent = CloudNuker
+
+UIGradient_12.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 170, 0))}
+UIGradient_12.Parent = CloudNuker
+
+SPEED.Name = "S P E E D"
+SPEED.Parent = Main2
+SPEED.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SPEED.Position = UDim2.new(0.621725559, 0, 0.435499012, 0)
+SPEED.Size = UDim2.new(0, 124, 0, 43)
+SPEED.Font = Enum.Font.Nunito
+SPEED.Text = "S P E E D"
+SPEED.TextColor3 = Color3.fromRGB(0, 0, 0)
+SPEED.TextScaled = true
+SPEED.TextSize = 14.000
+SPEED.TextWrapped = true
+
+UICorner_13.Parent = SPEED
+
+UIGradient_13.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 255))}
+UIGradient_13.Parent = SPEED
+
+Smolbean.Name = "Smol bean!"
+Smolbean.Parent = Main2
+Smolbean.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Smolbean.Position = UDim2.new(0.623193264, 0, 0.234315604, 0)
+Smolbean.Size = UDim2.new(0, 122, 0, 43)
+Smolbean.Font = Enum.Font.Nunito
+Smolbean.Text = "Smol beano!"
+Smolbean.TextColor3 = Color3.fromRGB(0, 0, 0)
+Smolbean.TextScaled = true
+Smolbean.TextSize = 14.000
+Smolbean.TextWrapped = true
+
+UICorner_14.Parent = Smolbean
+
+UIGradient_14.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 0))}
+UIGradient_14.Parent = Smolbean
+
+TPSky.Name = "TPSky"
+TPSky.Parent = Main2
+TPSky.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TPSky.Position = UDim2.new(0.120551661, 0, 0.437281936, 0)
+TPSky.Size = UDim2.new(0, 123, 0, 42)
+TPSky.Font = Enum.Font.Nunito
+TPSky.Text = "Tp to the sky"
+TPSky.TextColor3 = Color3.fromRGB(0, 0, 0)
+TPSky.TextScaled = true
+TPSky.TextSize = 14.000
+TPSky.TextWrapped = true
+
+UICorner_15.Parent = TPSky
+
+UIGradient_15.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(170, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 255))}
+UIGradient_15.Parent = TPSky
+
+ToolDeleter.Name = "Tool Deleter"
+ToolDeleter.Parent = Main2
+ToolDeleter.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ToolDeleter.Position = UDim2.new(0.623890042, 0, 0.672334254, 0)
+ToolDeleter.Size = UDim2.new(0, 123, 0, 38)
+ToolDeleter.Font = Enum.Font.Nunito
+ToolDeleter.Text = ""
+ToolDeleter.TextColor3 = Color3.fromRGB(0, 0, 0)
+ToolDeleter.TextScaled = true
+ToolDeleter.TextSize = 15.000
+ToolDeleter.TextStrokeTransparency = 0.890
+ToolDeleter.TextWrapped = true
+
+UIGradient_16.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(85, 0, 255))}
+UIGradient_16.Parent = ToolDeleter
+
+UICorner_16.Parent = ToolDeleter
+
+TextLabel.Parent = ToolDeleter
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(0.0257689357, 0, -0.0798695087, 0)
+TextLabel.Size = UDim2.new(0, 120, 0, 44)
+TextLabel.Font = Enum.Font.Nunito
+TextLabel.Text = "Tool Deleter"
+TextLabel.TextColor3 = Color3.fromRGB(170, 0, 0)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextStrokeTransparency = 0.230
+TextLabel.TextWrapped = true
+
+MultiFunctionGUI_3.Name = "Multi-Function GUI"
+MultiFunctionGUI_3.Parent = Main2
+MultiFunctionGUI_3.BackgroundColor3 = Color3.fromRGB(0, 230, 0)
+MultiFunctionGUI_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+MultiFunctionGUI_3.BorderSizePixel = 3
+MultiFunctionGUI_3.Position = UDim2.new(0.201702297, 0, 0.0376314186, 0)
+MultiFunctionGUI_3.Size = UDim2.new(0, 274, 0, 35)
+MultiFunctionGUI_3.Font = Enum.Font.Nunito
+MultiFunctionGUI_3.Text = "Multi-Function GUI"
+MultiFunctionGUI_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+MultiFunctionGUI_3.TextScaled = true
+MultiFunctionGUI_3.TextSize = 14.000
+MultiFunctionGUI_3.TextWrapped = true
+
+Version_2.Name = "Version"
+Version_2.Parent = Main2
+Version_2.BackgroundColor3 = Color3.fromRGB(0, 230, 0)
+Version_2.BackgroundTransparency = 1.000
+Version_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Version_2.BorderSizePixel = 0
+Version_2.Position = UDim2.new(0.792648017, 0, 0.89925164, 0)
+Version_2.Size = UDim2.new(0, 81, 0, 34)
+Version_2.Font = Enum.Font.Nunito
+Version_2.Text = "v1.13a"
+Version_2.TextColor3 = Color3.fromRGB(0, 170, 0)
+Version_2.TextScaled = true
+Version_2.TextSize = 14.000
+Version_2.TextStrokeTransparency = 0.140
+Version_2.TextWrapped = true
+
+X_2.Name = "X"
+X_2.Parent = Main2
+X_2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+X_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+X_2.BorderSizePixel = 2
+X_2.Position = UDim2.new(0.888876677, 0, 0.0460049361, 0)
+X_2.Size = UDim2.new(0, 35, 0, 28)
+X_2.Font = Enum.Font.Nunito
+X_2.LineHeight = 3.000
+X_2.Text = "X"
+X_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+X_2.TextSize = 31.000
+X_2.TextWrapped = true
+X_2.TextYAlignment = Enum.TextYAlignment.Bottom
+
+Back.Name = "Back"
+Back.Parent = Main2
+Back.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Back.Position = UDim2.new(0.422077894, 0, 0.869665742, 0)
+Back.Size = UDim2.new(0, 70, 0, 33)
+Back.Font = Enum.Font.Nunito
+Back.Text = "Back"
+Back.TextColor3 = Color3.fromRGB(0, 0, 0)
+Back.TextSize = 14.000
+
+UICorner_17.CornerRadius = UDim.new(0.0399999991, 8)
+UICorner_17.Parent = Back
+
+UIGradient_17.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 85, 255)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(255, 85, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(177, 177, 177))}
+UIGradient_17.Parent = Back
+
+FEInvisibleFling.Name = "FE Invisible Fling"
+FEInvisibleFling.Parent = Main2
+FEInvisibleFling.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FEInvisibleFling.Position = UDim2.new(0.117993653, 0, 0.233722284, 0)
+FEInvisibleFling.Size = UDim2.new(0, 123, 0, 40)
+FEInvisibleFling.Font = Enum.Font.Nunito
+FEInvisibleFling.Text = "FE Invis Fling"
+FEInvisibleFling.TextColor3 = Color3.fromRGB(0, 0, 0)
+FEInvisibleFling.TextScaled = true
+FEInvisibleFling.TextSize = 15.000
+FEInvisibleFling.TextWrapped = true
+
+UICorner_18.Parent = FEInvisibleFling
+
+UIGradient_18.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 170, 0))}
+UIGradient_18.Parent = FEInvisibleFling
 
 -- Scripts:
 
-local function DMULVR_fake_script() -- X.LocalScript 
+local function NRFCW_fake_script() -- OpenGUI.LocalScript 
+	local script = Instance.new('LocalScript', OpenGUI)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "GUI opened.",
+			Text = ""
+		})
+		script.Parent.Parent.Main1.Visible = true
+	end)
+end
+coroutine.wrap(NRFCW_fake_script)()
+local function VEGHASG_fake_script() -- RemoveGUI.LocalScript 
+	local script = Instance.new('LocalScript', RemoveGUI)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		 function OnClicked()
+			script.Parent.Parent:Remove()
+			game:GetService("StarterGui"):SetCore("SendNotification", {
+				Title = "GUI destroyed.",
+				Text = "Execute the script to bring it back."
+			})
+		end
+		script.Parent.MouseButton1Click:connect(OnClicked)
+	end)
+end
+coroutine.wrap(VEGHASG_fake_script)()
+local function BKFJPNO_fake_script() -- Rejoin.LocalScript 
+	local script = Instance.new('LocalScript', Rejoin)
+
+	script.Parent.MouseButton1Down:Connect(function()
+			game:GetService("TeleportService"):Teleport(game.PlaceId)
+		end)
+	
+end
+coroutine.wrap(BKFJPNO_fake_script)()
+local function ZXNVR_fake_script() -- X.LocalScript 
 	local script = Instance.new('LocalScript', X)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -317,90 +543,142 @@ local function DMULVR_fake_script() -- X.LocalScript
 	end)
 	
 end
-coroutine.wrap(DMULVR_fake_script)()
-local function MNBBR_fake_script() -- Smolbean.LocalScript 
-	local script = Instance.new('LocalScript', Smolbean)
+coroutine.wrap(ZXNVR_fake_script)()
+local function NMTDVGE_fake_script() -- Noclip.LocalScript 
+	local script = Instance.new('LocalScript', Noclip)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		game:GetService("StarterGui"):SetCore("SendNotification", {
-			Title = "SMOL BEANO TIME",
-			Text = "YAY"
+			Title = "[P] key = Enable noclipping",
+			Text = "To disable it, press the [P] key again."
 		})
-		for i,v in pairs(game.Players.LocalPlayer.Character.Humanoid:GetChildren()) do
-			if v:IsA("NumberValue") then
-				v:Destroy()
+	end)
+	noclip = false
+	game:GetService('RunService').Stepped:connect(function()
+		if noclip then
+			game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+		end
+	end)
+	plr = game.Players.LocalPlayer
+	mouse = plr:GetMouse()
+	mouse.KeyDown:connect(function(key)
+	
+		if key == "p" then
+			noclip = not noclip
+			game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
+		end
+	end)
+end
+coroutine.wrap(NMTDVGE_fake_script)()
+local function GMHHAC_fake_script() -- InfiniteJump.LocalScript 
+	local script = Instance.new('LocalScript', InfiniteJump)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "[T] key = Enable inf. jumps",
+			Text = "To disable it, press the [T] key again."
+		})
+	end)
+	_G.infinjump = false
+	
+	local Player = game:GetService("Players").LocalPlayer
+	local Mouse = Player:GetMouse()
+	Mouse.KeyDown:connect(function(k)
+		if _G.infinjump then
+			if k:byte() == 32 then
+				local Humanoid = game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
+				Humanoid:ChangeState("Jumping")
+				wait(0.1)
 			end
 		end
 	end)
-	
+	local Player = game:GetService("Players").LocalPlayer
+	local Mouse = Player:GetMouse()
+	Mouse.KeyDown:connect(function(k)
+		k = k:lower()
+		if k == "t" then
+			if _G.infinjump == true then
+				_G.infinjump = false
+			else
+				_G.infinjump = true
+			end
+		end
+	end)
 end
-coroutine.wrap(MNBBR_fake_script)()
-local function KKKMAV_fake_script() -- Frame.LocalScript 
-	local script = Instance.new('LocalScript', Frame)
-
-	script.Parent.Draggable = true
-end
-coroutine.wrap(KKKMAV_fake_script)()
-local function QDRYK_fake_script() -- TPSky.LocalScript 
-	local script = Instance.new('LocalScript', TPSky)
-
-	script.Parent.MouseButton1Down:Connect(function()
-		game:GetService("StarterGui"):SetCore("SendNotification", {
-			Title = "Tp'd to the hidden baseplate.",
-			Text = "Oop, it seems like you've landed here lol"
-		})
-			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2000, 22000, -1000)
-			baseplatee = Instance.new("Part", workspace)
-			baseplatee.Size = Vector3.new(1000, 1, 1000)
-			baseplatee.CFrame = game.workspace[game.Players.LocalPlayer.Name].HumanoidRootPart.CFrame + Vector3.new(0,-2, 0)
-			baseplatee.Anchored = true
-	
-		end)
-end
-coroutine.wrap(QDRYK_fake_script)()
-local function HWAXZNM_fake_script() -- SPEED.LocalScript 
-	local script = Instance.new('LocalScript', SPEED)
+coroutine.wrap(GMHHAC_fake_script)()
+local function IOFXFOU_fake_script() -- Lagreducer.LocalScript 
+	local script = Instance.new('LocalScript', Lagreducer)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		game:GetService("StarterGui"):SetCore("SendNotification", {
-			Title = "[X] key = Go faster",
-			Text = "To slow down, press the [X] key again."
+			Title = "Lag reduced.",
+			Text = ""
 		})
-		local walkspeedplayer = game:GetService("Players").LocalPlayer
-		local walkspeedmouse = walkspeedplayer:GetMouse()
-	
-		local walkspeedenabled = false
-	
-		function x_walkspeed(key)
-			if (key == "x") then
-				if walkspeedenabled == false then
-					_G.WS = 150;
-					local Humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid;
-					Humanoid:GetPropertyChangedSignal("WalkSpeed"):Connect(function()
-						Humanoid.WalkSpeed = _G.WS;
-					end)
-					Humanoid.WalkSpeed = _G.WS;
-	
-					walkspeedenabled = true
-				elseif walkspeedenabled == true then
-					_G.WS = 90;
-					local Humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid;
-					Humanoid:GetPropertyChangedSignal("WalkSpeed"):Connect(function()
-						Humanoid.WalkSpeed = _G.WS;
-					end)
-					Humanoid.WalkSpeed = _G.WS;
-	
-					walkspeedenabled = false
+			local decalsyeeted = true -- Leaving this on makes games look shitty but the fps goes up by at least 20.
+			local g = game
+			local w = g.Workspace
+			local l = g.Lighting
+			local t = w.Terrain
+			t.WaterWaveSize = 0
+			t.WaterWaveSpeed = 0
+			t.WaterReflectance = 0
+			t.WaterTransparency = 0
+			l.GlobalShadows = false
+			l.FogEnd = 9e9
+			l.Brightness = 1
+			settings().Rendering.QualityLevel = "Level01"
+			for i,v in pairs(g:GetDescendants()) do
+				if v:IsA("Part") or v:IsA("Union") or v:IsA("MeshPart") or v:IsA("CornerWedgePart") or v:IsA("TrussPart") then
+					v.Material = "Plastic"
+					v.Reflectance = 0
+				elseif v:IsA("Decal") and decalsyeeted then
+					v.Transparency = 1
+				elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
+					v.Lifetime = NumberRange.new(0)
+				elseif v:IsA("Explosion") then
+					v.BlastPressure = 1
+					v.BlastRadius = 1
 				end
 			end
-		end
-	
-		walkspeedmouse.KeyDown:connect(x_walkspeed)
-	end)
-	
+			for i,e in pairs(l:GetChildren()) do
+				if e:IsA("BlurEffect") or e:IsA("SunRaysEffect") or e:IsA("ColorCorrectionEffect") or e:IsA("BloomEffect") or e:IsA("DepthOfFieldEffect") then
+					e.Enabled = false
+				end
+			end
+		end)
 end
-coroutine.wrap(HWAXZNM_fake_script)()
-local function AATEYQ_fake_script() -- RevizAdmin.LocalScript 
+coroutine.wrap(IOFXFOU_fake_script)()
+local function JXIRD_fake_script() -- AntiAfk.LocalScript 
+	local script = Instance.new('LocalScript', AntiAfk)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "Anti-afk is enabled.",
+			Text = ""
+		})
+		wait(0.5)local ba=Instance.new("ScreenGui")
+		local ca=Instance.new("TextLabel")local da=Instance.new("Frame")
+		local _b=Instance.new("TextLabel")local ab=Instance.new("TextLabel")ba.Parent=game.CoreGui
+		ba.ZIndexBehavior=Enum.ZIndexBehavior.Sibling;ca.Parent=ba;ca.Active=true
+		ca.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)ca.Draggable=true
+		ca.Position=UDim2.new(0.698610067,0,0.098096624,0)ca.Size=UDim2.new(0,370,0,52)
+		ca.Font=Enum.Font.SourceSansSemibold;ca.Text="Anti AFK Script"ca.TextColor3=Color3.new(0,1,1)
+		ca.TextSize=22;da.Parent=ca
+		da.BackgroundColor3=Color3.new(0.196078,0.196078,0.196078)da.Position=UDim2.new(0,0,1.0192306,0)
+		da.Size=UDim2.new(0,370,0,107)_b.Parent=da
+		_b.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)_b.Position=UDim2.new(0,0,0.800455689,0)
+		_b.Size=UDim2.new(0,370,0,21)_b.Font=Enum.Font.Arial;_b.Text="Script made by PRO GAMER"
+		_b.TextColor3=Color3.new(0,1,1)_b.TextSize=20;ab.Parent=da
+		ab.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)ab.Position=UDim2.new(0,0,0.158377,0)
+		ab.Size=UDim2.new(0,370,0,44)ab.Font=Enum.Font.ArialBold;ab.Text="Status: Active"
+		ab.TextColor3=Color3.new(0,1,1)ab.TextSize=20;local bb=game:service'VirtualUser'
+		game:service'Players'.LocalPlayer.Idled:connect(function()
+			bb:CaptureController()bb:ClickButton2(Vector2.new())
+			ab.Text="You didn't get kicked, don't worry :3"wait(5)ab.Text="Status : Active"end)
+		end)
+end
+coroutine.wrap(JXIRD_fake_script)()
+local function SKGL_fake_script() -- RevizAdmin.LocalScript 
 	local script = Instance.new('LocalScript', RevizAdmin)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -3604,174 +3882,497 @@ local function AATEYQ_fake_script() -- RevizAdmin.LocalScript
 		return {}
 	end)
 end
-coroutine.wrap(AATEYQ_fake_script)()
-local function RXPJZPI_fake_script() -- Rejoin.LocalScript 
-	local script = Instance.new('LocalScript', Rejoin)
-
-	script.Parent.MouseButton1Down:Connect(function()
-			game:GetService("TeleportService"):Teleport(game.PlaceId)
-		end)
-	
-end
-coroutine.wrap(RXPJZPI_fake_script)()
-local function ICPXQM_fake_script() -- Lagreducer.LocalScript 
-	local script = Instance.new('LocalScript', Lagreducer)
+coroutine.wrap(SKGL_fake_script)()
+local function NLDYQH_fake_script() -- CloudNuker.LocalScript 
+	local script = Instance.new('LocalScript', CloudNuker)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		game:GetService("StarterGui"):SetCore("SendNotification", {
-			Title = "Lag reduced.",
-			Text = ""
+			Title = "Clouds nuked.",
+			Text = "Ignore the errors in the dev console."
 		})
-			local decalsyeeted = true -- Leaving this on makes games look shitty but the fps goes up by at least 20.
-			local g = game
-			local w = g.Workspace
-			local l = g.Lighting
-			local t = w.Terrain
-			t.WaterWaveSize = 0
-			t.WaterWaveSpeed = 0
-			t.WaterReflectance = 0
-			t.WaterTransparency = 0
-			l.GlobalShadows = false
-			l.FogEnd = 9e9
-			l.Brightness = 1
-			settings().Rendering.QualityLevel = "Level01"
-			for i,v in pairs(g:GetDescendants()) do
-				if v:IsA("Part") or v:IsA("Union") or v:IsA("MeshPart") or v:IsA("CornerWedgePart") or v:IsA("TrussPart") then
-					v.Material = "Plastic"
-					v.Reflectance = 0
-				elseif v:IsA("Decal") and decalsyeeted then
-					v.Transparency = 1
-				elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
-					v.Lifetime = NumberRange.new(0)
-				elseif v:IsA("Explosion") then
-					v.BlastPressure = 1
-					v.BlastRadius = 1
+		for i,v in pairs (game:GetChildren("ReplicatedStorage, Workspace")) do
+			local Folder = game:GetService("ReplicatedStorage").Clouds
+			local Folder = game:GetService("Workspace").Clouds
+			Folder:destroy()
+		end	
+	end)	
+end
+coroutine.wrap(NLDYQH_fake_script)()
+local function IAZV_fake_script() -- SPEED.LocalScript 
+	local script = Instance.new('LocalScript', SPEED)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "[X] key = Go faster",
+			Text = "To slow down, press the [X] key again."
+		})
+		local walkspeedplayer = game:GetService("Players").LocalPlayer
+		local walkspeedmouse = walkspeedplayer:GetMouse()
+	
+		local walkspeedenabled = false
+	
+		function x_walkspeed(key)
+			if (key == "x") then
+				if walkspeedenabled == false then
+					_G.WS = 400;
+					local Humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid;
+					Humanoid:GetPropertyChangedSignal("WalkSpeed"):Connect(function()
+						Humanoid.WalkSpeed = _G.WS;
+					end)
+					Humanoid.WalkSpeed = _G.WS;
+	
+					walkspeedenabled = true
+				elseif walkspeedenabled == true then
+					_G.WS = 120;
+					local Humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid;
+					Humanoid:GetPropertyChangedSignal("WalkSpeed"):Connect(function()
+						Humanoid.WalkSpeed = _G.WS;
+					end)
+					Humanoid.WalkSpeed = _G.WS;
+	
+					walkspeedenabled = false
 				end
 			end
-			for i,e in pairs(l:GetChildren()) do
-				if e:IsA("BlurEffect") or e:IsA("SunRaysEffect") or e:IsA("ColorCorrectionEffect") or e:IsA("BloomEffect") or e:IsA("DepthOfFieldEffect") then
-					e.Enabled = false
+		end
+	
+		walkspeedmouse.KeyDown:connect(x_walkspeed)
+	end)
+	
+end
+coroutine.wrap(IAZV_fake_script)()
+local function JHSNM_fake_script() -- Smolbean.LocalScript 
+	local script = Instance.new('LocalScript', Smolbean)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "SMOL BEANO TIME",
+			Text = "YAY"
+		})
+		for i,v in pairs(game.Players.LocalPlayer.Character.Humanoid:GetChildren()) do
+			if v:IsA("NumberValue") then
+				v:Destroy()
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(JHSNM_fake_script)()
+local function RHDLAY_fake_script() -- TPSky.LocalScript 
+	local script = Instance.new('LocalScript', TPSky)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "Tp'd to the hidden baseplate.",
+			Text = "Oop, it seems like you've landed here lol"
+		})
+			game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2000, 22000, -1000)
+			baseplatee = Instance.new("Part", workspace)
+			baseplatee.Size = Vector3.new(1000, 1, 1000)
+			baseplatee.CFrame = game.workspace[game.Players.LocalPlayer.Name].HumanoidRootPart.CFrame + Vector3.new(0,-2, 0)
+			baseplatee.Anchored = true
+	
+		end)
+end
+coroutine.wrap(RHDLAY_fake_script)()
+local function IDGHEM_fake_script() -- ToolDeleter.LocalScript 
+	local script = Instance.new('LocalScript', ToolDeleter)
+
+	local ScreenGui = Instance.new("ScreenGui")
+	local Main = Instance.new("Frame")
+	local DeleteTools = Instance.new("TextButton")
+	local equip = Instance.new("TextButton")
+	local weapon = Instance.new("TextBox")
+	local maker = Instance.new("TextLabel")
+	local unequip = Instance.new("TextButton")
+	local openmain = Instance.new("Frame")
+	local open = Instance.new("TextButton")
+	local close = Instance.new("TextButton")
+	
+	--Properties:
+	ScreenGui.Parent = game.CoreGui
+	ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+	
+	Main.Name = "Main"
+	Main.Parent = ScreenGui
+	Main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+	Main.Position = UDim2.new(0.254060328, 0, 0.237191647, 0)
+	Main.Size = UDim2.new(0, 412, 0, 276)
+	Main.Visible = false
+	Main.Active = true 
+	Main.Draggable = true
+	
+	DeleteTools.Name = "Delete Tools"
+	DeleteTools.Parent = Main
+	DeleteTools.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+	DeleteTools.Position = UDim2.new(0.191557452, 0, 0.748750091, 0)
+	DeleteTools.Size = UDim2.new(0, 254, 0, 50)
+	DeleteTools.Font = Enum.Font.GothamSemibold
+	DeleteTools.Text = "Delete Tools"
+	DeleteTools.TextColor3 = Color3.fromRGB(0, 0, 0)
+	DeleteTools.TextScaled = true
+	DeleteTools.TextSize = 14.000
+	DeleteTools.TextWrapped = true
+	DeleteTools.MouseButton1Click:connect(function()
+		DeleteTools.Visible = true
+		_G.destroy = true
+		while _G.destroy do
+			wait(1.2)
+			for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+				if v.Name == weapon.Text then v:Destroy() end
+			end
+		end
+	end)
+	
+	equip.Name = "equip"
+	equip.Parent = Main
+	equip.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+	equip.Position = UDim2.new(0.191557452, 0, 0.488476455, 0)
+	equip.Size = UDim2.new(0, 254, 0, 50)
+	equip.Font = Enum.Font.GothamSemibold
+	equip.Text = "Equip Tools"
+	equip.TextColor3 = Color3.fromRGB(0, 0, 0)
+	equip.TextScaled = true
+	equip.TextSize = 14.000
+	equip.TextWrapped = true
+	equip.MouseButton1Click:connect(function()
+		equip.Visible = false
+		unequip.Visible = true
+		_G.equip = true
+		while _G.equip do
+			wait()
+			for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+				if v.Name == weapon.Text then
+					v.Parent = game.Players.LocalPlayer.Character
 				end
 			end
-		end)
-end
-coroutine.wrap(ICPXQM_fake_script)()
-local function HDSS_fake_script() -- AntiAfk.LocalScript 
-	local script = Instance.new('LocalScript', AntiAfk)
-
-	script.Parent.MouseButton1Down:Connect(function()
-		game:GetService("StarterGui"):SetCore("SendNotification", {
-			Title = "Anti-afk is enabled.",
-			Text = ""
-		})
-		wait(0.5)local ba=Instance.new("ScreenGui")
-		local ca=Instance.new("TextLabel")local da=Instance.new("Frame")
-		local _b=Instance.new("TextLabel")local ab=Instance.new("TextLabel")ba.Parent=game.CoreGui
-		ba.ZIndexBehavior=Enum.ZIndexBehavior.Sibling;ca.Parent=ba;ca.Active=true
-		ca.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)ca.Draggable=true
-		ca.Position=UDim2.new(0.698610067,0,0.098096624,0)ca.Size=UDim2.new(0,370,0,52)
-		ca.Font=Enum.Font.SourceSansSemibold;ca.Text="Anti AFK Script"ca.TextColor3=Color3.new(0,1,1)
-		ca.TextSize=22;da.Parent=ca
-		da.BackgroundColor3=Color3.new(0.196078,0.196078,0.196078)da.Position=UDim2.new(0,0,1.0192306,0)
-		da.Size=UDim2.new(0,370,0,107)_b.Parent=da
-		_b.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)_b.Position=UDim2.new(0,0,0.800455689,0)
-		_b.Size=UDim2.new(0,370,0,21)_b.Font=Enum.Font.Arial;_b.Text="Script made by PRO GAMER"
-		_b.TextColor3=Color3.new(0,1,1)_b.TextSize=20;ab.Parent=da
-		ab.BackgroundColor3=Color3.new(0.176471,0.176471,0.176471)ab.Position=UDim2.new(0,0,0.158377,0)
-		ab.Size=UDim2.new(0,370,0,44)ab.Font=Enum.Font.ArialBold;ab.Text="Status: Active"
-		ab.TextColor3=Color3.new(0,1,1)ab.TextSize=20;local bb=game:service'VirtualUser'
-		game:service'Players'.LocalPlayer.Idled:connect(function()
-			bb:CaptureController()bb:ClickButton2(Vector2.new())
-			ab.Text="You didn't get kicked, don't worry :3"wait(5)ab.Text="Status : Active"end)
-		end)
-end
-coroutine.wrap(HDSS_fake_script)()
-local function GBKVLHL_fake_script() -- InfiniteJump.LocalScript 
-	local script = Instance.new('LocalScript', InfiniteJump)
-
-	script.Parent.MouseButton1Down:Connect(function()
-		game:GetService("StarterGui"):SetCore("SendNotification", {
-			Title = "[T] key = Enable inf. jumps",
-			Text = "To disable it, press the [T] key again."
-		})
+		end
 	end)
-	_G.infinjump = true
 	
-	local Player = game:GetService("Players").LocalPlayer
-	local Mouse = Player:GetMouse()
-	Mouse.KeyDown:connect(function(k)
-		if _G.infinjump then
-			if k:byte() == 32 then
-				local Humanoid = game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
-				Humanoid:ChangeState("Jumping")
-				wait(0.1)
-			end
-		end
-	end)
-	local Player = game:GetService("Players").LocalPlayer
-	local Mouse = Player:GetMouse()
-	Mouse.KeyDown:connect(function(k)
-		k = k:lower()
-		if k == "t" then
-			if _G.infinjump == true then
-				_G.infinjump = false
-			else
-				_G.infinjump = true
-			end
-		end
-	end)
-end
-coroutine.wrap(GBKVLHL_fake_script)()
-local function GNCWWM_fake_script() -- Noclip.LocalScript 
-	local script = Instance.new('LocalScript', Noclip)
-
-	script.Parent.MouseButton1Down:Connect(function()
-		game:GetService("StarterGui"):SetCore("SendNotification", {
-			Title = "[P] key = Enable noclipping",
-			Text = "To disable it, press the [P] key again."
-		})
-	end)
-	noclip = false
-	game:GetService('RunService').Stepped:connect(function()
-		if noclip then
-			game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
-		end
-	end)
-	plr = game.Players.LocalPlayer
-	mouse = plr:GetMouse()
-	mouse.KeyDown:connect(function(key)
+	weapon.Name = "weapon"
+	weapon.Parent = Main
+	weapon.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+	weapon.Position = UDim2.new(0.191557452, 0, 0.225415915, 0)
+	weapon.Size = UDim2.new(0, 254, 0, 50)
+	weapon.Font = Enum.Font.GothamSemibold
+	weapon.Text = "Type the tool"
+	weapon.TextColor3 = Color3.fromRGB(0, 0, 0)
+	weapon.TextScaled = true
+	weapon.TextSize = 14.000
+	weapon.TextWrapped = true
 	
-		if key == "p" then
-			noclip = not noclip
-			game.Players.LocalPlayer.Character.Humanoid:ChangeState(11)
-		end
+	maker.Name = "maker"
+	maker.Parent = Main
+	maker.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+	maker.Size = UDim2.new(0, 412, 0, 50)
+	maker.Font = Enum.Font.GothamSemibold
+	maker.Text = "Tool Deleter"
+	maker.TextColor3 = Color3.fromRGB(0, 0, 0)
+	maker.TextScaled = true
+	maker.TextSize = 14.000
+	maker.TextWrapped = true
+	
+	unequip.Name = "unequip"
+	unequip.Parent = Main
+	unequip.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
+	unequip.Position = UDim2.new(0.189320415, 0, 0.487013519, 0)
+	unequip.Size = UDim2.new(0, 254, 0, 50)
+	unequip.Font = Enum.Font.GothamSemibold
+	unequip.Text = "Stop Equipping"
+	unequip.TextColor3 = Color3.fromRGB(0, 0, 0)
+	unequip.TextScaled = true
+	unequip.TextSize = 14.000
+	unequip.TextWrapped = true
+	unequip.MouseButton1Click:connect(function()
+		equip.Visible = true
+		unequip.Visible = false
+		_G.equip = false
+	end)
+	
+	openmain.Name = "openmain"
+	openmain.Parent = ScreenGui
+	openmain.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+	openmain.Position = UDim2.new(0.951748312, 0, 0.804554105, 0)
+	openmain.Size = UDim2.new(0, 65, 0, 31)
+	
+	open.Name = "Open"
+	open.Parent = openmain
+	open.BackgroundColor3 = Color3.fromRGB(85, 170, 0)
+	open.Position = UDim2.new(-0.00249683857, 0, -2.68220901e-07, 0)
+	open.Size = UDim2.new(0, 65, 0, 31)
+	open.Font = Enum.Font.GothamSemibold
+	open.Text = "Open"
+	open.TextColor3 = Color3.fromRGB(0, 0, 0)
+	open.TextScaled = true
+	open.TextSize = 14.000
+	open.TextWrapped = true
+	open.MouseButton1Down:connect(function()
+		Main.Visible = false
+		close.Visible = true
+		open.Visible = false
+	end)
+	
+	close.Name = "Close"
+	close.Parent = openmain
+	close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+	close.Position = UDim2.new(-0.0143235922, 0, 0, 0)
+	close.Size = UDim2.new(0, 65, 0, 31)
+	close.Font = Enum.Font.GothamSemibold
+	close.Text = "Close"
+	close.TextColor3 = Color3.fromRGB(0, 0, 0)
+	close.TextScaled = true
+	close.TextSize = 14.000
+	close.TextWrapped = true
+	close.MouseButton1Click:connect(function()
+		Main.Visible = true
+		close.Visible = false
+		open.Visible = true
 	end)
 end
-coroutine.wrap(GNCWWM_fake_script)()
-local function VKRRFW_fake_script() -- OpenGUI.LocalScript 
-	local script = Instance.new('LocalScript', OpenGUI)
+coroutine.wrap(IDGHEM_fake_script)()
+local function AXPAL_fake_script() -- X_2.LocalScript 
+	local script = Instance.new('LocalScript', X_2)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		game:GetService("StarterGui"):SetCore("SendNotification", {
-			Title = "GUI opened.",
-			Text = ""
+			Title = "GUI closed.",
+			Text = "To bring it up again, click on 'Open GUI'."
 		})
-		script.Parent.Parent.Frame.Visible = true
+		script.Parent.Parent.Visible = false
 	end)
+	
 end
-coroutine.wrap(VKRRFW_fake_script)()
-local function FYNVZW_fake_script() -- RemoveGUI.LocalScript 
-	local script = Instance.new('LocalScript', RemoveGUI)
+coroutine.wrap(AXPAL_fake_script)()
+local function VRJL_fake_script() -- FEInvisibleFling.LocalScript 
+	local script = Instance.new('LocalScript', FEInvisibleFling)
 
+	
+	
 	script.Parent.MouseButton1Down:Connect(function()
-		 function OnClicked()
-			script.Parent.Parent:Remove()
-			game:GetService("StarterGui"):SetCore("SendNotification", {
-				Title = "GUI destroyed.",
-				Text = "Execute the script to bring it back."
-			})
+		wait(0.22)
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "Script loaded.",
+			Text = "Press Z to be invisible, press M to respawn."
+		})
+	end)
+	
+	
+	local mouse = game.Players.LocalPlayer:GetMouse()
+	
+	local groot = nil
+	
+	mouse.KeyDown:connect(function(k)
+	
+		if k == "z" then
+	
+	
+	
+			spawn(function()
+				local message = Instance.new("Message",workspace)
+				message.Text = "FE Invisible Fling By Diemiers#4209 loaded."
+				wait(3)
+				message:Destroy()
+			end)
+	
+	
+			local ch = game.Players.LocalPlayer.Character
+			local prt=Instance.new("Model", workspace)
+			local z1 =  Instance.new("Part", prt)
+			z1.Name="Torso"
+			z1.CanCollide = false
+			z1.Anchored = true
+			local z2  =Instance.new("Part", prt)
+			z2.Name="Head"
+			z2.Anchored = true
+			z2.CanCollide = false
+			local z3 =Instance.new("Humanoid", prt)
+			z3.Name="Humanoid"
+			z1.Position = Vector3.new(0,9999,0)
+			z2.Position = Vector3.new(0,9991,0)
+			game.Players.LocalPlayer.Character=prt
+			wait(2)
+			game.Players.LocalPlayer.Character=ch
+			wait(3)
+	
+	
+			local plr = game.Players.LocalPlayer
+			mouse = plr:GetMouse()
+	
+			local Hum = Instance.new("Humanoid")
+			Hum.Parent = game.Players.LocalPlayer.Character
+	
+	
+			local root =  game.Players.LocalPlayer.Character.HumanoidRootPart
+	
+	
+			for i,v in pairs(plr.Character:GetChildren()) do
+	
+				if v ~= root and  v.Name ~= "Humanoid" then
+	
+					v:Destroy()
+	
+				end
+	
+	
+			end
+	
+			workspace.CurrentCamera.CameraSubject = root
+	
+			local se = Instance.new("SelectionBox",root)
+			se.Adornee = root
+	
+	
+			game:GetService('RunService').Stepped:connect(function()
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CanCollide = false
+			end)
+			game:GetService('RunService').RenderStepped:connect(function()
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CanCollide = false
+			end)
+	
+	
+			power = 9999999 -- change this to make it more or less powerful
+	
+			power = power*10
+	
+			---
+			wait(.1)
+			local bambam = Instance.new("BodyThrust")
+			bambam.Parent = game.Players.LocalPlayer.Character.HumanoidRootPart
+			bambam.Force = Vector3.new(power,0,power)
+			bambam.Location = game.Players.LocalPlayer.Character.HumanoidRootPart.Position 
+	
+	
+	
+	
+	
+			local plr = game.Players.LocalPlayer
+			local torso = root
+			local flying = true
+			local deb = true
+			local ctrl = {f = 0, b = 0, l = 0, r = 0}
+			local lastctrl = {f = 0, b = 0, l = 0, r = 0}
+			local maxspeed = 120
+			local speed = 99
+	
+	
+			---local bambam = Instance.new("BodyThrust")
+			---bambam.Parent = torso
+			--bambam.Force = Vector3.new(9999999,0,9999999)
+			--bambam.Location = torso.Position
+	
+	
+			---
+			groot = root
+	
+			function Fly()
+				local bg = Instance.new("BodyGyro", torso)
+				bg.P = 9e4
+				bg.maxTorque = Vector3.new(0, 0, 0)
+				bg.cframe = torso.CFrame
+				local bv = Instance.new("BodyVelocity", torso)
+				bv.velocity = Vector3.new(0,0,0)
+				bv.maxForce = Vector3.new(9e9, 9e9, 9e9)
+				repeat wait()
+	
+					if ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0 then
+						speed = speed+.2
+						if speed > maxspeed then
+							speed = maxspeed
+						end
+					elseif not (ctrl.l + ctrl.r ~= 0 or ctrl.f + ctrl.b ~= 0) and speed ~= 0 then
+						speed = speed-1
+						if speed < 0 then
+							speed = 0
+						end
+					end
+					if (ctrl.l + ctrl.r) ~= 0 or (ctrl.f + ctrl.b) ~= 0 then
+						bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (ctrl.f+ctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(ctrl.l+ctrl.r,(ctrl.f+ctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
+						lastctrl = {f = ctrl.f, b = ctrl.b, l = ctrl.l, r = ctrl.r}
+					elseif (ctrl.l + ctrl.r) == 0 and (ctrl.f + ctrl.b) == 0 and speed ~= 0 then
+						bv.velocity = ((game.Workspace.CurrentCamera.CoordinateFrame.lookVector * (lastctrl.f+lastctrl.b)) + ((game.Workspace.CurrentCamera.CoordinateFrame * CFrame.new(lastctrl.l+lastctrl.r,(lastctrl.f+lastctrl.b)*.2,0).p) - game.Workspace.CurrentCamera.CoordinateFrame.p))*speed
+					else
+						bv.velocity = Vector3.new(0,0.1,0)
+					end
+	
+				until not flying
+				ctrl = {f = 0, b = 0, l = 0, r = 0}
+				lastctrl = {f = 0, b = 0, l = 0, r = 0}
+				speed = 0
+				bg:Destroy()
+				bv:Destroy()
+	
+			end
+			mouse.KeyDown:connect(function(key)
+				if key:lower() == "" then
+					if flying then flying = false
+					else
+						flying = true
+						Fly()
+					end
+				elseif key:lower() == "w" then
+					ctrl.f = 1
+				elseif key:lower() == "s" then
+					ctrl.b = -1
+				elseif key:lower() == "a" then
+					ctrl.l = -1
+				elseif key:lower() == "d" then
+					ctrl.r = 1
+				end
+			end)
+			mouse.KeyUp:connect(function(key)
+				if key:lower() == "w" then
+					ctrl.f = 0
+				elseif key:lower() == "s" then
+					ctrl.b = 0
+				elseif key:lower() == "a" then
+					ctrl.l = 0
+				elseif key:lower() == "d" then
+					ctrl.r = 0
+				elseif key:lower() == "r" then
+	
+				end
+			end)
+			Fly()
+	
+	
+	
+		elseif k == "m" then
+	
+	
+			spawn(function()
+				local message = Instance.new("Message",workspace)
+				message.Text = "Respawning, please wait."
+				wait(1)
+				message:Destroy()
+			end)
+	
+			local saved = groot.Position
+	
+			local ch = game.Players.LocalPlayer.Character
+			local prt=Instance.new("Model", workspace)
+			local z1 =  Instance.new("Part", prt)
+			z1.Name="Torso"
+			z1.CanCollide = false
+			z1.Anchored = true
+			local z2  =Instance.new("Part", prt)
+			z2.Name="Head"
+			z2.Anchored = true
+			z2.CanCollide = false
+			local z3 =Instance.new("Humanoid", prt)
+			z3.Name="Humanoid"
+			z1.Position = Vector3.new(0,9999,0)
+			z2.Position = Vector3.new(0,9991,0)
+			game.Players.LocalPlayer.Character=prt
+			wait(5)
+			game.Players.LocalPlayer.Character=ch
+			local poop = nil
+			repeat wait() poop = game.Players.LocalPlayer.Character:FindFirstChild("Head") until poop ~= nil
+			wait(1)
+			game:GetService("Players").LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(saved)
+	
 		end
-		script.Parent.MouseButton1Click:connect(OnClicked)
+	
+	
 	end)
 end
-coroutine.wrap(FYNVZW_fake_script)()
+coroutine.wrap(VRJL_fake_script)()
