@@ -1,7 +1,4 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
+-- Nxll's Multi-Function GUI (PRIVATE RELEASE ONLY) --
 
 local MultiFunctionGUI = Instance.new("ScreenGui")
 local OpenGUI = Instance.new("TextButton")
@@ -23,7 +20,7 @@ local UIGradient_4 = Instance.new("UIGradient")
 local InfiniteJump = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
 local UIGradient_5 = Instance.new("UIGradient")
-local Lagreducer = Instance.new("TextButton")
+local FogNuker = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
 local UIGradient_6 = Instance.new("UIGradient")
 local AntiAfk = Instance.new("TextButton")
@@ -43,6 +40,7 @@ local UICorner_11 = Instance.new("UICorner")
 local CloudNuker = Instance.new("TextButton")
 local UICorner_12 = Instance.new("UICorner")
 local UIGradient_12 = Instance.new("UIGradient")
+local BoxingSim2 = Instance.new("TextLabel")
 local SPEED = Instance.new("TextButton")
 local UICorner_13 = Instance.new("UICorner")
 local UIGradient_13 = Instance.new("UIGradient")
@@ -67,9 +65,8 @@ local UICorner_18 = Instance.new("UICorner")
 local UIGradient_18 = Instance.new("UIGradient")
 
 --Properties:
-
+MultiFunctionGUI.Parent = game.CoreGui
 MultiFunctionGUI.Name = "Multi-Function GUI"
-MultiFunctionGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 MultiFunctionGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 MultiFunctionGUI.ResetOnSpawn = false
 
@@ -123,8 +120,8 @@ Main1.Selectable = true
 Main1.Size = UDim2.new(0, 462, 0, 338)
 Main1.Visible = false
 Next.MouseButton1Down:connect(function()
-Main2.Visible = true
-Main1.Visible = false	
+	Main2.Visible = true
+	Main1.Visible = false	
 end)
 
 Rejoin.Name = "Rejoin"
@@ -168,7 +165,7 @@ Version.BorderSizePixel = 0
 Version.Position = UDim2.new(0.785255671, 0, 0.899778128, 0)
 Version.Size = UDim2.new(0, 81, 0, 34)
 Version.Font = Enum.Font.Nunito
-Version.Text = "v1.13a"
+Version.Text = "v1.13b"
 Version.TextColor3 = Color3.fromRGB(0, 170, 0)
 Version.TextScaled = true
 Version.TextSize = 14.000
@@ -223,22 +220,22 @@ UICorner_5.Parent = InfiniteJump
 UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 85, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(85, 0, 255))}
 UIGradient_5.Parent = InfiniteJump
 
-Lagreducer.Name = "Lag reducer"
-Lagreducer.Parent = Main1
-Lagreducer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Lagreducer.Position = UDim2.new(0.114877149, 0, 0.655572772, 0)
-Lagreducer.Size = UDim2.new(0, 125, 0, 39)
-Lagreducer.Font = Enum.Font.Nunito
-Lagreducer.Text = "Lag reducer"
-Lagreducer.TextColor3 = Color3.fromRGB(0, 0, 0)
-Lagreducer.TextScaled = true
-Lagreducer.TextSize = 14.000
-Lagreducer.TextWrapped = true
+FogNuker.Name = "Fog Nuker"
+FogNuker.Parent = Main1
+FogNuker.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FogNuker.Position = UDim2.new(0.114877149, 0, 0.655572772, 0)
+FogNuker.Size = UDim2.new(0, 125, 0, 39)
+FogNuker.Font = Enum.Font.Nunito
+FogNuker.Text = "Fog Nuker"
+FogNuker.TextColor3 = Color3.fromRGB(0, 0, 0)
+FogNuker.TextScaled = true
+FogNuker.TextSize = 14.000
+FogNuker.TextWrapped = true
 
-UICorner_6.Parent = Lagreducer
+UICorner_6.Parent = FogNuker
 
 UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 170, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
-UIGradient_6.Parent = Lagreducer
+UIGradient_6.Parent = FogNuker
 
 AntiAfk.Name = "AntiAfk"
 AntiAfk.Parent = Main1
@@ -305,8 +302,8 @@ Main2.Selectable = true
 Main2.Size = UDim2.new(0, 462, 0, 338)
 Main2.Visible = false
 Back.MouseButton1Down:connect(function()
-Main1.Visible = true
-Main2.Visible = false	
+	Main1.Visible = true
+	Main2.Visible = false	
 end)
 
 UIGradient_11.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 170, 255)), ColorSequenceKeypoint.new(0.50, Color3.fromRGB(0, 85, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(85, 0, 127))}
@@ -332,6 +329,19 @@ UICorner_12.Parent = CloudNuker
 UIGradient_12.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 170, 0))}
 UIGradient_12.Parent = CloudNuker
 
+BoxingSim2.Name = "BoxingSim2"
+BoxingSim2.Parent = CloudNuker
+BoxingSim2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+BoxingSim2.BackgroundTransparency = 1.000
+BoxingSim2.Position = UDim2.new(-0.0487804934, 0, 1.13888884, 0)
+BoxingSim2.Size = UDim2.new(0, 135, 0, 24)
+BoxingSim2.Font = Enum.Font.Nunito
+BoxingSim2.Text = "^ Boxing Sim 2 only ^"
+BoxingSim2.TextColor3 = Color3.fromRGB(0, 0, 0)
+BoxingSim2.TextScaled = true
+BoxingSim2.TextSize = 14.000
+BoxingSim2.TextWrapped = true
+
 SPEED.Name = "S P E E D"
 SPEED.Parent = Main2
 SPEED.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -352,7 +362,7 @@ UIGradient_13.Parent = SPEED
 Smolbean.Name = "Smol bean!"
 Smolbean.Parent = Main2
 Smolbean.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Smolbean.Position = UDim2.new(0.623193264, 0, 0.234315604, 0)
+Smolbean.Position = UDim2.new(0.621028781, 0, 0.228398442, 0)
 Smolbean.Size = UDim2.new(0, 122, 0, 43)
 Smolbean.Font = Enum.Font.Nunito
 Smolbean.Text = "Smol beano!"
@@ -438,7 +448,7 @@ Version_2.BorderSizePixel = 0
 Version_2.Position = UDim2.new(0.792648017, 0, 0.89925164, 0)
 Version_2.Size = UDim2.new(0, 81, 0, 34)
 Version_2.Font = Enum.Font.Nunito
-Version_2.Text = "v1.13a"
+Version_2.Text = "v1.13b"
 Version_2.TextColor3 = Color3.fromRGB(0, 170, 0)
 Version_2.TextScaled = true
 Version_2.TextSize = 14.000
@@ -495,7 +505,7 @@ UIGradient_18.Parent = FEInvisibleFling
 
 -- Scripts:
 
-local function NRFCW_fake_script() -- OpenGUI.LocalScript 
+local function ICOTTG_fake_script() -- OpenGUI.LocalScript 
 	local script = Instance.new('LocalScript', OpenGUI)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -506,8 +516,8 @@ local function NRFCW_fake_script() -- OpenGUI.LocalScript
 		script.Parent.Parent.Main1.Visible = true
 	end)
 end
-coroutine.wrap(NRFCW_fake_script)()
-local function VEGHASG_fake_script() -- RemoveGUI.LocalScript 
+coroutine.wrap(ICOTTG_fake_script)()
+local function FOHJUP_fake_script() -- RemoveGUI.LocalScript 
 	local script = Instance.new('LocalScript', RemoveGUI)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -521,8 +531,8 @@ local function VEGHASG_fake_script() -- RemoveGUI.LocalScript
 		script.Parent.MouseButton1Click:connect(OnClicked)
 	end)
 end
-coroutine.wrap(VEGHASG_fake_script)()
-local function BKFJPNO_fake_script() -- Rejoin.LocalScript 
+coroutine.wrap(FOHJUP_fake_script)()
+local function PJNZ_fake_script() -- Rejoin.LocalScript 
 	local script = Instance.new('LocalScript', Rejoin)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -530,8 +540,8 @@ local function BKFJPNO_fake_script() -- Rejoin.LocalScript
 		end)
 	
 end
-coroutine.wrap(BKFJPNO_fake_script)()
-local function ZXNVR_fake_script() -- X.LocalScript 
+coroutine.wrap(PJNZ_fake_script)()
+local function IWGOAM_fake_script() -- X.LocalScript 
 	local script = Instance.new('LocalScript', X)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -543,8 +553,8 @@ local function ZXNVR_fake_script() -- X.LocalScript
 	end)
 	
 end
-coroutine.wrap(ZXNVR_fake_script)()
-local function NMTDVGE_fake_script() -- Noclip.LocalScript 
+coroutine.wrap(IWGOAM_fake_script)()
+local function QGAYVR_fake_script() -- Noclip.LocalScript 
 	local script = Instance.new('LocalScript', Noclip)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -569,8 +579,8 @@ local function NMTDVGE_fake_script() -- Noclip.LocalScript
 		end
 	end)
 end
-coroutine.wrap(NMTDVGE_fake_script)()
-local function GMHHAC_fake_script() -- InfiniteJump.LocalScript 
+coroutine.wrap(QGAYVR_fake_script)()
+local function IAKPUO_fake_script() -- InfiniteJump.LocalScript 
 	local script = Instance.new('LocalScript', InfiniteJump)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -605,50 +615,37 @@ local function GMHHAC_fake_script() -- InfiniteJump.LocalScript
 		end
 	end)
 end
-coroutine.wrap(GMHHAC_fake_script)()
-local function IOFXFOU_fake_script() -- Lagreducer.LocalScript 
-	local script = Instance.new('LocalScript', Lagreducer)
+coroutine.wrap(IAKPUO_fake_script)()
+local function BUBQXYO_fake_script() -- FogNuker.LocalScript 
+	local script = Instance.new('LocalScript', FogNuker)
 
 	script.Parent.MouseButton1Down:Connect(function()
 		game:GetService("StarterGui"):SetCore("SendNotification", {
-			Title = "Lag reduced.",
-			Text = ""
+			Title = "Fog has been nuked.",
+			Text = "Enjoy the view without fog."
 		})
-			local decalsyeeted = true -- Leaving this on makes games look shitty but the fps goes up by at least 20.
 			local g = game
 			local w = g.Workspace
 			local l = g.Lighting
-			local t = w.Terrain
-			t.WaterWaveSize = 0
-			t.WaterWaveSpeed = 0
-			t.WaterReflectance = 0
-			t.WaterTransparency = 0
 			l.GlobalShadows = false
 			l.FogEnd = 9e9
 			l.Brightness = 1
 			settings().Rendering.QualityLevel = "Level01"
 			for i,v in pairs(g:GetDescendants()) do
-				if v:IsA("Part") or v:IsA("Union") or v:IsA("MeshPart") or v:IsA("CornerWedgePart") or v:IsA("TrussPart") then
-					v.Material = "Plastic"
-					v.Reflectance = 0
-				elseif v:IsA("Decal") and decalsyeeted then
-					v.Transparency = 1
-				elseif v:IsA("ParticleEmitter") or v:IsA("Trail") then
-					v.Lifetime = NumberRange.new(0)
-				elseif v:IsA("Explosion") then
+				if v:IsA("Explosion") then
 					v.BlastPressure = 1
 					v.BlastRadius = 1
 				end
 			end
 			for i,e in pairs(l:GetChildren()) do
-				if e:IsA("BlurEffect") or e:IsA("SunRaysEffect") or e:IsA("ColorCorrectionEffect") or e:IsA("BloomEffect") or e:IsA("DepthOfFieldEffect") then
+				if e:IsA("BlurEffect") or e:IsA("SunRaysEffect") or e:IsA("BloomEffect") or e:IsA("DepthOfFieldEffect") then
 					e.Enabled = false
 				end
 			end
 		end)
 end
-coroutine.wrap(IOFXFOU_fake_script)()
-local function JXIRD_fake_script() -- AntiAfk.LocalScript 
+coroutine.wrap(BUBQXYO_fake_script)()
+local function DIPLTW_fake_script() -- AntiAfk.LocalScript 
 	local script = Instance.new('LocalScript', AntiAfk)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -677,8 +674,8 @@ local function JXIRD_fake_script() -- AntiAfk.LocalScript
 			ab.Text="You didn't get kicked, don't worry :3"wait(5)ab.Text="Status : Active"end)
 		end)
 end
-coroutine.wrap(JXIRD_fake_script)()
-local function SKGL_fake_script() -- RevizAdmin.LocalScript 
+coroutine.wrap(DIPLTW_fake_script)()
+local function WMWQZ_fake_script() -- RevizAdmin.LocalScript 
 	local script = Instance.new('LocalScript', RevizAdmin)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -3882,8 +3879,8 @@ local function SKGL_fake_script() -- RevizAdmin.LocalScript
 		return {}
 	end)
 end
-coroutine.wrap(SKGL_fake_script)()
-local function NLDYQH_fake_script() -- CloudNuker.LocalScript 
+coroutine.wrap(WMWQZ_fake_script)()
+local function ZNFV_fake_script() -- CloudNuker.LocalScript 
 	local script = Instance.new('LocalScript', CloudNuker)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -3898,8 +3895,8 @@ local function NLDYQH_fake_script() -- CloudNuker.LocalScript
 		end	
 	end)	
 end
-coroutine.wrap(NLDYQH_fake_script)()
-local function IAZV_fake_script() -- SPEED.LocalScript 
+coroutine.wrap(ZNFV_fake_script)()
+local function NTKHA_fake_script() -- SPEED.LocalScript 
 	local script = Instance.new('LocalScript', SPEED)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -3940,8 +3937,8 @@ local function IAZV_fake_script() -- SPEED.LocalScript
 	end)
 	
 end
-coroutine.wrap(IAZV_fake_script)()
-local function JHSNM_fake_script() -- Smolbean.LocalScript 
+coroutine.wrap(NTKHA_fake_script)()
+local function QFIQOB_fake_script() -- Smolbean.LocalScript 
 	local script = Instance.new('LocalScript', Smolbean)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -3957,8 +3954,8 @@ local function JHSNM_fake_script() -- Smolbean.LocalScript
 	end)
 	
 end
-coroutine.wrap(JHSNM_fake_script)()
-local function RHDLAY_fake_script() -- TPSky.LocalScript 
+coroutine.wrap(QFIQOB_fake_script)()
+local function FSUSCK_fake_script() -- TPSky.LocalScript 
 	local script = Instance.new('LocalScript', TPSky)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -3974,8 +3971,8 @@ local function RHDLAY_fake_script() -- TPSky.LocalScript
 	
 		end)
 end
-coroutine.wrap(RHDLAY_fake_script)()
-local function IDGHEM_fake_script() -- ToolDeleter.LocalScript 
+coroutine.wrap(FSUSCK_fake_script)()
+local function ETUV_fake_script() -- ToolDeleter.LocalScript 
 	local script = Instance.new('LocalScript', ToolDeleter)
 
 	local ScreenGui = Instance.new("ScreenGui")
@@ -3990,8 +3987,9 @@ local function IDGHEM_fake_script() -- ToolDeleter.LocalScript
 	local close = Instance.new("TextButton")
 	
 	--Properties:
-	ScreenGui.Parent = game.CoreGui
+	ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 	ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+	ScreenGui.ResetOnSpawn = false
 	
 	Main.Name = "Main"
 	Main.Parent = ScreenGui
@@ -4066,7 +4064,7 @@ local function IDGHEM_fake_script() -- ToolDeleter.LocalScript
 	maker.BackgroundColor3 = Color3.fromRGB(0, 0, 255)
 	maker.Size = UDim2.new(0, 412, 0, 50)
 	maker.Font = Enum.Font.GothamSemibold
-	maker.Text = "Tool Deleter"
+	maker.Text = "Farming GUI"
 	maker.TextColor3 = Color3.fromRGB(0, 0, 0)
 	maker.TextScaled = true
 	maker.TextSize = 14.000
@@ -4107,7 +4105,7 @@ local function IDGHEM_fake_script() -- ToolDeleter.LocalScript
 	open.TextSize = 14.000
 	open.TextWrapped = true
 	open.MouseButton1Down:connect(function()
-		Main.Visible = false
+		Main.Visible = true
 		close.Visible = true
 		open.Visible = false
 	end)
@@ -4124,13 +4122,13 @@ local function IDGHEM_fake_script() -- ToolDeleter.LocalScript
 	close.TextSize = 14.000
 	close.TextWrapped = true
 	close.MouseButton1Click:connect(function()
-		Main.Visible = true
+		Main.Visible = false
 		close.Visible = false
 		open.Visible = true
 	end)
 end
-coroutine.wrap(IDGHEM_fake_script)()
-local function AXPAL_fake_script() -- X_2.LocalScript 
+coroutine.wrap(ETUV_fake_script)()
+local function WIFT_fake_script() -- X_2.LocalScript 
 	local script = Instance.new('LocalScript', X_2)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -4142,14 +4140,14 @@ local function AXPAL_fake_script() -- X_2.LocalScript
 	end)
 	
 end
-coroutine.wrap(AXPAL_fake_script)()
-local function VRJL_fake_script() -- FEInvisibleFling.LocalScript 
+coroutine.wrap(WIFT_fake_script)()
+local function FTIJT_fake_script() -- FEInvisibleFling.LocalScript 
 	local script = Instance.new('LocalScript', FEInvisibleFling)
 
 	
 	
 	script.Parent.MouseButton1Down:Connect(function()
-		wait(0.22)
+		wait(0.33)
 		game:GetService("StarterGui"):SetCore("SendNotification", {
 			Title = "Script loaded.",
 			Text = "Press Z to be invisible, press M to respawn."
@@ -4375,4 +4373,4 @@ local function VRJL_fake_script() -- FEInvisibleFling.LocalScript
 	
 	end)
 end
-coroutine.wrap(VRJL_fake_script)()
+coroutine.wrap(FTIJT_fake_script)()
