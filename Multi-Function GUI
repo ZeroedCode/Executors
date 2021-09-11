@@ -1,4 +1,4 @@
--- Nxll's Multi-Function GUI (PRIVATE RELEASE ONLY) --
+-- Private Release.
 
 local MultiFunctionGUI = Instance.new("ScreenGui")
 local OpenGUI = Instance.new("TextButton")
@@ -165,7 +165,7 @@ Version.BorderSizePixel = 0
 Version.Position = UDim2.new(0.785255671, 0, 0.899778128, 0)
 Version.Size = UDim2.new(0, 81, 0, 34)
 Version.Font = Enum.Font.Nunito
-Version.Text = "v1.13b"
+Version.Text = "v1.13c"
 Version.TextColor3 = Color3.fromRGB(0, 170, 0)
 Version.TextScaled = true
 Version.TextSize = 14.000
@@ -336,7 +336,7 @@ BoxingSim2.BackgroundTransparency = 1.000
 BoxingSim2.Position = UDim2.new(-0.0487804934, 0, 1.13888884, 0)
 BoxingSim2.Size = UDim2.new(0, 135, 0, 24)
 BoxingSim2.Font = Enum.Font.Nunito
-BoxingSim2.Text = "^ Boxing Sim 2 only ^"
+BoxingSim2.Text = "⬆️ Boxing Sim 2 only ⬆️"
 BoxingSim2.TextColor3 = Color3.fromRGB(0, 0, 0)
 BoxingSim2.TextScaled = true
 BoxingSim2.TextSize = 14.000
@@ -448,7 +448,7 @@ Version_2.BorderSizePixel = 0
 Version_2.Position = UDim2.new(0.792648017, 0, 0.89925164, 0)
 Version_2.Size = UDim2.new(0, 81, 0, 34)
 Version_2.Font = Enum.Font.Nunito
-Version_2.Text = "v1.13b"
+Version_2.Text = "v1.13c"
 Version_2.TextColor3 = Color3.fromRGB(0, 170, 0)
 Version_2.TextScaled = true
 Version_2.TextSize = 14.000
@@ -624,6 +624,7 @@ local function BUBQXYO_fake_script() -- FogNuker.LocalScript
 			Title = "Fog has been nuked.",
 			Text = "Enjoy the view without fog."
 		})
+			game:GetService("Lighting").Atmosphere:Destroy()
 			local g = game
 			local w = g.Workspace
 			local l = g.Lighting
@@ -3912,7 +3913,7 @@ local function NTKHA_fake_script() -- SPEED.LocalScript
 		function x_walkspeed(key)
 			if (key == "x") then
 				if walkspeedenabled == false then
-					_G.WS = 160;
+					_G.WS = 400;
 					local Humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid;
 					Humanoid:GetPropertyChangedSignal("WalkSpeed"):Connect(function()
 						Humanoid.WalkSpeed = _G.WS;
@@ -3921,7 +3922,7 @@ local function NTKHA_fake_script() -- SPEED.LocalScript
 	
 					walkspeedenabled = true
 				elseif walkspeedenabled == true then
-					_G.WS = 100;
+					_G.WS = 120;
 					local Humanoid = game:GetService("Players").LocalPlayer.Character.Humanoid;
 					Humanoid:GetPropertyChangedSignal("WalkSpeed"):Connect(function()
 						Humanoid.WalkSpeed = _G.WS;
