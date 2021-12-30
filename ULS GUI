@@ -270,7 +270,7 @@ Version.BorderSizePixel = 0
 Version.Position = UDim2.new(0.792648017, 0, 0.89925164, 0)
 Version.Size = UDim2.new(0, 81, 0, 34)
 Version.Font = Enum.Font.Nunito
-Version.Text = "v1.35a"
+Version.Text = "v1.35b"
 Version.TextColor3 = Color3.fromRGB(0, 170, 0)
 Version.TextScaled = true
 Version.TextSize = 14.000
@@ -362,7 +362,7 @@ Version_2.BorderSizePixel = 0
 Version_2.Position = UDim2.new(0.785255671, 0, 0.899778128, 0)
 Version_2.Size = UDim2.new(0, 81, 0, 34)
 Version_2.Font = Enum.Font.Nunito
-Version_2.Text = "v1.35a"
+Version_2.Text = "v1.35b"
 Version_2.TextColor3 = Color3.fromRGB(0, 170, 0)
 Version_2.TextScaled = true
 Version_2.TextSize = 14.000
@@ -4030,17 +4030,23 @@ local function QQSLEN_fake_script() -- X_2.LocalScript
 end
 coroutine.wrap(QQSLEN_fake_script)()
 local function CRMZZR_fake_script() -- ProteinSpammer.LocalScript 
-	local script = Instance.new('LocalScript', ProteinSpammer)
-
-	script.Parent.MouseButton1Down:Connect(function()
-			local player = game.Players.LocalPlayer
-			while (0.01) do
-				game:GetService("ReplicatedStorage").Events.bar:InvokeServer()
-				local Event = game:GetService("ReplicatedStorage").Events.Rebirth
-				Event:InvokeServer()
-			end 
-		end)
 end
+	local script = Instance.new('LocalScript', ProteinSpammer)
+	
+	script.Parent.MouseButton1Down:Connect(function()
+	local RunService = game:GetService("RunService")
+ 
+local RATE_PER_SECOND = 6
+ 
+RunService.Heartbeat:Connect(function(step)
+	local increment = RATE_PER_SECOND * step
+wait(0.04)
+game:GetService("ReplicatedStorage").Events.bar:InvokeServer()
+ local Event = game:GetService("ReplicatedStorage").Events.Rebirth
+Event:InvokeServer()
+end)
+
+end)
 coroutine.wrap(CRMZZR_fake_script)()
 local function JSOAJBZ_fake_script() -- Noclip.LocalScript 
 	local script = Instance.new('LocalScript', Noclip)
