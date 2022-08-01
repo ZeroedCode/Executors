@@ -1,108 +1,66 @@
--- Instances:
-
 local MultiFunctionGUI = Instance.new("ScreenGui")
-local OpenGUI = Instance.new("TextButton")
-local UICorner = Instance.new("UICorner")
-local UIGradient = Instance.new("UIGradient")
-local RemoveGUI = Instance.new("TextButton")
-local UICorner_2 = Instance.new("UICorner")
-local UIGradient_2 = Instance.new("UIGradient")
 local Main1 = Instance.new("Frame")
 local X = Instance.new("TextButton")
-local UICorner_3 = Instance.new("UICorner")
+local UICorner = Instance.new("UICorner")
 local Version = Instance.new("TextLabel")
 local MultiFunctionGUI_2 = Instance.new("TextLabel")
-local UIGradient_3 = Instance.new("UIGradient")
-local UICorner_4 = Instance.new("UICorner")
+local UIGradient = Instance.new("UIGradient")
+local UICorner_2 = Instance.new("UICorner")
 local ScrollingFrame = Instance.new("ScrollingFrame")
 local AntiAfk = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local UIGradient_2 = Instance.new("UIGradient")
+local InfiniteJump = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local UIGradient_3 = Instance.new("UIGradient")
+local Lagreducer = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
 local UIGradient_4 = Instance.new("UIGradient")
-local InfiniteJump = Instance.new("TextButton")
+local Rejoin = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
 local UIGradient_5 = Instance.new("UIGradient")
-local Lagreducer = Instance.new("TextButton")
+local RevizAdmin = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
 local UIGradient_6 = Instance.new("UIGradient")
-local Rejoin = Instance.new("TextButton")
+local ProteinSpammer = Instance.new("TextButton")
 local UICorner_8 = Instance.new("UICorner")
 local UIGradient_7 = Instance.new("UIGradient")
-local RevizAdmin = Instance.new("TextButton")
+local Removepopups = Instance.new("TextButton")
 local UICorner_9 = Instance.new("UICorner")
 local UIGradient_8 = Instance.new("UIGradient")
-local ProteinSpammer = Instance.new("TextButton")
+local SPEED = Instance.new("TextButton")
 local UICorner_10 = Instance.new("UICorner")
 local UIGradient_9 = Instance.new("UIGradient")
-local Removepopups = Instance.new("TextButton")
+local Smolbean = Instance.new("TextButton")
 local UICorner_11 = Instance.new("UICorner")
 local UIGradient_10 = Instance.new("UIGradient")
-local SPEED = Instance.new("TextButton")
+local TPSky = Instance.new("TextButton")
 local UICorner_12 = Instance.new("UICorner")
 local UIGradient_11 = Instance.new("UIGradient")
-local Smolbean = Instance.new("TextButton")
-local UICorner_13 = Instance.new("UICorner")
+local ULSAutopunch = Instance.new("TextButton")
 local UIGradient_12 = Instance.new("UIGradient")
-local TPSky = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local RemoveGUI = Instance.new("TextButton")
 local UICorner_14 = Instance.new("UICorner")
 local UIGradient_13 = Instance.new("UIGradient")
-local ULSAutopunch = Instance.new("TextButton")
-local UIGradient_14 = Instance.new("UIGradient")
+local OpenGUI = Instance.new("TextButton")
 local UICorner_15 = Instance.new("UICorner")
-local TextLabel = Instance.new("TextLabel")
+local UIGradient_14 = Instance.new("UIGradient")
 
 --Properties:
 
-MultiFunctionGUI.Name = "Multi-Function GUI"
+MultiFunctionGUI.Name = "MultiFunctionGUI"
 MultiFunctionGUI.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 MultiFunctionGUI.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 MultiFunctionGUI.ResetOnSpawn = false
-
-OpenGUI.Name = "OpenGUI"
-OpenGUI.Parent = MultiFunctionGUI
-OpenGUI.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
-OpenGUI.BackgroundTransparency = 0.450
-OpenGUI.BorderSizePixel = 0
-OpenGUI.Position = UDim2.new(0.00790631771, 0, 0.791015208, 0)
-OpenGUI.Size = UDim2.new(0, 102, 0, 31)
-OpenGUI.Font = Enum.Font.FredokaOne
-OpenGUI.Text = "Open GUI"
-OpenGUI.TextColor3 = Color3.fromRGB(0, 0, 0)
-OpenGUI.TextScaled = true
-OpenGUI.TextSize = 14.000
-OpenGUI.TextWrapped = true
-
-UICorner.CornerRadius = UDim.new(0.0399999991, 8)
-UICorner.Parent = OpenGUI
-
-UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(62, 0, 94)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 41, 98))}
-UIGradient.Parent = OpenGUI
-
-RemoveGUI.Name = "RemoveGUI"
-RemoveGUI.Parent = MultiFunctionGUI
-RemoveGUI.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
-RemoveGUI.BackgroundTransparency = 0.450
-RemoveGUI.BorderSizePixel = 0
-RemoveGUI.Position = UDim2.new(0.00790631771, 0, 0.850521743, 0)
-RemoveGUI.Size = UDim2.new(0, 102, 0, 31)
-RemoveGUI.Font = Enum.Font.FredokaOne
-RemoveGUI.Text = "Remove GUI"
-RemoveGUI.TextColor3 = Color3.fromRGB(0, 0, 0)
-RemoveGUI.TextScaled = true
-RemoveGUI.TextSize = 14.000
-RemoveGUI.TextWrapped = true
-
-UICorner_2.CornerRadius = UDim.new(0.0399999991, 8)
-UICorner_2.Parent = RemoveGUI
-
-UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(62, 0, 94)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 41, 98))}
-UIGradient_2.Parent = RemoveGUI
 
 Main1.Name = "Main1"
 Main1.Parent = MultiFunctionGUI
 Main1.Active = true
 Main1.BackgroundColor3 = Color3.fromRGB(164, 16, 255)
 Main1.BorderSizePixel = 3
-Main1.Position = UDim2.new(0.377878726, 0, 0.379025072, 0)
+Main1.Position = UDim2.new(-1.37800002, 0, 0.379000008, 0)
 Main1.Selectable = true
 Main1.Size = UDim2.new(0, 403, 0, 294)
 Main1.Visible = false
@@ -122,7 +80,7 @@ X.TextSize = 31.000
 X.TextWrapped = true
 X.TextYAlignment = Enum.TextYAlignment.Bottom
 
-UICorner_3.Parent = X
+UICorner.Parent = X
 
 Version.Name = "Version"
 Version.Parent = Main1
@@ -133,7 +91,7 @@ Version.BorderSizePixel = 0
 Version.Position = UDim2.new(0.777811527, 0, 0.882771313, 0)
 Version.Size = UDim2.new(0, 81, 0, 34)
 Version.Font = Enum.Font.FredokaOne
-Version.Text = "v2.01"
+Version.Text = "v2.2"
 Version.TextColor3 = Color3.fromRGB(0, 170, 0)
 Version.TextScaled = true
 Version.TextSize = 14.000
@@ -155,11 +113,11 @@ MultiFunctionGUI_2.TextScaled = true
 MultiFunctionGUI_2.TextSize = 14.000
 MultiFunctionGUI_2.TextWrapped = true
 
-UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 85, 255)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(255, 85, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(177, 177, 177))}
-UIGradient_3.Parent = Main1
+UIGradient.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 85, 255)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(255, 85, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(177, 177, 177))}
+UIGradient.Parent = Main1
 
-UICorner_4.CornerRadius = UDim.new(0.0399999991, 8)
-UICorner_4.Parent = Main1
+UICorner_2.CornerRadius = UDim.new(0.0399999991, 8)
+UICorner_2.Parent = Main1
 
 ScrollingFrame.Parent = Main1
 ScrollingFrame.Active = true
@@ -182,10 +140,10 @@ AntiAfk.TextScaled = true
 AntiAfk.TextSize = 14.000
 AntiAfk.TextWrapped = true
 
-UICorner_5.Parent = AntiAfk
+UICorner_3.Parent = AntiAfk
 
-UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 127)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(170, 170, 255))}
-UIGradient_4.Parent = AntiAfk
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 127)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(170, 170, 255))}
+UIGradient_2.Parent = AntiAfk
 
 InfiniteJump.Name = "Infinite Jump"
 InfiniteJump.Parent = ScrollingFrame
@@ -199,10 +157,10 @@ InfiniteJump.TextScaled = true
 InfiniteJump.TextSize = 14.000
 InfiniteJump.TextWrapped = true
 
-UICorner_6.Parent = InfiniteJump
+UICorner_4.Parent = InfiniteJump
 
-UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 85, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(85, 0, 255))}
-UIGradient_5.Parent = InfiniteJump
+UIGradient_3.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 85, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(85, 0, 255))}
+UIGradient_3.Parent = InfiniteJump
 
 Lagreducer.Name = "Lag reducer"
 Lagreducer.Parent = ScrollingFrame
@@ -216,10 +174,10 @@ Lagreducer.TextScaled = true
 Lagreducer.TextSize = 14.000
 Lagreducer.TextWrapped = true
 
-UICorner_7.Parent = Lagreducer
+UICorner_5.Parent = Lagreducer
 
-UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 170, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
-UIGradient_6.Parent = Lagreducer
+UIGradient_4.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 170, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 0))}
+UIGradient_4.Parent = Lagreducer
 
 Rejoin.Name = "Rejoin"
 Rejoin.Parent = ScrollingFrame
@@ -233,10 +191,10 @@ Rejoin.TextScaled = true
 Rejoin.TextSize = 14.000
 Rejoin.TextWrapped = true
 
-UICorner_8.Parent = Rejoin
+UICorner_6.Parent = Rejoin
 
-UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 255))}
-UIGradient_7.Parent = Rejoin
+UIGradient_5.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 0, 255))}
+UIGradient_5.Parent = Rejoin
 
 RevizAdmin.Name = "Reviz Admin"
 RevizAdmin.Parent = ScrollingFrame
@@ -250,10 +208,10 @@ RevizAdmin.TextScaled = true
 RevizAdmin.TextSize = 14.000
 RevizAdmin.TextWrapped = true
 
-UICorner_9.Parent = RevizAdmin
+UICorner_7.Parent = RevizAdmin
 
-UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 255))}
-UIGradient_8.Parent = RevizAdmin
+UIGradient_6.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 255))}
+UIGradient_6.Parent = RevizAdmin
 
 ProteinSpammer.Name = "Protein Spammer"
 ProteinSpammer.Parent = ScrollingFrame
@@ -267,10 +225,10 @@ ProteinSpammer.TextScaled = true
 ProteinSpammer.TextSize = 15.000
 ProteinSpammer.TextWrapped = true
 
-UICorner_10.Parent = ProteinSpammer
+UICorner_8.Parent = ProteinSpammer
 
-UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 170, 0))}
-UIGradient_9.Parent = ProteinSpammer
+UIGradient_7.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 170, 0))}
+UIGradient_7.Parent = ProteinSpammer
 
 Removepopups.Name = "Remove popups"
 Removepopups.Parent = ScrollingFrame
@@ -284,10 +242,10 @@ Removepopups.TextScaled = true
 Removepopups.TextSize = 15.000
 Removepopups.TextWrapped = true
 
-UICorner_11.Parent = Removepopups
+UICorner_9.Parent = Removepopups
 
-UIGradient_10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 170, 0))}
-UIGradient_10.Parent = Removepopups
+UIGradient_8.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 170, 0))}
+UIGradient_8.Parent = Removepopups
 
 SPEED.Name = "S P E E D"
 SPEED.Parent = ScrollingFrame
@@ -301,10 +259,10 @@ SPEED.TextScaled = true
 SPEED.TextSize = 14.000
 SPEED.TextWrapped = true
 
-UICorner_12.Parent = SPEED
+UICorner_10.Parent = SPEED
 
-UIGradient_11.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 255))}
-UIGradient_11.Parent = SPEED
+UIGradient_9.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 0, 255))}
+UIGradient_9.Parent = SPEED
 
 Smolbean.Name = "Smol bean!"
 Smolbean.Parent = ScrollingFrame
@@ -318,10 +276,10 @@ Smolbean.TextScaled = true
 Smolbean.TextSize = 14.000
 Smolbean.TextWrapped = true
 
-UICorner_13.Parent = Smolbean
+UICorner_11.Parent = Smolbean
 
-UIGradient_12.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 0))}
-UIGradient_12.Parent = Smolbean
+UIGradient_10.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(255, 0, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 0))}
+UIGradient_10.Parent = Smolbean
 
 TPSky.Name = "TPSky"
 TPSky.Parent = ScrollingFrame
@@ -335,10 +293,10 @@ TPSky.TextScaled = true
 TPSky.TextSize = 14.000
 TPSky.TextWrapped = true
 
-UICorner_14.Parent = TPSky
+UICorner_12.Parent = TPSky
 
-UIGradient_13.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(170, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 255))}
-UIGradient_13.Parent = TPSky
+UIGradient_11.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(170, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(0, 255, 255))}
+UIGradient_11.Parent = TPSky
 
 ULSAutopunch.Name = "ULS Autopunch"
 ULSAutopunch.Parent = ScrollingFrame
@@ -353,10 +311,10 @@ ULSAutopunch.TextSize = 15.000
 ULSAutopunch.TextStrokeTransparency = 0.890
 ULSAutopunch.TextWrapped = true
 
-UIGradient_14.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(85, 0, 255))}
-UIGradient_14.Parent = ULSAutopunch
+UIGradient_12.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(0, 255, 0)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(85, 0, 255))}
+UIGradient_12.Parent = ULSAutopunch
 
-UICorner_15.Parent = ULSAutopunch
+UICorner_13.Parent = ULSAutopunch
 
 TextLabel.Parent = ULSAutopunch
 TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -372,36 +330,49 @@ TextLabel.TextSize = 14.000
 TextLabel.TextStrokeTransparency = 0.230
 TextLabel.TextWrapped = true
 
+RemoveGUI.Name = "RemoveGUI"
+RemoveGUI.Parent = MultiFunctionGUI
+RemoveGUI.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+RemoveGUI.BackgroundTransparency = 0.450
+RemoveGUI.BorderSizePixel = 0
+RemoveGUI.Position = UDim2.new(-0.000578531064, 0, 0.861023486, 0)
+RemoveGUI.Size = UDim2.new(0, 102, 0, 31)
+RemoveGUI.Font = Enum.Font.FredokaOne
+RemoveGUI.Text = "Remove GUI"
+RemoveGUI.TextColor3 = Color3.fromRGB(0, 0, 0)
+RemoveGUI.TextScaled = true
+RemoveGUI.TextSize = 14.000
+RemoveGUI.TextWrapped = true
+
+UICorner_14.CornerRadius = UDim.new(0.0399999991, 8)
+UICorner_14.Parent = RemoveGUI
+
+UIGradient_13.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(62, 0, 94)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 41, 98))}
+UIGradient_13.Parent = RemoveGUI
+
+OpenGUI.Name = "OpenGUI"
+OpenGUI.Parent = MultiFunctionGUI
+OpenGUI.BackgroundColor3 = Color3.fromRGB(170, 0, 255)
+OpenGUI.BackgroundTransparency = 0.450
+OpenGUI.BorderSizePixel = 0
+OpenGUI.Position = UDim2.new(-0.000578531064, 0, 0.80151695, 0)
+OpenGUI.Size = UDim2.new(0, 102, 0, 31)
+OpenGUI.Font = Enum.Font.FredokaOne
+OpenGUI.Text = "Open GUI"
+OpenGUI.TextColor3 = Color3.fromRGB(0, 0, 0)
+OpenGUI.TextScaled = true
+OpenGUI.TextSize = 14.000
+OpenGUI.TextWrapped = true
+
+UICorner_15.CornerRadius = UDim.new(0.0399999991, 8)
+UICorner_15.Parent = OpenGUI
+
+UIGradient_14.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(62, 0, 94)), ColorSequenceKeypoint.new(0.51, Color3.fromRGB(255, 255, 255)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 41, 98))}
+UIGradient_14.Parent = OpenGUI
+
 -- Scripts:
 
-local function HYVD_fake_script() -- OpenGUI.LocalScript 
-	local script = Instance.new('LocalScript', OpenGUI)
-
-	script.Parent.MouseButton1Down:Connect(function()
-		game:GetService("StarterGui"):SetCore("SendNotification", {
-			Title = "GUI opened.",
-			Text = ""
-		})
-		script.Parent.Parent.Main1.Visible = true
-	end)
-end
-coroutine.wrap(HYVD_fake_script)()
-local function PPJDSF_fake_script() -- RemoveGUI.LocalScript 
-	local script = Instance.new('LocalScript', RemoveGUI)
-
-	script.Parent.MouseButton1Down:Connect(function()
-		 function OnClicked()
-			script.Parent.Parent:Remove()
-			game:GetService("StarterGui"):SetCore("SendNotification", {
-				Title = "GUI destroyed.",
-				Text = "Execute the script to bring it back."
-			})
-		end
-		script.Parent.MouseButton1Click:connect(OnClicked)
-	end)
-end
-coroutine.wrap(PPJDSF_fake_script)()
-local function PQWVC_fake_script() -- X.LocalScript 
+local function VTZNW_fake_script() -- X.CloseFrame 
 	local script = Instance.new('LocalScript', X)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -411,10 +382,9 @@ local function PQWVC_fake_script() -- X.LocalScript
 		})
 		script.Parent.Parent.Visible = false
 	end)
-	
 end
-coroutine.wrap(PQWVC_fake_script)()
-local function JICFF_fake_script() -- AntiAfk.LocalScript 
+coroutine.wrap(VTZNW_fake_script)()
+local function DXLRXQ_fake_script() -- AntiAfk.LocalScript 
 	local script = Instance.new('LocalScript', AntiAfk)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -443,8 +413,8 @@ local function JICFF_fake_script() -- AntiAfk.LocalScript
 			ab.Text="You didn't get kicked, don't worry :3"wait(5)ab.Text="Status : Active"end)
 		end)
 end
-coroutine.wrap(JICFF_fake_script)()
-local function HSJO_fake_script() -- InfiniteJump.LocalScript 
+coroutine.wrap(DXLRXQ_fake_script)()
+local function KFOZ_fake_script() -- InfiniteJump.LocalScript 
 	local script = Instance.new('LocalScript', InfiniteJump)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -479,8 +449,8 @@ local function HSJO_fake_script() -- InfiniteJump.LocalScript
 		end
 	end)
 end
-coroutine.wrap(HSJO_fake_script)()
-local function ABDJEF_fake_script() -- Lagreducer.LocalScript 
+coroutine.wrap(KFOZ_fake_script)()
+local function SMTY_fake_script() -- Lagreducer.LocalScript 
 	local script = Instance.new('LocalScript', Lagreducer)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -521,8 +491,17 @@ local function ABDJEF_fake_script() -- Lagreducer.LocalScript
 			end
 		end)
 end
-coroutine.wrap(ABDJEF_fake_script)()
-local function IJFUKS_fake_script() -- RevizAdmin.LocalScript 
+coroutine.wrap(SMTY_fake_script)()
+local function YECE_fake_script() -- Rejoin.RJ 
+	local script = Instance.new('LocalScript', Rejoin)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		game:GetService("TeleportService"):Teleport(game.PlaceId)
+	end)
+	
+end
+coroutine.wrap(YECE_fake_script)()
+local function CIPQ_fake_script() -- RevizAdmin.LocalScript 
 	local script = Instance.new('LocalScript', RevizAdmin)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -3726,8 +3705,8 @@ local function IJFUKS_fake_script() -- RevizAdmin.LocalScript
 		return {}
 	end)
 end
-coroutine.wrap(IJFUKS_fake_script)()
-local function VVMDCW_fake_script() -- ProteinSpammer.LocalScript 
+coroutine.wrap(CIPQ_fake_script)()
+local function FLKIBSF_fake_script() -- ProteinSpammer.LocalScript 
 	local script = Instance.new('LocalScript', ProteinSpammer)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -3739,8 +3718,8 @@ local function VVMDCW_fake_script() -- ProteinSpammer.LocalScript
 			end 
 		end)
 end
-coroutine.wrap(VVMDCW_fake_script)()
-local function IYSN_fake_script() -- Removepopups.LocalScript 
+coroutine.wrap(FLKIBSF_fake_script)()
+local function TSHZM_fake_script() -- Removepopups.LocalScript 
 	local script = Instance.new('LocalScript', Removepopups)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -3755,8 +3734,8 @@ local function IYSN_fake_script() -- Removepopups.LocalScript
 	end)	
 	
 end
-coroutine.wrap(IYSN_fake_script)()
-local function CHHT_fake_script() -- SPEED.LocalScript 
+coroutine.wrap(TSHZM_fake_script)()
+local function UAAO_fake_script() -- SPEED.LocalScript 
 	local script = Instance.new('LocalScript', SPEED)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -3797,8 +3776,8 @@ local function CHHT_fake_script() -- SPEED.LocalScript
 	end)
 	
 end
-coroutine.wrap(CHHT_fake_script)()
-local function UTVCQMO_fake_script() -- Smolbean.LocalScript 
+coroutine.wrap(UAAO_fake_script)()
+local function YQLHNI_fake_script() -- Smolbean.LocalScript 
 	local script = Instance.new('LocalScript', Smolbean)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -3814,8 +3793,8 @@ local function UTVCQMO_fake_script() -- Smolbean.LocalScript
 	end)
 	
 end
-coroutine.wrap(UTVCQMO_fake_script)()
-local function OIXTH_fake_script() -- TPSky.LocalScript 
+coroutine.wrap(YQLHNI_fake_script)()
+local function HTYMPM_fake_script() -- TPSky.LocalScript 
 	local script = Instance.new('LocalScript', TPSky)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -3831,8 +3810,8 @@ local function OIXTH_fake_script() -- TPSky.LocalScript
 	
 		end)
 end
-coroutine.wrap(OIXTH_fake_script)()
-local function DBRDWN_fake_script() -- ULSAutopunch.LocalScript 
+coroutine.wrap(HTYMPM_fake_script)()
+local function AHRL_fake_script() -- ULSAutopunch.LocalScript 
 	local script = Instance.new('LocalScript', ULSAutopunch)
 
 	script.Parent.MouseButton1Down:Connect(function()
@@ -4009,8 +3988,8 @@ local function DBRDWN_fake_script() -- ULSAutopunch.LocalScript
 			game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value.Text
 		end)
 end
-coroutine.wrap(DBRDWN_fake_script)()
-local function PEPTNP_fake_script() -- Main1.Dragify 
+coroutine.wrap(AHRL_fake_script)()
+local function QYKBY_fake_script() -- Main1.Dragify 
 	local script = Instance.new('LocalScript', Main1)
 
 	local UIS = game:GetService("UserInputService")
@@ -4051,4 +4030,79 @@ local function PEPTNP_fake_script() -- Main1.Dragify
 	dragify(script.Parent)
 	
 end
-coroutine.wrap(PEPTNP_fake_script)()
+coroutine.wrap(QYKBY_fake_script)()
+local function NRGCQ_fake_script() -- MultiFunctionGUI.MakeButtonsMove 
+	local script = Instance.new('LocalScript', MultiFunctionGUI)
+
+	local GuiLayer = script.Parent:GetChildren() -- Gets everything on the same layer as the script
+	
+	local function onHover(item)
+		local currentpos = item.Position
+		item:TweenPosition(
+			UDim2.new(0.012, 0, currentpos.Y.Scale + 0, 0),
+			"Out", -- easing direction
+			"Quad", -- easing style
+			0.1, --time in seconds
+			true --override?
+		)
+	end
+	
+	local function onExit(item)
+		local currentpos = item.Position
+		item:TweenPosition(
+			UDim2.new(-0.001, 0, currentpos.Y.Scale + 0, 0),
+			"Out", -- easing direction
+			"Quad", -- easing style
+			0.1, --time in seconds
+			true --override?
+		)
+	end
+	
+	for _, item in pairs(GuiLayer) do
+		if item:IsA("TextButton") then -- Checks if the Item is a TextButton, for example
+			item.MouseEnter:Connect(function() -- Activates the function called "onHover" whenever any of those items are hovered over
+				onHover(item)
+			end)
+			item.MouseLeave:Connect(function()
+				onExit(item)
+			end)
+		end
+	end
+end
+coroutine.wrap(NRGCQ_fake_script)()
+local function CFZTEND_fake_script() -- RemoveGUI.FrameGoesPoof 
+	local script = Instance.new('LocalScript', RemoveGUI)
+
+	script.Parent.MouseButton1Down:Connect(function()
+		 function OnClicked()
+			script.Parent.Parent:Remove()
+			game:GetService("StarterGui"):SetCore("SendNotification", {
+				Title = "GUI destroyed.",
+				Text = "Execute the script to bring it back."
+			})
+		end
+		script.Parent.MouseButton1Click:connect(OnClicked)
+	end)
+end
+coroutine.wrap(CFZTEND_fake_script)()
+local function VBVLC_fake_script() -- OpenGUI.MakeFrameAppear 
+	local script = Instance.new('LocalScript', OpenGUI)
+
+	function click()
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "GUI opened.",
+			Text = ""
+		})
+		script.Parent.Parent.Main1.Visible = true
+		script.Parent.Parent.Main1:TweenPosition(
+			
+			UDim2.new(0.378, 0,0.379, 0),
+			"InOut",
+			"Bounce",
+			1,
+			false
+		)
+	end
+	script.Parent.MouseButton1Click:Connect(click)
+end
+coroutine.wrap(VBVLC_fake_script)()
