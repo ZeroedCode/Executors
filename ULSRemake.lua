@@ -1,6 +1,6 @@
 repeat wait() until game:IsLoaded()
 
--- Making sure the game is Ultimate Lifting Simulator.
+-- Making sure the game is Treasure Hunt Simulator
 if game.PlaceId ~= 2472820296 then
     game.Players.LocalPlayer:Kick("This script only works on Ultimate Lifting Simulator.")
 end
@@ -95,6 +95,29 @@ local Toggle = Tab:CreateToggle({
 	-- The variable (Value) is a boolean on whether the toggle is true or false
 	end,
 })
+
+local Button = Tab:CreateButton({
+	Name = "Protein BARS",
+	Callback = function()
+		pcall(function()
+		game:GetService('RunService').Stepped:connect(function()
+	game:GetService("ReplicatedStorage").Events.bar:InvokeServer()
+end)
+end)
+	end,
+})
+
+local Button = Tab:CreateButton({
+	Name = "Auto rebirth",
+	Callback = function()
+		pcall(function()
+		game:GetService("RunService").Stepped:Connect(function()
+game:GetService("ReplicatedStorage").Events.Rebirth:InvokeServer()
+end)
+end)
+	end,
+})
+
 
 local Section = Tab:CreateSection("Extras")
 local Toggle = Tab:CreateToggle({
