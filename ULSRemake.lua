@@ -1,6 +1,6 @@
 repeat wait() until game:IsLoaded()
 
--- Making sure the game is Treasure Hunt Simulator
+-- Making sure the game is Ultimate Lifting Simulator.
 if game.PlaceId ~= 2472820296 then
     game.Players.LocalPlayer:Kick("This script only works on Ultimate Lifting Simulator.")
 end
@@ -27,6 +27,8 @@ local Window = Rayfield:CreateWindow({
 
 Rayfield:Notify("Title Example", "Content/Description Example", 4483362458) -- Notfication -- Title, Content, Image
 
+
+--Tab 1
 local Tab = Window:CreateTab("Main", 4483362458) -- Title, Image
 
 local Section = Tab:CreateSection("Fun stuff")
@@ -54,16 +56,6 @@ Event:InvokeServer()
 end) end)
 
 	end,
-
-})
-local Toggle = Tab:CreateToggle({
-	Name = "Toggle Example",
-	CurrentValue = false,
-	Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-	Callback = function(Value)
-		-- The function that takes place when the toggle is pressed
-		-- The variable (Value) is a boolean on whether the toggle is true or false
-	end,
 })
 
 local Slider = Tab:CreateSlider({
@@ -81,41 +73,117 @@ local Slider = Tab:CreateSlider({
 	end,
 })
 
-local Label = Tab:CreateLabel("Label Example")
 
-local Paragraph = Tab:CreateParagraph({Title = "Paragraph Example", Content = "Paragraph Example"})
+local Section = Tab:CreateSection("Farming")
+local Toggle = Tab:CreateToggle({
+	Name = "Auto lift",
+	CurrentValue = false,
+	Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Value)
+	-- The function that takes place when the toggle is pressed
+	if Value then
+		_G.Print = true
+		while _G.Print do
+			wait(0)
+		local A_1 = game:GetService("Workspace")["Zeroed_code"]["Diamond Weights"]
+			local Event = game:GetService("ReplicatedStorage").Events.str
+			Event:InvokeServer(A_1)
+		end
+		else
+		_G.Print = false
+	end
+	-- The variable (Value) is a boolean on whether the toggle is true or false
+	end,
+})
 
-local Input = Tab:CreateInput({
-	Name = "Input Example",
-	PlaceholderText = "Input Placeholder",
-	RemoveTextAfterFocusLost = false,
-	Callback = function(Text)
+local Section = Tab:CreateSection("Extras")
+local Toggle = Tab:CreateToggle({
+	Name = "Auto drop",
+	CurrentValue = false,
+	Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Value)
+	-- The function that takes place when the toggle is pressed
+	if Value then
+		_G.Print = true
+		while _G.Print do
+			game.Players.LocalPlayer.Character.Humanoid.Name = 1
+			local l = game.Players.LocalPlayer.Character["1"]:Clone()
+			l.Parent = game.Players.LocalPlayer.Character
+			l.Name = "Humanoid"
+			wait()
+			game.Players.LocalPlayer.Character["1"]:Destroy()
+			game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character
+			game.Players.LocalPlayer.Character.Animate.Disabled = true
+			wait(0)
+			game.Players.LocalPlayer.Character.Animate.Disabled = false
+			game.Players.LocalPlayer.Character.Humanoid.DisplayDistanceType = "None"
+			wait(5)
+		end
+		else
+		_G.Print = false
+	end
+	-- The variable (Value) is a boolean on whether the toggle is true or false
+	end,
+})
+
+local Tab = Window:CreateTab(" ”Admin scripts”", 4483362458) -- Title, Image
+
+local Section = Tab:CreateSection(" ”Admin” <-- Pick & choose ")
+local Button = Tab:CreateButton({
+	Name = "Load Reviz v2",
+	Callback = function()
+		-- The function that takes place when the button is pressed
+	loadstring(game:HttpGet('https://pastebin.com/raw/ZNSgtiwA'))()
+	end,
+})
+
+local Button = Tab:CreateButton({
+	Name = "Load Fate's Admin",
+	Callback = function()
+		-- The function that takes place when the button is pressed
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/ZeroedCode/Executors/main/Fate%20Admin.lua'))()
+	end,
+})
+
+
+
+
+local Section = Tab:CreateSection("W.I.P")
+local Label = Tab:CreateLabel("More things to work on soon.")
+
+local Paragraph = Tab:CreateParagraph({Title = "Important:", Content = "• When more stuff has been figured out to be integrated into the remake project, then it'll be put into this hub."})
+
+--local Input = Tab:CreateInput({
+	--Name = "Input Example",
+	--PlaceholderText = "Input Placeholder",
+	--RemoveTextAfterFocusLost = false,
+	--Callback = function(Text)
 		-- The function that takes place when the input is changed
 		-- The variable (Text) is a string for the value in the text box
-	end,
-})
+	--end,
+--})
 
-local Keybind = Tab:CreateKeybind({
-	Name = "Keybind Example",
-	CurrentKeybind = "Q",
-	HoldToInteract = false,
-	Flag = "Keybind1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-	Callback = function(Keybind)
+--local Keybind = Tab:CreateKeybind({
+	--Name = "Keybind Example",
+	--CurrentKeybind = "Q",
+	--HoldToInteract = false,
+	--Flag = "Keybind1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	--Callback = function(Keybind)
 		-- The function that takes place when the keybind is pressed
 		-- The variable (Keybind) is a boolean for whether the keybind is being held or not (HoldToInteract needs to be true)
-	end,
-})
+	--end,
+--})
 
-local Dropdown = Tab:CreateDropdown({
-	Name = "Dropdown Example",
-	Options = {"Option 1","Option 2"},
-	CurrentOption = "Option 1",
-	Flag = "Dropdown1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-	Callback = function(Option)
+--local Dropdown = Tab:CreateDropdown({
+--	Name = "Dropdown Example",
+	--Options = {"Option 1","Option 2"},
+--	CurrentOption = "Option 1",
+--	Flag = "Dropdown1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+--	Callback = function(Option)
 		-- The function that takes place when the selected option is changed
 		-- The variable (Option) is a string for the value that the dropdown was changed to
-	end,
-})
+	--end,
+--})
 
 local Button = Tab:CreateButton({
 	Name = "Destroy UI",
