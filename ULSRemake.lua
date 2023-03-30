@@ -7,7 +7,7 @@ end
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
 
 local Window = Rayfield:CreateWindow({
-	Name = "Ultimate Lifting Simulator [UNFINISHED]",
+	Name = "Ultimate Lifting Simulator [ALPHA]",
 	LoadingTitle = "Rayfield Interface Suite",
 	LoadingSubtitle = "by Sirius",
 	ConfigurationSaving = {
@@ -24,8 +24,20 @@ local Window = Rayfield:CreateWindow({
 		Key = "ABCDEF"
 	}
 })
-
-Rayfield:Notify("Title Example", "Content/Description Example", 4483362458) -- Notfication -- Title, Content, Image
+Rayfield:Notify({ -- Notfication -- Title, Content, Image
+   Title = "Welcome!",
+   Content = "Click on the X button to hide the UI. Press the Right Shift key to make it appear.",
+   Duration = 2.5,
+   Image = 4483362458,
+   Actions = { -- Notification Buttons
+      Ignore = {
+         Name = "Okay",
+         Callback = function()
+         --print("The user tapped Okay")
+      end
+   },
+},
+})
 
 
 --Tab 1
@@ -85,7 +97,9 @@ local Toggle = Tab:CreateToggle({
 		_G.Print = true
 		while _G.Print do
 			wait(0)
-		local A_1 = game:GetService("Workspace")["Zeroed_code"]["Diamond Weights"]
+	for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+    if v.Name == Text then v:Activate() end
+    end
 			local Event = game:GetService("ReplicatedStorage").Events.str
 			Event:InvokeServer(A_1)
 		end
@@ -96,16 +110,7 @@ local Toggle = Tab:CreateToggle({
 	end,
 })
 
-local Button = Tab:CreateButton({
-	Name = "Protein BARS",
-	Callback = function()
-		pcall(function()
-		game:GetService('RunService').Stepped:connect(function()
-	game:GetService("ReplicatedStorage").Events.bar:InvokeServer()
-end)
-end)
-	end,
-})
+
 
 local Button = Tab:CreateButton({
 	Name = "Auto rebirth",
@@ -118,8 +123,68 @@ end)
 	end,
 })
 
+local Input = Tab:CreateInput({
+	Name = "Select a Weight",
+	PlaceholderText = "Nothing selected",
+	RemoveTextAfterFocusLost = true,
+	Callback = function(Text)
+		_G.equip = true
+while _G.equip do
+    wait()
+for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+    if v.Name == Text then
+        v.Parent = game.Players.LocalPlayer.Character
+              else _G.equip = false
+    end
+    end
+    end
+		-- The function that takes place when the input is changed
+		-- The variable (Text) is a string for the value in the text box
+	end,
+})
+
+local Keybind = Tab:CreateKeybind({
+	Name = "Unequip Weight",
+	CurrentKeybind = "U",
+	HoldToInteract = false,
+	Flag = "Keybind1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Callback = function(Keybind)
+		-- The function that takes place when the keybind is pressed
+		local Players = game:GetService("Players")
+	local ContextActionService = game:GetService("ContextActionService")
+
+	local player = Players.LocalPlayer
+
+	ContextActionService:BindAction("unequipTools", function(_, userInputState)
+	if userInputState == Enum.UserInputState.Begin then
+		if player.Character then
+			local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+			if humanoid then
+				humanoid:UnequipTools()
+			end
+		end
+	end
+end, false, Enum.KeyCode.U)
+		-- The variable (Keybind) is a boolean for whether the keybind is being held or not (HoldToInteract needs to be true)
+	end,
+})
+
+
+
 
 local Section = Tab:CreateSection("Extras")
+local Button = Tab:CreateButton({
+	Name = "Protein BARS",
+	Callback = function()
+		pcall(function()
+		game:GetService('RunService').Stepped:connect(function()
+	game:GetService("ReplicatedStorage").Events.bar:InvokeServer()
+end)
+end)
+	end,
+})
+
+
 local Toggle = Tab:CreateToggle({
 	Name = "Auto drop",
 	CurrentValue = false,
@@ -148,6 +213,27 @@ local Toggle = Tab:CreateToggle({
 	-- The variable (Value) is a boolean on whether the toggle is true or false
 	end,
 })
+local Button = Tab:CreateButton({
+	Name = "Auto-train pet",
+	Callback = function()
+	game:GetService('RunService').Stepped:connect(function()
+	pcall(function()
+	game:GetService("ReplicatedStorage").Events.train:InvokeServer()
+	end) end)
+
+end,
+})
+local Button = Tab:CreateButton({
+	Name = "Sky Baseplate",
+	Callback = function()
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2000, 22000, -1000)
+		baseplatee = Instance.new("Part", workspace)
+		baseplatee.Size = Vector3.new(1000, 1, 1000)
+		baseplatee.CFrame = game.workspace[game.Players.LocalPlayer.Name].HumanoidRootPart.CFrame + Vector3.new(0,-2, 0)
+		baseplatee.Anchored = true
+end,
+})
+
 
 local Tab = Window:CreateTab(" ”Admin scripts”", 4483362458) -- Title, Image
 
@@ -167,15 +253,59 @@ local Button = Tab:CreateButton({
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/ZeroedCode/Executors/main/Fate%20Admin.lua'))()
 	end,
 })
+local Button = Tab:CreateButton({
+	Name = "Load IY FE",
+	Callback = function()
+		-- The function that takes place when the button is pressed
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end,
+})
+local Button = Tab:CreateButton({
+	Name = "Load CMD-X",
+	Callback = function()
+		-- The function that takes place when the button is pressed
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source'))()
+	end,
+})
 
 
 
+local Tab = Window:CreateTab("Others", 4483362458) -- Title, Image
+local Section = Tab:CreateSection("Having trouble trying to read small numbers?")
+local Button = Tab:CreateButton({
+	Name = "UrMom GUI",
+	Callback = function()
+		-- The function that takes place when the button is pressed
+     loadstring(game:HttpGet('https://raw.githubusercontent.com/ZeroedCode/Executors/main/UrMom.lua'))()
+	end,
+})
 
+
+local Section = Tab:CreateSection("Click the button below if things are breaking.")
+local Button = Tab:CreateButton({
+	Name = "Rejoin",
+	Callback = function()
+		-- The function that takes place when the button is pressed
+      game:GetService("TeleportService"):Teleport(game.PlaceId)
+	end,
+})
+local Section = Tab:CreateSection("Click the button to remove the UI.")
+local Button = Tab:CreateButton({
+	Name = "Destroy UI",
+	Callback = function()
+		Rayfield:Destroy()
+	end,
+})
+
+
+local Tab = Window:CreateTab("Info", 4483362458) -- Title, Image
 local Section = Tab:CreateSection("W.I.P")
 local Label = Tab:CreateLabel("More things to work on soon.")
 
 local Paragraph = Tab:CreateParagraph({Title = "Important:", Content = "• When more stuff has been figured out to be integrated into the remake project, then it'll be put into this hub."})
 
+local Section = Tab:CreateSection("Credits")
+local Label = Tab:CreateLabel("Made by Pink Cat#4491")
 --local Input = Tab:CreateInput({
 	--Name = "Input Example",
 	--PlaceholderText = "Input Placeholder",
@@ -207,13 +337,6 @@ local Paragraph = Tab:CreateParagraph({Title = "Important:", Content = "• When
 		-- The variable (Option) is a string for the value that the dropdown was changed to
 	--end,
 --})
-
-local Button = Tab:CreateButton({
-	Name = "Destroy UI",
-	Callback = function()
-		Rayfield:Destroy()
-	end,
-})
 
 -- Extras
 
