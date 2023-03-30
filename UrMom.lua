@@ -117,7 +117,6 @@ BeforeCalibrated.TextScaled = true
 BeforeCalibrated.Parent = UMMain
 
 UrMomUi.Parent = game:GetService("Players").LocalPlayer.PlayerGui
-
 local ts = game:GetService("TweenService")
 
 local need_tweens = {
