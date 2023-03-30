@@ -7,7 +7,7 @@ end
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
 
 local Window = Rayfield:CreateWindow({
-	Name = "Ultimate Lifting Simulator [ALPHA]",
+	Name = "Ultimate Lifting Simulator [EARLY ACCESS]",
 	LoadingTitle = "Rayfield Interface Suite",
 	LoadingSubtitle = "by Sirius",
 	ConfigurationSaving = {
