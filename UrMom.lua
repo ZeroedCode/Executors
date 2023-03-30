@@ -1,7 +1,7 @@
 local UrMomUi = Instance.new("ScreenGui")
 UrMomUi.Name = "UrMomUi"
 UrMomUi.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-UrMomUi.ResetOnSpawn = false
+ScreenGui.ResetOnSpawn = false
 
 local UMMain = Instance.new("Frame")
 UMMain.Name = "UMMain"
