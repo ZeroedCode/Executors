@@ -4,61 +4,81 @@ repeat wait() until game:IsLoaded()
 if game.PlaceId ~= 2472820296 then
     game.Players.LocalPlayer:Kick("This script only works on Ultimate Lifting Simulator.")
 end
-local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
-local Window = Rayfield:CreateWindow({
-	Name = "Ultimate Lifting Simulator [EARLY ACCESS]",
-	LoadingTitle = "Rayfield Interface Suite",
-	LoadingSubtitle = "by Sirius",
-	ConfigurationSaving = {
-		Enabled = true,
-		FolderName = "Rayfield Interface Suite",
-		FileName = "Big Hub"
-	},
-	KeySystem = false, -- Set this to true to use their key system
-	KeySettings = {
-		Title = "Sirius Hub",
-		Subtitle = "Key System",
-		Note = "Join the discord (discord.gg/sirius)",
-		SaveKey = true,
-		Key = "ABCDEF"
-	}
-})
-Rayfield:Notify({ -- Notfication -- Title, Content, Image
-   Title = "Welcome!",
-   Content = "Click on the X button to hide the UI. Press the Right Shift key to make it appear.",
-   Duration = 2.5,
-   Image = 4483362458,
-   Actions = { -- Notification Buttons
-      Ignore = {
-         Name = "Okay",
-         Callback = function()
-         --print("The user tapped Okay")
-      end
-   },
-},
+OrionLib:MakeNotification({
+	Name = "Welcome!",
+	Content = "Some features may be added in the future, or removed.",
+	Image = "rbxassetid://4483345998",
+	Time = 5
 })
 
 
---Tab 1
-local Tab = Window:CreateTab("Main", 4483362458) -- Title, Image
+local Window = OrionLib:MakeWindow({Name = "Ultimate Lifting Simulator [EARLY ACCESS]", HidePremium = false, SaveConfig = true, ConfigFolder = "Orion"})
 
-local Section = Tab:CreateSection("Fun stuff")
+--Player Tab--
+local PlayerTab = Window:MakeTab({
+	Name = "Player",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
 
-local Button = Tab:CreateButton({
+local PlayerSection = PlayerTab:AddSection({
+	Name = "Player"
+})
+
+
+PlayerSection:AddSlider({
+	Name = "Walkspeed",
+	Min = 16,
+	Max = 1000,
+	Default = 5,
+	Color = Color3.fromRGB(255,0,255),
+	Increment = 4,
+	ValueName = "Walkspeed",
+	Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+	end    
+})
+
+PlayerSection:AddSlider({
+	Name = "Jump Power",
+	Min = 50,
+	Max = 1000,
+	Default = 5,
+	Color = Color3.fromRGB(255,0,0),
+	Increment = 4,
+	ValueName = "Jump Power",
+	Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+	end    
+})
+--Player Tab End--
+
+
+--Fun Stuff Tab
+local FunStuffTab = Window:MakeTab({
+	Name = "Fun Stuff",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local FunStuffSection = FunStuffTab:AddSection({
+	Name = "Fun Stuff"
+})
+
+FunStuffTab:AddButton({
 	Name = "Lag the server",
 	Callback = function()
-		-- The function that takes place when the button is pressed
-		while true do
+while true do
 local string_1 = "Punch";
 local Target = game:GetService("ReplicatedStorage").Events.Equip;
 Target:FireServer(string_1);
-wait()
+task.wait()
 end
-	end,
+	end, 
 })
 
-local Button = Tab:CreateButton({
+FunStuffTab:AddButton({
 	Name = "Spam your stomps",
 	Callback = function()
 		pcall(function()
@@ -69,34 +89,27 @@ end) end)
 
 	end,
 })
+--Fun Stuff Tab End--
 
-local Slider = Tab:CreateSlider({
-	Name = "Speed",
-	Range = {0, 1000},
-	Increment = 10,
-	Suffix = "Walkspeed",
-	CurrentValue = 0,
-	Flag = "Slider1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-	Callback = function(Value)
-		-- The function that takes place when the slider changes
-		local hum = game:GetService("Players").LocalPlayer.Character.Humanoid
-		-- The variable (Value) is a number which correlates to the value the slider is currently at
-		hum.WalkSpeed = Value
-	end,
+--Farming Tab
+local FarmingTab = Window:MakeTab({
+	Name = "Farming",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local FarmingSection = FarmingTab:AddSection({
+	Name = "Farming"
 })
 
-
-local Section = Tab:CreateSection("Farming")
-local Toggle = Tab:CreateToggle({
-	Name = "Auto lift",
-	CurrentValue = false,
-	Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+FarmingTab:AddToggle({
+	Name = "Auto-lift",
+	Default = false,
+	Save = false,
 	Callback = function(Value)
-	-- The function that takes place when the toggle is pressed
-	if Value then
+		if Value then
 		_G.Print = true
 		while _G.Print do
-			wait(0)
+			task.wait()
 	for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
     if v.Name == Text then v:Activate() end
     end
@@ -110,46 +123,40 @@ local Toggle = Tab:CreateToggle({
 	end,
 })
 
-
-
-local Button = Tab:CreateButton({
+FarmingTab:AddButton({
 	Name = "Auto rebirth",
 	Callback = function()
-		pcall(function()
-		game:GetService("RunService").Stepped:Connect(function()
+		while true do
+		task.wait()
 game:GetService("ReplicatedStorage").Events.Rebirth:InvokeServer()
-end)
-end)
+end
 	end,
-})
+}) 
 
-local Input = Tab:CreateInput({
-	Name = "Select a Weight",
-	PlaceholderText = "Nothing selected",
-	RemoveTextAfterFocusLost = true,
-	Callback = function(Text)
+
+FarmingTab:AddTextbox({
+	Name = "Select a weight",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
 		_G.equip = true
 while _G.equip do
     wait()
 for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
-    if v.Name == Text then
+    if v.Name == Value then
         v.Parent = game.Players.LocalPlayer.Character
               else _G.equip = false
     end
     end
     end
-		-- The function that takes place when the input is changed
-		-- The variable (Text) is a string for the value in the text box
 	end,
 })
 
-local Keybind = Tab:CreateKeybind({
-	Name = "Unequip Weight",
-	CurrentKeybind = "U",
-	HoldToInteract = false,
-	Flag = "Keybind1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-	Callback = function(Keybind)
-		-- The function that takes place when the keybind is pressed
+FarmingTab:AddBind({
+	Name = "Unequip weight [for PC users]",
+	Default = Enum.KeyCode.U,
+	Hold = false,
+	Callback = function()
 		local Players = game:GetService("Players")
 	local ContextActionService = game:GetService("ContextActionService")
 
@@ -164,34 +171,46 @@ local Keybind = Tab:CreateKeybind({
 			end
 		end
 	end
-end, false, Enum.KeyCode.U)
+end, false,Enum.KeyCode.U)
 		-- The variable (Keybind) is a boolean for whether the keybind is being held or not (HoldToInteract needs to be true)
 	end,
 })
 
+FarmingTab:AddButton({
+	Name = "Unequip weight [for mobile users]",
+	Callback = function()
+	game:GetService'Players'.LocalPlayer.Character:FindFirstChildOfClass'Humanoid':UnequipTools()
+	end,
+}) 
+--Farming Tab End--
 
+--Extras Tab
+local ExtrasTab = Window:MakeTab({
+	Name = "Extras",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local ExtrasSection = ExtrasTab:AddSection({
+	Name = "Extras"
+})
 
-
-local Section = Tab:CreateSection("Extras")
-local Button = Tab:CreateButton({
+ExtrasTab:AddButton({
 	Name = "Protein BARS",
 	Callback = function()
-		pcall(function()
-		game:GetService('RunService').Stepped:connect(function()
+		while true do
+		task.wait()
+		--pcall(function()
+		--game:GetService('RunService').Stepped:connect(function()
 	game:GetService("ReplicatedStorage").Events.bar:InvokeServer()
-end)
-end)
+end
 	end,
 })
 
-
-local Toggle = Tab:CreateToggle({
+ExtrasTab:AddToggle({
 	Name = "Auto drop",
-	CurrentValue = false,
-	Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+	Default = false,
 	Callback = function(Value)
-	-- The function that takes place when the toggle is pressed
-	if Value then
+if Value then
 		_G.Print = true
 		while _G.Print do
 			game.Players.LocalPlayer.Character.Humanoid.Name = 1
@@ -213,7 +232,8 @@ local Toggle = Tab:CreateToggle({
 	-- The variable (Value) is a boolean on whether the toggle is true or false
 	end,
 })
-local Button = Tab:CreateButton({
+
+ExtrasTab:AddButton({
 	Name = "Auto-train pet",
 	Callback = function()
 	game:GetService('RunService').Stepped:connect(function()
@@ -223,7 +243,9 @@ local Button = Tab:CreateButton({
 
 end,
 })
-local Button = Tab:CreateButton({
+
+
+ExtrasTab:AddButton({
 	Name = "Sky Baseplate",
 	Callback = function()
 		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2000, 22000, -1000)
@@ -233,12 +255,35 @@ local Button = Tab:CreateButton({
 		baseplatee.Anchored = true
 end,
 })
+--Extras Tab End--
 
+--"Admin Tab"--
+local AdminScriptsTab = Window:MakeTab({
+	Name = " ”Admin scripts”",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local AdminScriptsSection = AdminScriptsTab:AddSection({
+	Name = "”Admin” <-- Pick & choose"
+})
 
-local Tab = Window:CreateTab(" ”Admin scripts”", 4483362458) -- Title, Image
+AdminScriptsTab:AddButton({
+	Name = "Load Fate's Admin",
+	Callback = function()
+		-- The function that takes place when the button is pressed
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/ZeroedCode/Executors/main/Fate%20Admin.lua'))()
+	end,
+})
 
-local Section = Tab:CreateSection(" ”Admin” <-- Pick & choose ")
-local Button = Tab:CreateButton({
+AdminScriptsTab:AddButton({
+	Name = "Load IY FE",
+	Callback = function()
+		-- The function that takes place when the button is pressed
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	end,
+})
+
+AdminScriptsTab:AddButton({
 	Name = "Load Reviz v2",
 	Callback = function()
 		-- The function that takes place when the button is pressed
@@ -246,33 +291,25 @@ local Button = Tab:CreateButton({
 	end,
 })
 
-local Button = Tab:CreateButton({
-	Name = "Load Fate's Admin",
-	Callback = function()
-		-- The function that takes place when the button is pressed
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/ZeroedCode/Executors/main/Fate%20Admin.lua'))()
-	end,
-})
-local Button = Tab:CreateButton({
-	Name = "Load IY FE",
-	Callback = function()
-		-- The function that takes place when the button is pressed
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-	end,
-})
-local Button = Tab:CreateButton({
+AdminScriptsTab:AddButton({
 	Name = "Load CMD-X",
 	Callback = function()
 		-- The function that takes place when the button is pressed
 	loadstring(game:HttpGet('https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source'))()
 	end,
 })
+--"Admin" Tab End--
 
-
-
-local Tab = Window:CreateTab("Others", 4483362458) -- Title, Image
-local Section = Tab:CreateSection("Having trouble trying to read small numbers?")
-local Button = Tab:CreateButton({
+--Settings Tab--
+local SettingsTab = Window:MakeTab({
+	Name = "Settings",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local SettingsSection = SettingsTab:AddSection({
+	Name = "Having trouble trying to read small numbers?"
+})
+SettingsTab:AddButton({
 	Name = "UrMom GUI",
 	Callback = function()
 		-- The function that takes place when the button is pressed
@@ -280,84 +317,41 @@ local Button = Tab:CreateButton({
 	end,
 })
 
+local SettingsSection = SettingsTab:AddSection({
+	Name = "Settings"
+})
 
-local Section = Tab:CreateSection("Click the button below if things are breaking.")
-local Button = Tab:CreateButton({
+SettingsSection:AddButton({
+	Name = "Destroy UI",
+	Callback = function()
+        OrionLib:Destroy()
+  	end    
+})
+
+SettingsTab:AddButton({
 	Name = "Rejoin",
 	Callback = function()
 		-- The function that takes place when the button is pressed
       game:GetService("TeleportService"):Teleport(game.PlaceId)
 	end,
 })
-local Section = Tab:CreateSection("Click the button to remove the UI.")
-local Button = Tab:CreateButton({
-	Name = "Destroy UI",
-	Callback = function()
-		Rayfield:Destroy()
-	end,
+--Settings End--
+
+--Info Tab--
+local InfoTab = Window:MakeTab({
+	Name = "Info",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local InfoSection = InfoTab:AddSection({
+	Name = "Info"
 })
 
+InfoTab:AddLabel("UI project is in a work of progress.")
+InfoTab:AddParagraph("Important:","• Elements in the remake project may soon to have evaluated changes, and/or may be removed/added.\n - Everything here is not final. ")
+local InfoSection = InfoTab:AddSection({
+	Name = "Credits"
+})
+InfoTab:AddLabel("Made by Pink Cat#4491")
 
-local Tab = Window:CreateTab("Info", 4483362458) -- Title, Image
-local Section = Tab:CreateSection("W.I.P")
-local Label = Tab:CreateLabel("More things to work on soon.")
-
-local Paragraph = Tab:CreateParagraph({Title = "Important:", Content = "• When more stuff has been figured out to be integrated into the remake project, then it'll be put into this hub."})
-
-local Section = Tab:CreateSection("Credits")
-local Label = Tab:CreateLabel("Made by Pink Cat#4491")
---local Input = Tab:CreateInput({
-	--Name = "Input Example",
-	--PlaceholderText = "Input Placeholder",
-	--RemoveTextAfterFocusLost = false,
-	--Callback = function(Text)
-		-- The function that takes place when the input is changed
-		-- The variable (Text) is a string for the value in the text box
-	--end,
---})
-
---local Keybind = Tab:CreateKeybind({
-	--Name = "Keybind Example",
-	--CurrentKeybind = "Q",
-	--HoldToInteract = false,
-	--Flag = "Keybind1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-	--Callback = function(Keybind)
-		-- The function that takes place when the keybind is pressed
-		-- The variable (Keybind) is a boolean for whether the keybind is being held or not (HoldToInteract needs to be true)
-	--end,
---})
-
---local Dropdown = Tab:CreateDropdown({
---	Name = "Dropdown Example",
-	--Options = {"Option 1","Option 2"},
---	CurrentOption = "Option 1",
---	Flag = "Dropdown1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
---	Callback = function(Option)
-		-- The function that takes place when the selected option is changed
-		-- The variable (Option) is a string for the value that the dropdown was changed to
-	--end,
---})
-
--- Extras
-
--- getgenv().SecureMode = true -- Only Set To True If Games Are Detecting/Crashing The UI
-
--- Rayfield:Destroy() -- Destroys UI
-
--- Rayfield:LoadConfiguration() -- Enables Configuration Saving
-
--- Section:Set("Section Example") -- Use To Update Section Text
-
--- Button:Set("Button Example") -- Use To Update Button Text
-
--- Toggle:Set(false) -- Use To Update Toggle
-
--- Slider:Set(10) -- Use To Update Slider Value
-
--- Label:Set("Label Example") -- Use To Update Label Text
-
--- Paragraph:Set({Title = "Paragraph Example", Content = "Paragraph Example"}) -- Use To Update Paragraph Text
-
--- Keybind:Set("RightCtrl") -- Keybind (string) -- Use To Update Keybind
-
--- Dropdown:Set("Option 2") -- The new option value -- Use To Update/Set New Dropdowns
+OrionLib:Init() --UI Lib End
