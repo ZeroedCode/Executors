@@ -126,7 +126,6 @@ FarmingTab:AddToggle({
 FarmingTab:AddButton({
 	Name = "Auto rebirth",
 	Callback = function()
-		Callback = function()
 		pcall(function()
 game:GetService('RunService').Stepped:connect(function()
 game:GetService("ReplicatedStorage").Events.Rebirth:InvokeServer()
