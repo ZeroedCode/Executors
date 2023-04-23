@@ -126,13 +126,13 @@ FarmingTab:AddToggle({
 FarmingTab:AddButton({
 	Name = "Auto rebirth",
 	Callback = function()
-		while true do
-		task.wait()
+		Callback = function()
+		pcall(function()
+game:GetService('RunService').Stepped:connect(function()
 game:GetService("ReplicatedStorage").Events.Rebirth:InvokeServer()
-end
+end) end)
 	end,
 }) 
-
 
 FarmingTab:AddTextbox({
 	Name = "Select a weight",
