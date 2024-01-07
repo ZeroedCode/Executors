@@ -27,7 +27,7 @@ function getCurrentPlayerPOS()
     spawn(function()
     while _G.World1TP == true do 
        teleportTO(game:GetService("Workspace").Worlds.Sun_Realm.Main_Win_Giver.CFrame)
-       wait(10)
+       task.wait(0.25)
        end
     end)
  end
@@ -35,8 +35,8 @@ function getCurrentPlayerPOS()
  function TP2()
     spawn(function()
     while _G.World2TP == true do 
-       teleportTO(game:GetService("Workspace").Wins.World2.CFrame)
-       wait(10)
+       teleportTO(game:GetService("Workspace").Worlds.Ice_Realm.Main_Win_Giver.CFrame)
+       task.wait(0.25)
        end
     end)
  end
@@ -44,8 +44,8 @@ function getCurrentPlayerPOS()
  function TP3()
     spawn(function()
     while _G.World3TP == true do 
-       teleportTO(game:GetService("Workspace").Wins.World3.CFrame)
-       wait(10)
+       teleportTO(game:GetService("Workspace").Worlds.Mountain_Realm.Main_Win_Giver.CFrame)
+       task.wait(0.25)
        end
     end)
  end
@@ -54,7 +54,7 @@ function getCurrentPlayerPOS()
     spawn(function()
     while _G.World4TP == true do 
        teleportTO(game:GetService("Workspace").Wins.World4.CFrame)
-       wait(10)
+       task.wait(0.25)
        end
     end)
  end
@@ -63,7 +63,7 @@ function getCurrentPlayerPOS()
     spawn(function()
     while _G.World5TP == true do 
        teleportTO(game:GetService("Workspace").Wins.World5.CFrame)
-       wait(10)
+       task.wait(0.25)
        end
     end)
  end
@@ -72,7 +72,7 @@ function getCurrentPlayerPOS()
     spawn(function()
     while _G.World6TP == true do 
        teleportTO(game:GetService("Workspace").Wins.World6.CFrame)
-       wait(10)
+       task.wait(0.25)
        end
     end)
  end
@@ -81,7 +81,7 @@ function getCurrentPlayerPOS()
     spawn(function()
     while _G.World7TP == true do 
        teleportTO(game:GetService("Workspace").Wins.World7.CFrame)
-       wait(10)
+       task.wait(0.25)
        end
     end)
  end
@@ -90,7 +90,7 @@ function getCurrentPlayerPOS()
     spawn(function()
     while _G.World8TP == true do 
        teleportTO(game:GetService("Workspace").Wins.World8.CFrame)
-       wait(10)
+       task.wait(0.25)
        end
     end)
  end
@@ -99,7 +99,7 @@ function getCurrentPlayerPOS()
     spawn(function()
     while _G.World9TP == true do 
        teleportTO(game:GetService("Workspace").Wins.World9.CFrame)
-       wait(10)
+       task.wait(0.25)
        end
     end)
  end
@@ -108,7 +108,7 @@ function getCurrentPlayerPOS()
     spawn(function()
     while _G.World10TP == true do 
        teleportTO(game:GetService("Workspace").Wins.World10.CFrame)
-       wait(10)
+       task.wait(0.25)
        end
     end)
  end
@@ -117,7 +117,7 @@ function getCurrentPlayerPOS()
     spawn(function()
     while _G.World11TP == true do 
        teleportTO(game:GetService("Workspace").Wins.World11.CFrame)
-       wait(10)
+       task.wait(0.25)
        end
     end)
  end
@@ -126,7 +126,7 @@ function getCurrentPlayerPOS()
     spawn(function()
     while _G.World12TP == true do 
        teleportTO(game:GetService("Workspace").Wins.World12.CFrame)
-       wait(10)
+       task.wait(0.25)
        end
     end)
  end
@@ -135,7 +135,7 @@ function getCurrentPlayerPOS()
     spawn(function()
     while _G.World13TP == true do 
        teleportTO(game:GetService("Workspace").Wins.World13.CFrame)
-       wait(10)
+       task.wait(0.25)
        end
     end)
  end
@@ -144,7 +144,7 @@ function getCurrentPlayerPOS()
     spawn(function()
     while _G.World14TP == true do 
        teleportTO(game:GetService("Workspace").Wins.World14.CFrame)
-       wait(10)
+       task.wait(0.25)
        end
     end)
  end
@@ -153,7 +153,7 @@ function getCurrentPlayerPOS()
     spawn(function()
     while _G.RedTowerTP == true do 
        teleportTO(game:GetService("Workspace").Wins.RedTower.CFrame)
-       wait(10)
+       task.wait(0.25)
        end
     end)
  end
@@ -162,7 +162,7 @@ function getCurrentPlayerPOS()
     spawn(function()
     while _G.WallsTP == true do 
        teleportTO(game:GetService("Workspace").Wins.Walls.CFrame)
-       wait(10)
+       task.wait(0.25)
        end
     end)
  end
@@ -171,7 +171,7 @@ function getCurrentPlayerPOS()
     spawn(function()
     while _G.ObbyTowerTP == true do 
        teleportTO(game:GetService("Workspace").Wins.World14.CFrame)
-       wait(10)
+       task.wait(0.25)
        end
     end)
  end
