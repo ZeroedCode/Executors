@@ -187,7 +187,7 @@ function getCurrentPlayerPOS()
  
  
  
- local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+ local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/SiriusSoftwareLtd/Rayfield/main/source.lua'))()
  
  local Window = Rayfield:CreateWindow({
      Name = "Ziggy's Every Sec +1 Jump Power Auto Farm",
