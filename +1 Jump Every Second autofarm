@@ -170,7 +170,12 @@ function getCurrentPlayerPOS()
  function autoRebirth()
     spawn(function()
        while _G.AutoRebirth == true do
-       game:GetService("ReplicatedStorage"):WaitForChild("RebirthEvent"):FireServer()
+local args = {
+    [1] = 1
+}
+
+game:GetService("ReplicatedStorage").Remote_Events.Rebirth:FireServer(unpack(args))
+
        wait()
        end
     end)
