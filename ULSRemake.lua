@@ -334,6 +334,13 @@ SettingsTab:AddButton({
       game:GetService("TeleportService"):Teleport(game.PlaceId)
 	end,
 })
+SettingsTab:AddButton({
+	Name = "Rejoin",
+	Callback = function()
+		-- The function that takes place when the button is pressed
+      loadstring(game:HttpGet('https://raw.githubusercontent.com/juywvm/-Roblox-Projects-/main/____Anti_Afk_Remastered_______'))()
+	end,
+})
 --Settings End--
 
 --Info Tab--
