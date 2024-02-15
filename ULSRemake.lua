@@ -335,7 +335,7 @@ SettingsTab:AddButton({
 	end,
 })
 SettingsTab:AddButton({
-	Name = "Rejoin",
+	Name = "Anti AFK",
 	Callback = function()
 		-- The function that takes place when the button is pressed
       loadstring(game:HttpGet('https://raw.githubusercontent.com/juywvm/-Roblox-Projects-/main/____Anti_Afk_Remastered_______'))()
