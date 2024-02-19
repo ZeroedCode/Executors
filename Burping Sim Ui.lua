@@ -488,7 +488,7 @@ FarmingTab:AddToggle(
             if Value then
                 _G.Print = true
                 while _G.Print do
-                    while task.wait(2.34) do
+                    while task.wait(2.339) do
                         game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Starter Drink")
                     end
                 end
@@ -509,7 +509,7 @@ FarmingTab:AddToggle(
             if Value then
                 _G.Print = true
                 while _G.Print do
-                    while task.wait(2.34) do
+                    while task.wait(2.339) do
                         game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Second Drink")
                     end
                 end
@@ -530,7 +530,7 @@ FarmingTab:AddToggle(
             if Value then
                 _G.Print = true
                 while _G.Print do
-                    while task.wait(2.34) do
+                    while task.wait(2.339) do
                         game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Third Drink")
                     end
                 end
@@ -551,7 +551,7 @@ FarmingTab:AddToggle(
             if Value then
                 _G.Print = true
                 while _G.Print do
-                    while task.wait(2.34) do
+                    while task.wait(2.339) do
                         game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Fourth Drink")
                     end
                 end
@@ -572,7 +572,7 @@ FarmingTab:AddToggle(
             if Value then
                 _G.Print = true
                 while _G.Print do
-                    while task.wait(2.34) do
+                    while task.wait(2.339) do
                         game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Fifth Drink")
                     end
                 end
@@ -593,7 +593,7 @@ FarmingTab:AddToggle(
             if Value then
                 _G.Print = true
                 while _G.Print do
-                    while task.wait(2.34) do
+                    while task.wait(2.339) do
                         game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Sixth Drink")
                     end
                 end
@@ -614,7 +614,7 @@ FarmingTab:AddToggle(
             if Value then
                 _G.Print = true
                 while _G.Print do
-                    while task.wait(2.34) do
+                    while task.wait(2.339) do
                         game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Seventh Drink")
                     end
                 end
@@ -635,7 +635,7 @@ FarmingTab:AddToggle(
             if Value then
                 _G.Print = true
                 while _G.Print do
-                    while task.wait(2.34) do
+                    while task.wait(2.339) do
                         game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Eighth Drink")
                     end
                 end
@@ -656,7 +656,7 @@ FarmingTab:AddToggle(
             if Value then
                 _G.Print = true
                 while _G.Print do
-                    while task.wait(2.34) do
+                    while task.wait(2.339) do
                         game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Ninth Drink")
                     end
                 end
@@ -677,7 +677,7 @@ FarmingTab:AddToggle(
             if Value then
                 _G.Print = true
                 while _G.Print do
-                    while task.wait(2.34) do
+                    while task.wait(2.339) do
                         game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Atomic Drink")
                     end
                 end
@@ -698,7 +698,7 @@ FarmingTab:AddToggle(
             if Value then
                 _G.Print = true
                 while _G.Print do
-                    while task.wait(2.34) do
+                    while task.wait(2.339) do
                         game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Omega Burp Juice")
                     end
                 end
@@ -719,7 +719,7 @@ FarmingTab:AddToggle(
             if Value then
                 _G.Print = true
                 while _G.Print do
-                    while task.wait(2.34) do
+                    while task.wait(2.339) do
                         game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Thunder Fizz")
                     end
                 end
@@ -740,7 +740,7 @@ FarmingTab:AddToggle(
             if Value then
                 _G.Print = true
                 while _G.Print do
-                    while task.wait(2.34) do
+                    while task.wait(2.339) do
                         game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Garlic Juice")
                     end
                 end
