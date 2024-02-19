@@ -764,7 +764,7 @@ FarmingTab:AddButton(
         Name = "Auto Prestige",
         Callback = function()
             while true do
-                task.wait(0.7)
+                task.wait(0.075)
                 game.ReplicatedStorage.RemoteEvents.PrestigeEvent:FireServer()
             end
         end
@@ -925,7 +925,7 @@ ExtrasTab:AddButton(
     {
         Name = "Sky Baseplate",
         Callback = function()
-            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2000, 22000, -1000)
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-7000, 22000, -5000)
             baseplatee = Instance.new("Part", workspace)
             baseplatee.Size = Vector3.new(1000, 1, 1000)
             baseplatee.CFrame =
