@@ -16,7 +16,7 @@ local open = Instance.new("TextButton")
 local close = Instance.new("TextButton")
 
 --Properties:
-ScreenGui.Parent = game.Players.PlayerGui
+ScreenGui.Parent = game.CoreGui
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
 Main.Name = "Main"
