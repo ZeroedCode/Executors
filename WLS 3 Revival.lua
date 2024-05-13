@@ -48,6 +48,8 @@ Window:CheckBox({
        getgenv().C = value C()
     end
 })
+Window:Seperator();
+
 
 Window:Text("Misc");
 Window:Seperator();
