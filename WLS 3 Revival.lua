@@ -61,7 +61,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/juywvm/-Roblox-Projec
 end)
 
 Window:Button("AutoClicker"):Connect(function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/ZeroedCode/Executors/main/AutoClicker.lua", true))()  
+loadstring(game:HttpGet("https://raw.githubusercontent.com/ZeroedCode/Executors/main/AutoClicker.lua"))()  
 end)
 
 Window:End()
