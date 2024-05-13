@@ -30,9 +30,8 @@ local Text = Draw("Text", {
     Outline = true,
     OutlineColor = Color3.fromRGB(255, 255, 255),
     Color = Color3.fromRGB(0, 0, 0),
-    Text = "Auto Clicking : FALSE\nMouse Locked : FALSE",
+    Text = "Auto Clicking : NO\nMouse Locked : NO",
     Visible = true,
-    Text.Position = UDim2.new(0, 5, 0, 45)
 })
 --Key Bind--
 UIS.InputBegan:Connect(function(inputObj, GPE)
