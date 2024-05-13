@@ -25,7 +25,7 @@ Window:CheckBox({
     Enabled = false,
     OnChanged = function(value) 
     task.wait(0.1)
-        game:GetService("ReplicatedStorage").Remotes.Server:FireServer()
+         game:GetService("ReplicatedStorage").rEvents.rebirthEvent:FireServer()
     end
 })
 
