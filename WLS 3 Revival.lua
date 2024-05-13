@@ -6,6 +6,7 @@ getgenv().Settings = {
     ["GUI"] = true, -- A drawing gui that tells you what is going on with the autoclicker.
     ["Delay"] = 1.01 -- 0 for RenderStepped, other numbers go to regular wait timings.
 }
+
 local ImGui = loadstring(game:HttpGet("https://raw.githubusercontent.com/wiIlow/imgui-rbx/main/main.lua", true))()
 
 
@@ -59,7 +60,7 @@ Window:Button("Anti-AFK"):Connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/juywvm/-Roblox-Projects-/main/____Anti_Afk_Remastered_______", true))()       
 end)
 
-Window:Button("Autoclicker"):Connect(function()
+Window:Button("AutoClicker"):Connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ZeroedCode/Executors/main/AutoClicker.lua", true))()  
 end)
 
