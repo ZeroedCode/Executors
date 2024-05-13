@@ -59,7 +59,7 @@ Window:Button("Anti-AFK"):Connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/juywvm/-Roblox-Projects-/main/____Anti_Afk_Remastered_______", true))()       
 end)
 
-Window:Button("Anti-AFK"):Connect(function()
+Window:Button("Autoclicker"):Connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ZeroedCode/Executors/main/AutoClicker.lua", true))()  
     end)
 Window:End()
