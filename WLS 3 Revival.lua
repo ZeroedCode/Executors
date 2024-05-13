@@ -35,14 +35,9 @@ end)
 
 
 Window:Seperator();
-Window:CheckBox({
-    Name = "Auto Rebirth",
-    Enabled = false,
-    OnChanged = function(value) 
-    task.wait(0.1)
-         game:GetService("ReplicatedStorage").rEvents.rebirthEvent:FireServer()
-    end
-})
+Window:Button("Auto Rebirth"):Connect(function() 
+loadstring(game:HttpGet("https://pastefy.app/hcwvN9Bg/raw"))()  
+end)
 
 
 Window:Seperator();
