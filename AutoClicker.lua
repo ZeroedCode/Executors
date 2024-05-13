@@ -30,7 +30,7 @@ local Text = Draw("Text", {
     Outline = true,
     OutlineColor = Color3.fromRGB(255, 255, 255),
     Color = Color3.fromRGB(0, 0, 0),
-    Text = "Auto Clicking : NO\nMouse Locked : NO",
+    Text = "Auto Clicking : FALSE\nMouse Locked : FALSE",
     Visible = true,
 })
 --Key Bind--
