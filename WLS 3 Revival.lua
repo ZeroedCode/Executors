@@ -61,5 +61,6 @@ end)
 
 Window:Button("Autoclicker"):Connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ZeroedCode/Executors/main/AutoClicker.lua", true))()  
-    end)
+end)
+
 Window:End()
