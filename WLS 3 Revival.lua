@@ -61,4 +61,8 @@ Window:Button("AutoClicker"):Connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/ZeroedCode/Executors/main/AutoClicker.lua"))()  
 end)
 
+Window:Button("Auto reset"):Connect(function()
+loadstring(game:HttpGet("https://pastefy.app/WGynR32L/raw"))()  
+end)
+
 Window:End()
