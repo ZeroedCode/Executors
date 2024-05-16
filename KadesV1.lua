@@ -69,13 +69,13 @@ local tp_radius     = config.tp_radius or 25    -- teleport radius around rootpa
 local limbs         = config.limbs or {       -- hats used for limbs replacement for the rig  (default hats below)]]
     ["Right Arm"] = { -- Right Arm
         texture = "rbxassetid://12344206675",
-        mesh = "rbxassetid://14255522247",
+        mesh = "rbxassetid://11449388499",
         offset = cf_angle(mt_rad(-125),0,0)
     }, -- Right Arm
     
     ["Left Arm"] = { -- Left Arm
         texture = "rbxassetid://12344207341", 
-        mesh = "rbxassetid://14255522247",
+        mesh = "rbxassetid://11449386931",
         offset = cf_angle(mt_rad(-125),0,0)
     }, -- Left Arm
 
