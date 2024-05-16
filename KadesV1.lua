@@ -68,32 +68,32 @@ local radius_val    = config.radius_val or 10    -- radius to keep real rig's aw
 local tp_radius     = config.tp_radius or 25    -- teleport radius around rootpart| rig_root_part * cframe.new(math.random(-tp_radius, tp_radius), 0, math.random(-tp_radius, tp_radius))
 local limbs         = config.limbs or {       -- hats used for limbs replacement for the rig  (default hats below)]]
     ["Right Arm"] = { -- Right Arm
-        texture = "rbxassetid://12344206675",
-        mesh = "rbxassetid://12344206657",
+        texture = "rbxassetid://12679191136",
+        mesh = "rbxassetid://14255522247",
         offset = cf_angle(mt_rad(-125),0,0)
     }, -- Right Arm
     
     ["Left Arm"] = { -- Left Arm
-        texture = "rbxassetid://12344207341", 
-        mesh = "rbxassetid://12344207333",
+        texture = "rbxassetid://12679191136", 
+        mesh = "rbxassetid://14255522247",
         offset = cf_angle(mt_rad(-125),0,0)
     }, -- Left Arm
 
     ["Right Leg"] = { -- Right Leg
-        texture = "http://www.roblox.com/asset/?id=11263219250", 
+        texture = "https://www.roblox.com/library/101204037/Br-yellowish-green", 
         mesh = "rbxassetid://11263221350",
         offset = cf_angle(0,mt_rad(-90), mt_rad(90))
     }, -- Right Leg
 
     ["Left Leg"] = { -- Left Leg
-        texture = "http://www.roblox.com/asset/?id=11159284657", 
+        texture = "https://www.roblox.com/library/101204037/Br-yellowish-green", 
         mesh = "rbxassetid://11159370334",
         offset = cf_angle(0, mt_rad(-90), mt_rad(90))
     }, -- Left Leg
 
     ["Torso"] = { -- Torso
-        texture = "rbxassetid://13415110780", 
-        mesh = "rbxassetid://13421774668",
+        texture = "https://www.roblox.com/library/10181284557/blue", 
+        mesh = "rbxassetid://14768666349",
         offset = cf_zero
     }, -- Torso
 }
