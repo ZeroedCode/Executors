@@ -29,6 +29,18 @@ function main:Begin(PROPS)
         Height = PROPS.Height or 350
     }
 
+    local function SecureGui(gui_element)
+        if (syn and syn.protect_gui) then 
+            syn.protect_gui(gui_element)
+            gui_element.Parent = game:GetService("PlayerGui")                                 
+        elseif gethui then
+            gui_element.Parent = gethui()  
+        else
+            error("Cannot secure GUI, it's unsafe to continue.");                           
+            gui_element.Parent = game:GetService("Players").LocalPlayer.PlayerGui           
+        end
+    end
+
     local function GetFont() 
         return Font.fromId(12187374954)                                                     
     end
