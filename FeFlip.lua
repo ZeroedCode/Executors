@@ -77,8 +77,8 @@ print("made by Zeezy#7203")
 
 local notifSound = Instance.new("Sound",workspace)
 notifSound.PlaybackSpeed = 1
-notifSound.Volume = 0.4
-notifSound.SoundId = "rbxassetid://170765130"
+notifSound.Volume = 0.8
+notifSound.SoundId = "rbxassetid://17597091938"
 notifSound.PlayOnRemove = true
 notifSound:Destroy()
 game.StarterGui:SetCore("SendNotification", {Title = "feFlip", Text = "feFlip loaded successfully!", Icon = "rbxassetid://505845268", Duration = 5, Button1 = "Okay"})
