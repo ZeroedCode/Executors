@@ -4,7 +4,7 @@ getgenv().Settings = {
     ["Lock Mouse Position Keybind"] = "B",
     ["Right Click"] = false,
     ["GUI"] = true, -- A drawing gui that tells you what is going on with the autoclicker.
-    ["Delay"] = 1.01 -- 0 for RenderStepped, other numbers go to regular wait timings.
+    ["Delay"] = .01 -- 0 for RenderStepped, other numbers go to regular wait timings.
 }
 
 local ImGui = loadstring(game:HttpGet("https://raw.githubusercontent.com/wiIlow/imgui-rbx/main/main.lua", true))()
