@@ -205,33 +205,6 @@ end
 	end,
 })
 
-ExtrasTab:AddToggle({
-	Name = "Auto drop",
-	Default = false,
-	Callback = function(Value)
-if Value then
-		_G.Print = true
-		while _G.Print do
-			game.Players.LocalPlayer.Character.Humanoid.Name = 1
-			local l = game.Players.LocalPlayer.Character["1"]:Clone()
-			l.Parent = game.Players.LocalPlayer.Character
-			l.Name = "Humanoid"
-			wait()
-			game.Players.LocalPlayer.Character["1"]:Destroy()
-			game.Workspace.CurrentCamera.CameraSubject = game.Players.LocalPlayer.Character
-			game.Players.LocalPlayer.Character.Animate.Disabled = true
-			wait(0)
-			game.Players.LocalPlayer.Character.Animate.Disabled = false
-			game.Players.LocalPlayer.Character.Humanoid.DisplayDistanceType = "None"
-			wait(5)
-		end
-		else
-		_G.Print = false
-	end
-	-- The variable (Value) is a boolean on whether the toggle is true or false
-	end,
-})
-
 ExtrasTab:AddButton({
 	Name = "Auto-train pet",
 	Callback = function()
@@ -358,6 +331,6 @@ InfoTab:AddParagraph("Important:","• Elements in the remake project may soon t
 local InfoSection = InfoTab:AddSection({
 	Name = "Credits"
 })
-InfoTab:AddLabel("Made by Pink Cat#4491")
+InfoTab:AddLabel("Made by 01_pink")
 
 OrionLib:Init() --UI Lib End
