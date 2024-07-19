@@ -1,0 +1,2317 @@
+local n = Instance.new("ScreenGui")
+local o = Instance.new("Frame")
+local p = Instance.new("ImageLabel")
+local q = Instance.new("UIGradient")
+local r = Instance.new("ImageLabel")
+local s = Instance.new("UIGradient")
+local t = Instance.new("TextBox")
+local u = Instance.new("ImageLabel")
+local v = Instance.new("UIGradient")
+local w = Instance.new("ImageLabel")
+local x = Instance.new("UIGradient")
+local y = Instance.new("ScrollingFrame")
+local z = Instance.new("UIListLayout")
+local plr = game.Players.LocalPlayer
+local A = false
+local B = Color3.fromRGB(255, 0, 0)
+local C = Color3.fromRGB(0, 255, 0)
+local D = Instance.new("TextLabel")
+local E = Instance.new("TextLabel")
+local F = Instance.new("TextLabel")
+local G = Instance.new("TextLabel")
+local H = Instance.new("TextLabel")
+local I = Instance.new("TextLabel")
+local J = Instance.new("TextLabel")
+local K = Instance.new("TextLabel")
+local L = Instance.new("TextLabel")
+local M = Instance.new("TextLabel")
+local N = Instance.new("TextLabel")
+local O = Instance.new("TextLabel")
+local P = Instance.new("TextLabel")
+local Q = Instance.new("TextLabel")
+local R = Instance.new("TextLabel")
+local S = Instance.new("TextLabel")
+local T = Instance.new("TextLabel")
+local U = Instance.new("TextLabel")
+local V = Instance.new("TextLabel")
+local W = Instance.new("TextLabel")
+local X = Instance.new("TextLabel")
+local Y = Instance.new("TextLabel")
+local Z = Instance.new("TextLabel")
+local _ = Instance.new("TextLabel")
+local a0 = Instance.new("TextLabel")
+local a1 = Instance.new("TextLabel")
+local a2 = Instance.new("TextLabel")
+local a3 = Instance.new("TextLabel")
+local a4 = Instance.new("TextLabel")
+local a5 = Instance.new("TextLabel")
+local a6 = Instance.new("TextBox")
+local a7 = Instance.new("TextLabel")
+local a8 = Instance.new("TextLabel")
+local a9 = Instance.new("TextLabel")
+local aa = Instance.new("TextLabel")
+local ab = Instance.new("TextLabel")
+local ac = Instance.new("TextLabel")
+local ad = Instance.new("TextLabel")
+local ae = Instance.new("TextLabel")
+local af = Instance.new("TextLabel")
+local ag = Instance.new("TextLabel")
+local ah = Instance.new("TextLabel")
+local ai = Instance.new("TextLabel")
+local aj = Instance.new("TextLabel")
+local ak = Instance.new("TextLabel")
+local al = Instance.new("TextLabel")
+local am = Instance.new("TextLabel")
+local an = Instance.new("TextLabel")
+local ao = Instance.new("TextLabel")
+local ap = Instance.new("TextLabel")
+local aq = Instance.new("TextLabel")
+local ar = Instance.new("TextLabel")
+local as = Instance.new("TextLabel")
+local at = Instance.new("TextLabel")
+local au = Instance.new("TextLabel")
+local av = Instance.new("TextLabel")
+local aw = Instance.new("TextLabel")
+local ax = Instance.new("TextLabel")
+local ay = Instance.new("TextLabel")
+local az = Instance.new("TextLabel")
+local aA = Instance.new("TextLabel")
+local aB = Instance.new("TextLabel")
+local aC = nil
+local aD = false
+local aE = false
+local aF = false
+local aG = false
+local aH = false
+local aI = false
+local aJ = nil
+local aK
+local aL = false
+local aM = nil
+n.Parent = game.CoreGui
+o.Name = "main"
+o.Parent = n
+o.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+o.BackgroundTransparency = 1.000
+o.Position = UDim2.new(0.604221702, 0, 0, 0)
+o.Size = UDim2.new(0, 190, 0, 62)
+o.Active = true
+o.Draggable = true
+p.Name = "Frame"
+p.Parent = o
+p.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+p.BackgroundTransparency = 1.000
+p.BorderColor3 = Color3.fromRGB(255, 255, 255)
+p.Position = UDim2.new(-0.00155715644, 0, 0.00518575311, 0)
+p.Size = UDim2.new(0, 170, 0, 46)
+p.Image = "rbxassetid://3570695787"
+p.ScaleType = Enum.ScaleType.Slice
+p.SliceCenter = Rect.new(100, 100, 100, 100)
+p.SliceScale = 0.120
+q.Color =
+    ColorSequence.new {
+    ColorSequenceKeypoint.new(0.00, Color3.fromRGB(39, 255, 11)),
+    ColorSequenceKeypoint.new(0.12, Color3.fromRGB(0, 0, 0)),
+    ColorSequenceKeypoint.new(0.85, Color3.fromRGB(0, 0, 0)),
+    ColorSequenceKeypoint.new(1.00, Color3.fromRGB(188, 0, 255))
+}
+q.Rotation = -0.70731937885284
+q.Parent = p
+r.Name = "Frame"
+r.Parent = p
+r.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+r.BackgroundTransparency = 1.000
+r.Position = UDim2.new(0.0147047937, 0, 0.0718050003, 0)
+r.Size = UDim2.new(0, 162, 0, 39)
+r.Image = "rbxassetid://3570695787"
+r.ImageColor3 = Color3.fromRGB(0, 0, 0)
+r.ScaleType = Enum.ScaleType.Slice
+r.SliceCenter = Rect.new(100, 100, 100, 100)
+r.SliceScale = 0.120
+s.Parent = r
+t.Parent = r
+t.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+t.BackgroundTransparency = 1.000
+t.Position = UDim2.new(0.0370368473, 0, 0, 0)
+t.Size = UDim2.new(0, 149, 0, 39)
+t.Font = Enum.Font.FredokaOne
+t.PlaceholderText = "Type list for cmds"
+t.Text = ""
+t.TextColor3 = Color3.fromRGB(0, 170, 0)
+t.TextScaled = true
+t.TextSize = 14.000
+t.TextStrokeColor3 = Color3.fromRGB(178, 0, 240)
+t.TextStrokeTransparency = 0.500
+t.TextWrapped = true
+u.Name = "listf"
+u.Parent = o
+u.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+u.BackgroundTransparency = 1.000
+u.BorderColor3 = Color3.fromRGB(255, 255, 255)
+u.Position = UDim2.new(-0.000418841839, 0, 0.846421659, 0)
+u.Size = UDim2.new(0, 170, 0, 364)
+u.Visible = false
+u.Image = "rbxassetid://3570695787"
+u.ScaleType = Enum.ScaleType.Slice
+u.SliceCenter = Rect.new(100, 100, 100, 100)
+u.SliceScale = 0.120
+v.Color =
+    ColorSequence.new {
+    ColorSequenceKeypoint.new(0.00, Color3.fromRGB(39, 255, 11)),
+    ColorSequenceKeypoint.new(0.12, Color3.fromRGB(0, 0, 0)),
+    ColorSequenceKeypoint.new(0.85, Color3.fromRGB(0, 0, 0)),
+    ColorSequenceKeypoint.new(1.00, Color3.fromRGB(188, 0, 255))
+}
+v.Rotation = -0.70731937885284
+v.Parent = u
+w.Name = "Frame"
+w.Parent = u
+w.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+w.BackgroundTransparency = 1.000
+w.Position = UDim2.new(0.0205871575, 0, 0.0086181974, 0)
+w.Size = UDim2.new(0, 162, 0, 357)
+w.Image = "rbxassetid://3570695787"
+w.ImageColor3 = Color3.fromRGB(0, 0, 0)
+w.ScaleType = Enum.ScaleType.Slice
+w.SliceCenter = Rect.new(100, 100, 100, 100)
+w.SliceScale = 0.120
+x.Parent = w
+y.Parent = w
+y.Active = true
+y.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+y.BackgroundTransparency = 1.000
+y.Position = UDim2.new(0, 0, 0.0252100844, 0)
+y.Size = UDim2.new(0, 162, 0, 336)
+y.CanvasSize = UDim2.new(0, 0, 5.45000019, 0)
+z.Parent = y
+D.Name = "aa"
+D.Parent = y
+D.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+D.BackgroundTransparency = 1.000
+D.BorderSizePixel = 0
+D.Position = UDim2.new(0, 0, -0.00632440485, 0)
+D.Size = UDim2.new(0, 150, 0, 32)
+D.Font = Enum.Font.FredokaOne
+D.Text = "FARM"
+D.TextColor3 = Color3.fromRGB(170, 170, 127)
+D.TextSize = 22.000
+D.TextStrokeColor3 = Color3.fromRGB(0, 0, 255)
+D.TextStrokeTransparency = 0.500
+D.TextWrapped = true
+E.Name = "ab"
+E.Parent = y
+E.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+E.BackgroundTransparency = 1.000
+E.BorderSizePixel = 0
+E.Position = UDim2.new(0, 0, -0.00632440485, 0)
+E.Size = UDim2.new(0, 150, 0, 32)
+E.Font = Enum.Font.FredokaOne
+E.Text = "Weight"
+E.TextColor3 = Color3.fromRGB(170, 170, 127)
+E.TextSize = 22.000
+E.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+E.TextStrokeTransparency = 0.500
+E.TextWrapped = true
+F.Name = "ac"
+F.Parent = y
+F.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+F.BackgroundTransparency = 1.000
+F.BorderSizePixel = 0
+F.Position = UDim2.new(0, 0, -0.00632440485, 0)
+F.Size = UDim2.new(0, 150, 0, 32)
+F.Font = Enum.Font.FredokaOne
+F.Text = "farm/unfarm"
+F.TextColor3 = Color3.fromRGB(170, 170, 127)
+F.TextSize = 22.000
+F.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+F.TextStrokeTransparency = 0.500
+F.TextWrapped = true
+G.Name = "ad"
+G.Parent = y
+G.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+G.BackgroundTransparency = 1.000
+G.BorderSizePixel = 0
+G.Position = UDim2.new(0, 0, -0.00632440485, 0)
+G.Size = UDim2.new(0, 150, 0, 32)
+G.Font = Enum.Font.FredokaOne
+G.Text = "equip/unequip"
+G.TextColor3 = Color3.fromRGB(170, 170, 127)
+G.TextSize = 22.000
+G.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+G.TextStrokeTransparency = 0.500
+G.TextWrapped = true
+H.Name = "ba"
+H.Parent = y
+H.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+H.BackgroundTransparency = 1.000
+H.BorderSizePixel = 0
+H.Position = UDim2.new(0, 0, -0.00632440485, 0)
+H.Size = UDim2.new(0, 150, 0, 32)
+H.Font = Enum.Font.FredokaOne
+H.Text = "ANTILAG"
+H.TextColor3 = Color3.fromRGB(170, 170, 127)
+H.TextSize = 22.000
+H.TextStrokeColor3 = Color3.fromRGB(0, 0, 255)
+H.TextStrokeTransparency = 0.500
+H.TextWrapped = true
+I.Name = "baa"
+I.Parent = y
+I.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+I.BackgroundTransparency = 1.000
+I.BorderSizePixel = 0
+I.Position = UDim2.new(0, 0, -0.00632440485, 0)
+I.Size = UDim2.new(0, 150, 0, 32)
+I.Font = Enum.Font.FredokaOne
+I.Text = "fast setup"
+I.TextColor3 = Color3.fromRGB(0, 0, 255)
+I.TextSize = 22.000
+I.TextStrokeColor3 = Color3.fromRGB(255, 255, 143)
+I.TextStrokeTransparency = 0.500
+I.TextWrapped = true
+J.Name = "bb"
+J.Parent = y
+J.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+J.BackgroundTransparency = 1.000
+J.BorderSizePixel = 0
+J.Position = UDim2.new(0, 0, -0.00632440485, 0)
+J.Size = UDim2.new(0, 150, 0, 32)
+J.Font = Enum.Font.FredokaOne
+J.Text = "del camera"
+J.TextColor3 = Color3.fromRGB(170, 170, 127)
+J.TextSize = 22.000
+J.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+J.TextStrokeTransparency = 0.500
+J.TextWrapped = true
+K.Name = "bc"
+K.Parent = y
+K.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+K.BackgroundTransparency = 1.000
+K.BorderSizePixel = 0
+K.Position = UDim2.new(0, 0, -0.00632440485, 0)
+K.Size = UDim2.new(0, 150, 0, 32)
+K.Font = Enum.Font.FredokaOne
+K.Text = "del clouds"
+K.TextColor3 = Color3.fromRGB(170, 170, 127)
+K.TextSize = 22.000
+K.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+K.TextStrokeTransparency = 0.500
+K.TextWrapped = true
+L.Name = "bd"
+L.Parent = y
+L.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+L.BackgroundTransparency = 1.000
+L.BorderSizePixel = 0
+L.Position = UDim2.new(0, 0, -0.00632440485, 0)
+L.Size = UDim2.new(0, 150, 0, 32)
+L.Font = Enum.Font.FredokaOne
+L.Text = "del fog"
+L.TextColor3 = Color3.fromRGB(170, 170, 127)
+L.TextSize = 22.000
+L.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+L.TextStrokeTransparency = 0.500
+L.TextWrapped = true
+M.Name = "be"
+M.Parent = y
+M.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+M.BackgroundTransparency = 1.000
+M.BorderSizePixel = 0
+M.Position = UDim2.new(0, 0, -0.00632440485, 0)
+M.Size = UDim2.new(0, 150, 0, 32)
+M.Font = Enum.Font.FredokaOne
+M.Text = "fps"
+M.TextColor3 = Color3.fromRGB(170, 170, 127)
+M.TextSize = 22.000
+M.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+M.TextStrokeTransparency = 0.500
+M.TextWrapped = true
+N.Name = "bf"
+N.Parent = y
+N.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+N.BackgroundTransparency = 1.000
+N.BorderSizePixel = 0
+N.Position = UDim2.new(0, 0, -0.00632440485, 0)
+N.Size = UDim2.new(0, 150, 0, 32)
+N.Font = Enum.Font.FredokaOne
+N.Text = "del hud"
+N.TextColor3 = Color3.fromRGB(170, 170, 127)
+N.TextSize = 22.000
+N.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+N.TextStrokeTransparency = 0.500
+N.TextWrapped = true
+O.Name = "bg"
+O.Parent = y
+O.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+O.BackgroundTransparency = 1.000
+O.BorderSizePixel = 0
+O.Position = UDim2.new(0, 0, -0.00632440485, 0)
+O.Size = UDim2.new(0, 150, 0, 32)
+O.Font = Enum.Font.FredokaOne
+O.Text = "del rumble"
+O.TextColor3 = Color3.fromRGB(170, 170, 127)
+O.TextSize = 22.000
+O.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+O.TextStrokeTransparency = 0.500
+O.TextWrapped = true
+P.Name = "bh"
+P.Parent = y
+P.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+P.BackgroundTransparency = 1.000
+P.BorderSizePixel = 0
+P.Position = UDim2.new(0, 0, -0.00632440485, 0)
+P.Size = UDim2.new(0, 150, 0, 32)
+P.Font = Enum.Font.FredokaOne
+P.Text = "del sky"
+P.TextColor3 = Color3.fromRGB(170, 170, 127)
+P.TextSize = 22.000
+P.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+P.TextStrokeTransparency = 0.500
+P.TextWrapped = true
+Q.Name = "bi"
+Q.Parent = y
+Q.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Q.BackgroundTransparency = 1.000
+Q.BorderSizePixel = 0
+Q.Position = UDim2.new(0, 0, -0.00632440485, 0)
+Q.Size = UDim2.new(0, 150, 0, 32)
+Q.Font = Enum.Font.FredokaOne
+Q.Text = "del playerscript"
+Q.TextColor3 = Color3.fromRGB(170, 170, 127)
+Q.TextSize = 22.000
+Q.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+Q.TextStrokeTransparency = 0.500
+Q.TextWrapped = true
+R.Name = "bj"
+R.Parent = y
+R.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+R.BackgroundTransparency = 1.000
+R.BorderSizePixel = 0
+R.Position = UDim2.new(0, 0, -0.00632440485, 0)
+R.Size = UDim2.new(0, 150, 0, 32)
+R.Font = Enum.Font.FredokaOne
+R.Text = "del workspace"
+R.TextColor3 = Color3.fromRGB(170, 170, 127)
+R.TextSize = 22.000
+R.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+R.TextStrokeTransparency = 0.500
+R.TextWrapped = true
+S.Name = "bk"
+S.Parent = y
+S.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+S.BackgroundTransparency = 1.000
+S.BorderSizePixel = 0
+S.Position = UDim2.new(0, 0, -0.00632440485, 0)
+S.Size = UDim2.new(0, 150, 0, 32)
+S.Font = Enum.Font.FredokaOne
+S.Text = "del replicated"
+S.TextColor3 = Color3.fromRGB(170, 170, 127)
+S.TextSize = 22.000
+S.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+S.TextStrokeTransparency = 0.500
+S.TextWrapped = true
+T.Name = "bl"
+T.Parent = y
+T.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+T.BackgroundTransparency = 1.000
+T.BorderSizePixel = 0
+T.Position = UDim2.new(0, 0, -0.00632440485, 0)
+T.Size = UDim2.new(0, 150, 0, 32)
+T.Font = Enum.Font.FredokaOne
+T.Text = "del corepackage"
+T.TextColor3 = Color3.fromRGB(170, 170, 127)
+T.TextSize = 22.000
+T.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+T.TextStrokeTransparency = 0.500
+T.TextWrapped = true
+U.Name = "bm"
+U.Parent = y
+U.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+U.BackgroundTransparency = 1.000
+U.BorderSizePixel = 0
+U.Position = UDim2.new(0, 0, -0.00632440485, 0)
+U.Size = UDim2.new(0, 150, 0, 32)
+U.Font = Enum.Font.FredokaOne
+U.Text = "del water"
+U.TextColor3 = Color3.fromRGB(170, 170, 127)
+U.TextSize = 22.000
+U.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+U.TextStrokeTransparency = 0.500
+U.TextWrapped = true
+V.Name = "bn"
+V.Parent = y
+V.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+V.BackgroundTransparency = 1.000
+V.BorderSizePixel = 0
+V.Position = UDim2.new(0, 0, -0.00632440485, 0)
+V.Size = UDim2.new(0, 150, 0, 32)
+V.Font = Enum.Font.FredokaOne
+V.Text = "del coregui"
+V.TextColor3 = Color3.fromRGB(170, 170, 127)
+V.TextSize = 22.000
+V.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+V.TextStrokeTransparency = 0.500
+V.TextWrapped = true
+W.Name = "bo"
+W.Parent = y
+W.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+W.BackgroundTransparency = 1.000
+W.BorderSizePixel = 0
+W.Position = UDim2.new(0, 0, -0.00632440485, 0)
+W.Size = UDim2.new(0, 150, 0, 32)
+W.Font = Enum.Font.FredokaOne
+W.Text = "del lighting "
+W.TextColor3 = Color3.fromRGB(170, 170, 127)
+W.TextSize = 22.000
+W.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+W.TextStrokeTransparency = 0.500
+W.TextWrapped = true
+X.Name = "bp"
+X.Parent = y
+X.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+X.BackgroundTransparency = 1.000
+X.BorderSizePixel = 0
+X.Position = UDim2.new(0, 0, -0.00632440485, 0)
+X.Size = UDim2.new(0, 150, 0, 32)
+X.Font = Enum.Font.FredokaOne
+X.Text = "del chat"
+X.TextColor3 = Color3.fromRGB(170, 170, 127)
+X.TextSize = 22.000
+X.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+X.TextStrokeTransparency = 0.500
+X.TextWrapped = true
+Y.Name = "bq"
+Y.Parent = y
+Y.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Y.BackgroundTransparency = 1.000
+Y.BorderSizePixel = 0
+Y.Position = UDim2.new(0, 0, -0.00632440485, 0)
+Y.Size = UDim2.new(0, 150, 0, 32)
+Y.Font = Enum.Font.FredokaOne
+Y.Text = "del playergui"
+Y.TextColor3 = Color3.fromRGB(170, 170, 127)
+Y.TextSize = 22.000
+Y.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+Y.TextStrokeTransparency = 0.500
+Y.TextWrapped = true
+Z.Name = "ca"
+Z.Parent = y
+Z.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Z.BackgroundTransparency = 1.000
+Z.BorderSizePixel = 0
+Z.Position = UDim2.new(0, 0, -0.00632440485, 0)
+Z.Size = UDim2.new(0, 150, 0, 32)
+Z.Font = Enum.Font.FredokaOne
+Z.Text = "un/stats"
+Z.TextColor3 = Color3.fromRGB(170, 170, 127)
+Z.TextSize = 22.000
+Z.TextStrokeColor3 = Color3.fromRGB(0, 0, 255)
+Z.TextStrokeTransparency = 0.500
+Z.TextWrapped = true
+_.Name = "cb"
+_.Parent = y
+_.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+_.BackgroundTransparency = 1.000
+_.BorderSizePixel = 0
+_.Position = UDim2.new(0, 0, -0.00632440485, 0)
+_.Size = UDim2.new(0, 150, 0, 32)
+_.Font = Enum.Font.FredokaOne
+_.Text = "WEIGHT AMOUNT"
+_.TextColor3 = Color3.fromRGB(170, 170, 127)
+_.TextSize = 22.000
+_.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+_.TextStrokeTransparency = 0.500
+_.TextWrapped = true
+a0.Name = "cc"
+a0.Parent = y
+a0.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+a0.BackgroundTransparency = 1.000
+a0.BorderSizePixel = 0
+a0.Position = UDim2.new(0, 0, -0.00632440485, 0)
+a0.Size = UDim2.new(0, 150, 0, 32)
+a0.Font = Enum.Font.FredokaOne
+a0.Text = "0"
+a0.TextColor3 = Color3.fromRGB(170, 170, 127)
+a0.TextSize = 22.000
+a0.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+a0.TextStrokeTransparency = 0.500
+a0.TextWrapped = true
+a1.Name = "cd"
+a1.Parent = y
+a1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+a1.BackgroundTransparency = 1.000
+a1.BorderSizePixel = 0
+a1.Position = UDim2.new(0, 0, -0.00632440485, 0)
+a1.Size = UDim2.new(0, 150, 0, 32)
+a1.Font = Enum.Font.FredokaOne
+a1.Text = "STRENGTH"
+a1.TextColor3 = Color3.fromRGB(170, 170, 127)
+a1.TextSize = 22.000
+a1.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+a1.TextStrokeTransparency = 0.500
+a1.TextWrapped = true
+a2.Name = "ce"
+a2.Parent = y
+a2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+a2.BackgroundTransparency = 1.000
+a2.BorderSizePixel = 0
+a2.Position = UDim2.new(0, 0, -0.00632440485, 0)
+a2.Size = UDim2.new(0, 150, 0, 32)
+a2.Font = Enum.Font.FredokaOne
+a2.Text = "0"
+a2.TextColor3 = Color3.fromRGB(170, 170, 127)
+a2.TextSize = 22.000
+a2.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+a2.TextStrokeTransparency = 0.500
+a2.TextWrapped = true
+a3.Name = "cf"
+a3.Parent = y
+a3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+a3.BackgroundTransparency = 1.000
+a3.BorderSizePixel = 0
+a3.Position = UDim2.new(0, 0, -0.00632440485, 0)
+a3.Size = UDim2.new(0, 150, 0, 32)
+a3.Font = Enum.Font.FredokaOne
+a3.Text = "SPS"
+a3.TextColor3 = Color3.fromRGB(170, 170, 127)
+a3.TextSize = 22.000
+a3.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+a3.TextStrokeTransparency = 0.500
+a3.TextWrapped = true
+a4.Name = "cg"
+a4.Parent = y
+a4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+a4.BackgroundTransparency = 1.000
+a4.BorderSizePixel = 0
+a4.Position = UDim2.new(0, 0, -0.00632440485, 0)
+a4.Size = UDim2.new(0, 150, 0, 32)
+a4.Font = Enum.Font.FredokaOne
+a4.Text = "0"
+a4.TextColor3 = Color3.fromRGB(170, 170, 127)
+a4.TextSize = 22.000
+a4.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+a4.TextStrokeTransparency = 0.500
+a4.TextWrapped = true
+a5.Name = "ch"
+a5.Parent = y
+a5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+a5.BackgroundTransparency = 1.000
+a5.BorderSizePixel = 0
+a5.Position = UDim2.new(0, 0, -0.00632440485, 0)
+a5.Size = UDim2.new(0, 150, 0, 32)
+a5.Font = Enum.Font.FredokaOne
+a5.Text = "Wait()"
+a5.TextColor3 = Color3.fromRGB(170, 170, 127)
+a5.TextSize = 22.000
+a5.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+a5.TextStrokeTransparency = 0.500
+a5.TextWrapped = true
+a6.Name = "ci"
+a6.Parent = y
+a6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+a6.BackgroundTransparency = 1.000
+a6.BorderSizePixel = 0
+a6.Position = UDim2.new(0, 0, -0.00632440485, 0)
+a6.Size = UDim2.new(0, 150, 0, 32)
+a6.Font = Enum.Font.FredokaOne
+a6.Text = "0.6"
+a6.TextColor3 = Color3.fromRGB(170, 170, 127)
+a6.TextSize = 22.000
+a6.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+a6.TextStrokeTransparency = 0.500
+a6.TextWrapped = true
+a7.Name = "da"
+a7.Parent = y
+a7.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+a7.BackgroundTransparency = 1.000
+a7.BorderSizePixel = 0
+a7.Position = UDim2.new(0, 0, -0.00632440485, 0)
+a7.Size = UDim2.new(0, 150, 0, 32)
+a7.Font = Enum.Font.FredokaOne
+a7.Text = "others"
+a7.TextColor3 = Color3.fromRGB(170, 170, 127)
+a7.TextSize = 22.000
+a7.TextStrokeColor3 = Color3.fromRGB(0, 0, 255)
+a7.TextStrokeTransparency = 0.500
+a7.TextWrapped = true
+a8.Name = "dab"
+a8.Parent = y
+a8.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+a8.BackgroundTransparency = 1.000
+a8.BorderSizePixel = 0
+a8.Position = UDim2.new(0, 0, -0.00632440485, 0)
+a8.Size = UDim2.new(0, 150, 0, 32)
+a8.Font = Enum.Font.FredokaOne
+a8.Text = "loop [plr]"
+a8.TextColor3 = Color3.fromRGB(170, 170, 127)
+a8.TextSize = 22.000
+a8.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+a8.TextStrokeTransparency = 0.500
+a8.TextWrapped = true
+a9.Name = "dac"
+a9.Parent = y
+a9.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+a9.BackgroundTransparency = 1.000
+a9.BorderSizePixel = 0
+a9.Position = UDim2.new(0, 0, -0.00632440485, 0)
+a9.Size = UDim2.new(0, 150, 0, 32)
+a9.Font = Enum.Font.FredokaOne
+a9.Text = "un/aura [num]"
+a9.TextColor3 = Color3.fromRGB(170, 170, 127)
+a9.TextSize = 22.000
+a9.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+a9.TextStrokeTransparency = 0.500
+a9.TextWrapped = true
+aa.Name = "dad"
+aa.Parent = y
+aa.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+aa.BackgroundTransparency = 1.000
+aa.BorderSizePixel = 0
+aa.Position = UDim2.new(0, 0, -0.00632440485, 0)
+aa.Size = UDim2.new(0, 150, 0, 32)
+aa.Font = Enum.Font.FredokaOne
+aa.Text = "un/fast punch"
+aa.TextColor3 = Color3.fromRGB(170, 170, 127)
+aa.TextSize = 22.000
+aa.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+aa.TextStrokeTransparency = 0.500
+aa.TextWrapped = true
+ab.Name = "db"
+ab.Parent = y
+ab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ab.BackgroundTransparency = 1.000
+ab.BorderSizePixel = 0
+ab.Position = UDim2.new(0, 0, -0.00632440485, 0)
+ab.Size = UDim2.new(0, 150, 0, 32)
+ab.Font = Enum.Font.FredokaOne
+ab.Text = "strongest player"
+ab.TextColor3 = Color3.fromRGB(170, 170, 127)
+ab.TextSize = 22.000
+ab.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+ab.TextStrokeTransparency = 0.500
+ab.TextWrapped = true
+ac.Name = "dba"
+ac.Parent = y
+ac.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ac.BackgroundTransparency = 1.000
+ac.BorderSizePixel = 0
+ac.Position = UDim2.new(0, 0, -0.00632440485, 0)
+ac.Size = UDim2.new(0, 150, 0, 32)
+ac.Font = Enum.Font.FredokaOne
+ac.Text = "kill [plr]"
+ac.TextColor3 = Color3.fromRGB(170, 170, 127)
+ac.TextSize = 22.000
+ac.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+ac.TextStrokeTransparency = 0.500
+ac.TextWrapped = true
+ad.Name = "dbb"
+ad.Parent = y
+ad.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ad.BackgroundTransparency = 1.000
+ad.BorderSizePixel = 0
+ad.Position = UDim2.new(0, 0, -0.00632440485, 0)
+ad.Size = UDim2.new(0, 150, 0, 32)
+ad.Font = Enum.Font.FredokaOne
+ad.Text = "small"
+ad.TextColor3 = Color3.fromRGB(170, 170, 127)
+ad.TextSize = 22.000
+ad.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+ad.TextStrokeTransparency = 0.500
+ad.TextWrapped = true
+ae.Name = "dbc"
+ae.Parent = y
+ae.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ae.BackgroundTransparency = 1.000
+ae.BorderSizePixel = 0
+ae.Position = UDim2.new(0, 0, -0.00632440485, 0)
+ae.Size = UDim2.new(0, 150, 0, 32)
+ae.Font = Enum.Font.FredokaOne
+ae.Text = "acsmall [num]"
+ae.TextColor3 = Color3.fromRGB(170, 170, 127)
+ae.TextSize = 22.000
+ae.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+ae.TextStrokeTransparency = 0.500
+ae.TextWrapped = true
+af.Name = "dbd"
+af.Parent = y
+af.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+af.BackgroundTransparency = 1.000
+af.BorderSizePixel = 0
+af.Position = UDim2.new(0, 0, -0.00632440485, 0)
+af.Size = UDim2.new(0, 150, 0, 32)
+af.Font = Enum.Font.FredokaOne
+af.Text = "tp sz"
+af.TextColor3 = Color3.fromRGB(170, 170, 127)
+af.TextSize = 22.000
+af.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+af.TextStrokeTransparency = 0.500
+af.TextWrapped = true
+ag.Name = "dbe"
+ag.Parent = y
+ag.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ag.BackgroundTransparency = 1.000
+ag.BorderSizePixel = 0
+ag.Position = UDim2.new(0, 0, -0.00632440485, 0)
+ag.Size = UDim2.new(0, 150, 0, 32)
+ag.Font = Enum.Font.FredokaOne
+ag.Text = "tp high af"
+ag.TextColor3 = Color3.fromRGB(170, 170, 127)
+ag.TextSize = 22.000
+ag.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+ag.TextStrokeTransparency = 0.500
+ag.TextWrapped = true
+ah.Name = "dc"
+ah.Parent = y
+ah.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ah.BackgroundTransparency = 1.000
+ah.BorderSizePixel = 0
+ah.Position = UDim2.new(0, 0, -0.00632440485, 0)
+ah.Size = UDim2.new(0, 150, 0, 32)
+ah.Font = Enum.Font.FredokaOne
+ah.Text = "bring [plr]"
+ah.TextColor3 = Color3.fromRGB(170, 170, 127)
+ah.TextSize = 22.000
+ah.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+ah.TextStrokeTransparency = 0.500
+ah.TextWrapped = true
+ai.Name = "dd"
+ai.Parent = y
+ai.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ai.BackgroundTransparency = 1.000
+ai.BorderSizePixel = 0
+ai.Position = UDim2.new(0, 0, -0.00632440485, 0)
+ai.Size = UDim2.new(0, 150, 0, 32)
+ai.Font = Enum.Font.FredokaOne
+ai.Text = "un/spin [plr]"
+ai.TextColor3 = Color3.fromRGB(170, 170, 127)
+ai.TextSize = 22.000
+ai.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+ai.TextStrokeTransparency = 0.500
+ai.TextWrapped = true
+aj.Name = "de"
+aj.Parent = y
+aj.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+aj.BackgroundTransparency = 1.000
+aj.BorderSizePixel = 0
+aj.Position = UDim2.new(0, 0, -0.00632440485, 0)
+aj.Size = UDim2.new(0, 150, 0, 32)
+aj.Font = Enum.Font.FredokaOne
+aj.Text = "un/attach [plr]"
+aj.TextColor3 = Color3.fromRGB(170, 170, 127)
+aj.TextSize = 22.000
+aj.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+aj.TextStrokeTransparency = 0.500
+aj.TextWrapped = true
+ak.Name = "df"
+ak.Parent = y
+ak.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ak.BackgroundTransparency = 1.000
+ak.BorderSizePixel = 0
+ak.Position = UDim2.new(0, 0, -0.00632440485, 0)
+ak.Size = UDim2.new(0, 150, 0, 32)
+ak.Font = Enum.Font.FredokaOne
+ak.Text = "un/follow [plr]"
+ak.TextColor3 = Color3.fromRGB(170, 170, 127)
+ak.TextSize = 22.000
+ak.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+ak.TextStrokeTransparency = 0.500
+ak.TextWrapped = true
+al.Name = "dg"
+al.Parent = y
+al.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+al.BackgroundTransparency = 1.000
+al.BorderSizePixel = 0
+al.Position = UDim2.new(0, 0, -0.00632440485, 0)
+al.Size = UDim2.new(0, 150, 0, 32)
+al.Font = Enum.Font.FredokaOne
+al.Text = "un/trail [plr]"
+al.TextColor3 = Color3.fromRGB(170, 170, 127)
+al.TextSize = 22.000
+al.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+al.TextStrokeTransparency = 0.500
+al.TextWrapped = true
+am.Name = "dh"
+am.Parent = y
+am.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+am.BackgroundTransparency = 1.000
+am.BorderSizePixel = 0
+am.Position = UDim2.new(0, 0, -0.00632440485, 0)
+am.Size = UDim2.new(0, 150, 0, 32)
+am.Font = Enum.Font.FredokaOne
+am.Text = "un/orbit [plr]"
+am.TextColor3 = Color3.fromRGB(170, 170, 127)
+am.TextSize = 22.000
+am.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+am.TextStrokeTransparency = 0.500
+am.TextWrapped = true
+an.Name = "di"
+an.Parent = y
+an.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+an.BackgroundTransparency = 1.000
+an.BorderSizePixel = 0
+an.Position = UDim2.new(0, 0, -0.00632440485, 0)
+an.Size = UDim2.new(0, 150, 0, 32)
+an.Font = Enum.Font.FredokaOne
+an.Text = "noclip"
+an.TextColor3 = Color3.fromRGB(170, 170, 127)
+an.TextSize = 22.000
+an.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+an.TextStrokeTransparency = 0.500
+an.TextWrapped = true
+ao.Name = "dj"
+ao.Parent = y
+ao.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ao.BackgroundTransparency = 1.000
+ao.BorderSizePixel = 0
+ao.Position = UDim2.new(0, 0, -0.00632440485, 0)
+ao.Size = UDim2.new(0, 150, 0, 32)
+ao.Font = Enum.Font.FredokaOne
+ao.Text = "clip"
+ao.TextColor3 = Color3.fromRGB(170, 170, 127)
+ao.TextSize = 22.000
+ao.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+ao.TextStrokeTransparency = 0.500
+ao.TextWrapped = true
+ap.Name = "dk"
+ap.Parent = y
+ap.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ap.BackgroundTransparency = 1.000
+ap.BorderSizePixel = 0
+ap.Position = UDim2.new(0, 0, -0.00632440485, 0)
+ap.Size = UDim2.new(0, 150, 0, 32)
+ap.Font = Enum.Font.FredokaOne
+ap.Text = "walkspeed [num]"
+ap.TextColor3 = Color3.fromRGB(170, 170, 127)
+ap.TextSize = 22.000
+ap.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+ap.TextStrokeTransparency = 0.500
+ap.TextWrapped = true
+aq.Name = "dl"
+aq.Parent = y
+aq.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+aq.BackgroundTransparency = 1.000
+aq.BorderSizePixel = 0
+aq.Position = UDim2.new(0, 0, -0.00632440485, 0)
+aq.Size = UDim2.new(0, 150, 0, 32)
+aq.Font = Enum.Font.FredokaOne
+aq.Text = "jump [num]"
+aq.TextColor3 = Color3.fromRGB(170, 170, 127)
+aq.TextSize = 22.000
+aq.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+aq.TextStrokeTransparency = 0.500
+aq.TextWrapped = true
+ar.Name = "dm"
+ar.Parent = y
+ar.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ar.BackgroundTransparency = 1.000
+ar.BorderSizePixel = 0
+ar.Position = UDim2.new(0, 0, -0.00632440485, 0)
+ar.Size = UDim2.new(0, 150, 0, 32)
+ar.Font = Enum.Font.FredokaOne
+ar.Text = "un/annoy [plr]"
+ar.TextColor3 = Color3.fromRGB(170, 170, 127)
+ar.TextSize = 22.000
+ar.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+ar.TextStrokeTransparency = 0.500
+ar.TextWrapped = true
+as.Name = "dn"
+as.Parent = y
+as.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+as.BackgroundTransparency = 1.000
+as.BorderSizePixel = 0
+as.Position = UDim2.new(0, 0, -0.00632440485, 0)
+as.Size = UDim2.new(0, 150, 0, 32)
+as.Font = Enum.Font.FredokaOne
+as.Text = "un/headwalk [plr]"
+as.TextColor3 = Color3.fromRGB(170, 170, 127)
+as.TextSize = 22.000
+as.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+as.TextStrokeTransparency = 0.500
+as.TextWrapped = true
+at.Name = "dp"
+at.Parent = y
+at.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+at.BackgroundTransparency = 1.000
+at.BorderSizePixel = 0
+at.Position = UDim2.new(0, 0, -0.00632440485, 0)
+at.Size = UDim2.new(0, 150, 0, 32)
+at.Font = Enum.Font.FredokaOne
+at.Text = " god"
+at.TextColor3 = Color3.fromRGB(170, 170, 127)
+at.TextSize = 22.000
+at.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+at.TextStrokeTransparency = 0.500
+at.TextWrapped = true
+au.Name = "dq"
+au.Parent = y
+au.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+au.BackgroundTransparency = 1.000
+au.BorderSizePixel = 0
+au.Position = UDim2.new(0, 0, -0.00632440485, 0)
+au.Size = UDim2.new(0, 150, 0, 32)
+au.Font = Enum.Font.FredokaOne
+au.Text = "invisible"
+au.TextColor3 = Color3.fromRGB(170, 170, 127)
+au.TextSize = 22.000
+au.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+au.TextStrokeTransparency = 0.500
+au.TextWrapped = true
+av.Name = "dr"
+av.Parent = y
+av.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+av.BackgroundTransparency = 1.000
+av.BorderSizePixel = 0
+av.Position = UDim2.new(0, 0, -0.00632440485, 0)
+av.Size = UDim2.new(0, 150, 0, 32)
+av.Font = Enum.Font.FredokaOne
+av.Text = "un/view [plr]"
+av.TextColor3 = Color3.fromRGB(170, 170, 127)
+av.TextSize = 22.000
+av.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+av.TextStrokeTransparency = 0.500
+av.TextWrapped = true
+aw.Name = "ds"
+aw.Parent = y
+aw.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+aw.BackgroundTransparency = 1.000
+aw.BorderSizePixel = 0
+aw.Position = UDim2.new(0, 0, -0.00632440485, 0)
+aw.Size = UDim2.new(0, 150, 0, 32)
+aw.Font = Enum.Font.FredokaOne
+aw.Text = "goto [plr]"
+aw.TextColor3 = Color3.fromRGB(170, 170, 127)
+aw.TextSize = 22.000
+aw.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+aw.TextStrokeTransparency = 0.500
+aw.TextWrapped = true
+ax.Name = "dt"
+ax.Parent = y
+ax.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ax.BackgroundTransparency = 1.000
+ax.BorderSizePixel = 0
+ax.Position = UDim2.new(0, 0, -0.00632440485, 0)
+ax.Size = UDim2.new(0, 150, 0, 32)
+ax.Font = Enum.Font.FredokaOne
+ax.Text = "un/fly [plr]"
+ax.TextColor3 = Color3.fromRGB(170, 170, 127)
+ax.TextSize = 22.000
+ax.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+ax.TextStrokeTransparency = 0.500
+ax.TextWrapped = true
+ay.Name = "du"
+ay.Parent = y
+ay.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ay.BackgroundTransparency = 1.000
+ay.BorderSizePixel = 0
+ay.Position = UDim2.new(0, 0, -0.00632440485, 0)
+ay.Size = UDim2.new(0, 150, 0, 32)
+ay.Font = Enum.Font.FredokaOne
+ay.Text = "btools"
+ay.TextColor3 = Color3.fromRGB(170, 170, 127)
+ay.TextSize = 22.000
+ay.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+ay.TextStrokeTransparency = 0.500
+ay.TextWrapped = true
+az.Name = "dv"
+az.Parent = y
+az.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+az.BackgroundTransparency = 1.000
+az.BorderSizePixel = 0
+az.Position = UDim2.new(0, 0, -0.00632440485, 0)
+az.Size = UDim2.new(0, 150, 0, 32)
+az.Font = Enum.Font.FredokaOne
+az.Text = "tp me [plr]"
+az.TextColor3 = Color3.fromRGB(170, 170, 127)
+az.TextSize = 22.000
+az.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+az.TextStrokeTransparency = 0.500
+az.TextWrapped = true
+aA.Name = "dw"
+aA.Parent = y
+aA.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+aA.BackgroundTransparency = 1.000
+aA.BorderSizePixel = 0
+aA.Position = UDim2.new(0, 0, -0.00632440485, 0)
+aA.Size = UDim2.new(0, 150, 0, 32)
+aA.Font = Enum.Font.FredokaOne
+aA.Text = "un/dex"
+aA.TextColor3 = Color3.fromRGB(170, 170, 127)
+aA.TextSize = 22.000
+aA.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+aA.TextStrokeTransparency = 0.500
+aA.TextWrapped = true
+aB.Name = "dx"
+aB.Parent = y
+aB.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+aB.BackgroundTransparency = 1.000
+aB.BorderSizePixel = 0
+aB.Position = UDim2.new(0, 0, -0.00632440485, 0)
+aB.Size = UDim2.new(0, 150, 0, 32)
+aB.Font = Enum.Font.FredokaOne
+aB.Text = "no/clicktp"
+aB.TextColor3 = Color3.fromRGB(170, 170, 127)
+aB.TextSize = 22.000
+aB.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+aB.TextStrokeTransparency = 0.500
+aB.TextWrapped = true
+local aN = Instance.new("Script", Strength)
+local aO = game.ReplicatedStorage.Data:WaitForChild(game.Players.LocalPlayer.Name):WaitForChild("Strength")
+aO.Changed:Connect(
+    function(aP)
+        if A == true then
+            a2.Text = tostring(aP)
+        else
+        end
+    end
+)
+coroutine.wrap(
+    function()
+        game:GetService("RunService").Stepped:connect(
+            function()
+                if A == true then
+                    local aQ = 0
+                    for i, aR in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+                        if aR.Name == E.Text then
+                            aQ = aQ + 1
+                        else
+                            if aQ == 0 then
+                                for i, aR in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+                                    if aR.Name == E.Text then
+                                        aQ = aQ + 1
+                                    end
+                                end
+                            end
+                        end
+                        a0.Text = aQ .. ""
+                    end
+                else
+                end
+            end
+        )
+    end
+)()
+coroutine.wrap(
+    function()
+        local aS = game:GetService("Players").LocalPlayer.leaderstats.Strength
+        local aT = aS.Value
+        local aU = 0
+        local aV = 0
+        while true do
+            aT = aS.Value
+            wait(1)
+            aU = aS.Value
+            aV = aU - aT
+            if A == true then
+                a4.Text = aV
+            else
+            end
+        end
+    end
+)()
+local J = game:service "VirtualUser"
+game:service "Players".LocalPlayer.Idled:connect(
+    function()
+        J:CaptureController()
+        J:ClickButton2(Vector2.new())
+    end
+)
+local aW = Instance.new("ScreenGui")
+local p = Instance.new("Frame")
+local aX = Instance.new("ImageLabel")
+aW.Parent = game:GetService("CoreGui")
+p.Parent = aW
+p.BackgroundColor3 = Color3.new(1, 1, 1)
+p.BackgroundTransparency = 1
+p.Size = UDim2.new(0, 653, 0, 485)
+p.Position = UDim2.new(0, 0, -0.4, 0)
+aX.Parent = p
+aX.BackgroundColor3 = Color3.new(1, 1, 1)
+aX.BackgroundTransparency = 1
+aX.Position = UDim2.new(0, 0, 0, 0)
+aX.Size = UDim2.new(0, 653, 0, 485)
+aX.Image = "http://www.roblox.com/asset/?id=7369037402"
+aX:TweenPosition(UDim2.new(0, 0, 0.2, 0), "Out", "Elastic", 3)
+wait(3.01)
+aX:TweenPosition(UDim2.new(0, 0, 1.5, 0), "Out", "Elastic", 5)
+wait(5.01)
+aW:Destroy()
+speedget = 1
+lplayer = game:GetService("Players").LocalPlayer
+lplayer.CharacterAdded:Connect(
+    function(aY)
+        spin = false
+        flying = false
+        staring = false
+        banpl = false
+    end
+)
+function change()
+    prefix = prefix
+    speedfly = speedfly
+end
+function GetPlayer(aZ)
+    local a_ = {}
+    local b0 = aZ:lower()
+    if b0 == "all" then
+        for i, aR in pairs(game:GetService("Players"):GetPlayers()) do
+            table.insert(a_, aR)
+        end
+    elseif b0 == "others" then
+        for i, aR in pairs(game:GetService("Players"):GetPlayers()) do
+            if aR.Name ~= lplayer.Name then
+                table.insert(a_, aR)
+            end
+        end
+    elseif b0 == "me" then
+        for i, aR in pairs(game:GetService("Players"):GetPlayers()) do
+            if aR.Name == lplayer.Name then
+                table.insert(a_, aR)
+            end
+        end
+    else
+        for i, aR in pairs(game:GetService("Players"):GetPlayers()) do
+            if aR.Name:lower():sub(1, #aZ) == aZ:lower() then
+                table.insert(a_, aR)
+            end
+        end
+    end
+    return a_
+end
+local b1 = lplayer:GetMouse()
+spin = false
+followed = false
+traill = false
+noclip = false
+annoying = false
+hwalk = false
+droppinghats = false
+droppingtools = false
+flying = false
+spamdelay = 1
+spamming = false
+spammingpm = false
+cbringing = false
+remotes = true
+added = true
+binds = false
+stopsitting = false
+clickgoto = false
+gettingtools = false
+removingmeshhats = false
+removingmeshtool = false
+clickdel = false
+staring = false
+chatlogs = false
+banpl = false
+changingstate = false
+statechosen = 0
+adminversion = "Reviz Admin by illremember, Version 2.0"
+flying = false
+speedfly = 1
+aK =
+    hookfunction(
+    wait,
+    function(self, ...)
+        if aL == true then
+            if getcallingscript().Name == "MouseIcon" and not checkcaller() then
+                return aK()
+            end
+        end
+        return aK(self, ...)
+    end
+)
+randonum = 0
+game:GetService("RunService").Stepped:connect(
+    function()
+        pcall(
+            function()
+                if game.Players.LocalPlayer.Character.Humanoid:FindFirstChild("creator") then
+                    aM = tostring(game.Players.LocalPlayer.Character.Humanoid.creator.Value)
+                elseif not game.Players.LocalPlayer.Character.Humanoid:FindFirstChild("creator") then
+                    aM = nil
+                end
+            end
+        )
+    end
+)
+lplayer = game:GetService("Players").LocalPlayer
+lplayer.CharacterAdded:Connect(
+    function(aY)
+        if aM ~= nil then
+            game:GetService("StarterGui"):SetCore("SendNotification", {Title = aM, Text = "killed you"})
+        end
+    end
+)
+game:GetService("RunService").Stepped:connect(
+    function()
+        if aI == true then
+            local b2 = game.Players.LocalPlayer
+            local b3 = game.Players:GetChildren()
+            for i = 1, #b3 do
+                local aR = b3[i]
+                pcall(
+                    function()
+                        if b2:DistanceFromCharacter(aR.Character.HumanoidRootPart.Position) < tonumber(aJ) then
+                            if aR.Name ~= game.Players.LocalPlayer.Name then
+                                game.ReplicatedStorage.Remotes.Human_Punch:FireServer(
+                                    game.Players.LocalPlayer.Character.RightHand,
+                                    "RightPunch",
+                                    workspace[aR.Name].UpperTorso,
+                                    5,
+                                    true,
+                                    "RightPunch",
+                                    game.Players.LocalPlayer.Backpack.Boxing.Handle.Hit,
+                                    5
+                                )
+                            end
+                        end
+                    end
+                )
+            end
+        end
+    end
+)
+function plrchat(plr, b4)
+    print(plr.Name .. ": " .. tick() .. "\n" .. b4)
+end
+for i, aR in pairs(game:GetService("Players"):GetPlayers()) do
+    aR.Chatted:connect(
+        function(b4)
+            if chatlogs then
+                plrchat(aR, b4)
+            end
+        end
+    )
+end
+game:GetService("Players").PlayerAdded:connect(
+    function(plr)
+        plr.Chatted:connect(
+            function(b4)
+                if chatlogs then
+                    plrchat(plr, b4)
+                end
+            end
+        )
+    end
+)
+game:GetService("RunService").Stepped:connect(
+    function()
+        if aG == true then
+            if lplayer.Character then
+                lplayer.Character:WaitForChild("Humanoid")
+                lplayer.Character.Humanoid.Name = "1"
+                local l = lplayer.Character["1"]:Clone()
+                l.Parent = lplayer.Character
+                l.Name = "Humanoid"
+                wait(1)
+                lplayer.Character["1"]:Destroy()
+                lplayer.Character.Humanoid.DisplayDistanceType = "None"
+                lplayer.CharacterAdded:Wait()
+            end
+        end
+    end
+)
+game:GetService("RunService").Stepped:connect(
+    function()
+        if spin then
+            lplayer.Character.HumanoidRootPart.CFrame =
+                game:GetService("Players")[spinplr.Name].Character.HumanoidRootPart.CFrame
+        end
+        if followed then
+            lplayer.Character.HumanoidRootPart.CFrame =
+                game:GetService("Players")[flwplr.Name].Character.HumanoidRootPart.CFrame +
+                game:GetService("Players")[flwplr.Name].Character.HumanoidRootPart.CFrame.lookVector * -5
+        end
+        if traill then
+            lplayer.Character.HumanoidRootPart.CFrame =
+                game:GetService("Players")[trlplr.Name].Character.HumanoidRootPart.CFrame +
+                game:GetService("Players")[trlplr.Name].Character.HumanoidRootPart.CFrame.lookVector * 5
+        end
+        if annoying then
+            lplayer.Character.HumanoidRootPart.CFrame =
+                game:GetService("Players")[annplr.Name].Character.HumanoidRootPart.CFrame
+        end
+        if hwalk then
+            lplayer.Character.HumanoidRootPart.CFrame =
+                game:GetService("Players")[hdwplr.Name].Character.HumanoidRootPart.CFrame + Vector3.new(0, 4, 0)
+        end
+        if staring then
+            lplayer.Character.HumanoidRootPart.CFrame =
+                CFrame.new(
+                lplayer.Character.Torso.Position,
+                game:GetService("Players")[stareplr.Name].Character.Torso.Position
+            )
+        end
+    end
+)
+game:GetService("RunService").Stepped:connect(
+    function()
+        if noclip then
+            if lplayer.Character.Humanoid.RigType == Enum.HumanoidRigType.R6 then
+                lplayer.Character.Head.CanCollide = false
+                lplayer.Character.Torso.CanCollide = false
+                lplayer.Character["Left Leg"].CanCollide = false
+                lplayer.Character["Right Leg"].CanCollide = false
+            else
+                lplayer.Character.Humanoid:ChangeState(11)
+            end
+        end
+        if changingstate then
+            lplayer.Character.Humanoid:ChangeState(statechosen)
+        end
+    end
+)
+game:GetService("RunService").Stepped:connect(
+    function()
+        if droppinghats then
+            for i, aR in pairs(lplayer.Character:GetChildren()) do
+                if aR:IsA("Accessory") or aR:IsA("Hat") then
+                    aR.Parent = workspace
+                end
+            end
+        end
+        if droppingtools then
+            for i, aR in pairs(lplayer.Character:GetChildren()) do
+                if aR:IsA("Tool") then
+                    aR.Parent = workspace
+                end
+            end
+        end
+        if removingmeshhats then
+            for i, aR in pairs(lplayer.Character:GetChildren()) do
+                if aR:IsA("Accessory") or aR:IsA("Hat") then
+                    aR.Handle.Mesh:Destroy()
+                end
+            end
+        end
+        if removingmeshtool then
+            for i, aR in pairs(lplayer.Character:GetChildren()) do
+                if aR:IsA("Tool") then
+                    aR.Handle.Mesh:Destroy()
+                end
+            end
+        end
+    end
+)
+game:GetService("RunService").Stepped:connect(
+    function()
+        if banpl then
+            lplayer.Character.HumanoidRootPart.CFrame =
+                game:GetService("Players")[bplrr].Character.HumanoidRootPart.CFrame
+        end
+    end
+)
+game:GetService("RunService").Stepped:connect(
+    function()
+        if stopsitting then
+            lplayer.Character.Humanoid.Sit = false
+        end
+    end
+)
+plr = lplayer
+hum = plr.Character.HumanoidRootPart
+mouse = plr:GetMouse()
+mouse.KeyDown:connect(
+    function(b5)
+        if b5 == "e" then
+            if mouse.Target then
+                if clickgoto then
+                    hum.CFrame = CFrame.new(mouse.Hit.x, mouse.Hit.y + 5, mouse.Hit.z)
+                elseif clickdel then
+                    mouse.Target:Destroy()
+                end
+            end
+        end
+    end
+)
+game:GetService("Workspace").ChildAdded:connect(
+    function(b6)
+        if gettingtools then
+            if b6:IsA("Tool") then
+                b6.Handle.CFrame = lplayer.Character.HumanoidRootPart.CFrame
+            end
+        end
+    end
+)
+local function b7()
+    for i, b2 in ipairs(game:GetService("Players"):GetPlayers()) do
+        if b2.Character and b2.Character:FindFirstChild("HumanoidRootPart") then
+            if b2.Name == brplr then
+                b2.Character.HumanoidRootPart.CFrame =
+                    lplayer.Character.HumanoidRootPart.CFrame + lplayer.Character.HumanoidRootPart.CFrame.lookVector * 2
+            end
+        end
+    end
+end
+local function b8()
+    for i, b2 in ipairs(game:GetService("Players"):GetPlayers()) do
+        if b2.Character and b2.Character:FindFirstChild("HumanoidRootPart") then
+            b2.Character.HumanoidRootPart.CFrame =
+                lplayer.Character.HumanoidRootPart.CFrame + lplayer.Character.HumanoidRootPart.CFrame.lookVector * 3
+        end
+    end
+end
+spawn(
+    function()
+        while wait(spamdelay) do
+            if spamming == true then
+                game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(
+                    spamtext,
+                    "All"
+                )
+            end
+        end
+    end
+)
+spawn(
+    function()
+        while wait(spamdelay) do
+            if spammingpm == true then
+                game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(
+                    "/w " ..
+                        pmspammed ..
+                            " @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+                    "All"
+                )
+            end
+        end
+    end
+)
+spawn(
+    function()
+        while wait() do
+            if cbring == true then
+                b7()
+            end
+        end
+    end
+)
+spawn(
+    function()
+        while wait() do
+            if cbringall == true then
+                b8()
+            end
+        end
+    end
+)
+b1.KeyDown:connect(
+    function(b9)
+        if b9 == prefix then
+            t:CaptureFocus()
+        end
+    end
+)
+t.FocusLost:connect(
+    function()
+        if t.Text == "list" then
+            t.PlaceholderText = "type x to close list"
+            u.Visible = true
+        end
+        if t.Text == "x" then
+            t.PlaceholderText = ""
+            u.Visible = false
+        end
+        if t.Text == "equip" then
+            game:GetService("StarterGui"):SetCore("SendNotification", {Title = "equip", Text = "Activated"})
+            aE = true
+            G.TextStrokeColor3 = C
+            if E.TextStrokeColor3 == B then
+                game:GetService("StarterGui"):SetCore(
+                    "SendNotification",
+                    {Title = "select your Weight", Text = "type Double Weight or Dumbell"}
+                )
+            else
+            end
+            while aE == true do
+                wait()
+                for i, aR in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+                    if aR.Name == E.Text then
+                        aR.Parent = game.Players.LocalPlayer.Character
+                    end
+                end
+            end
+            local ba = tonumber(a0.Text)
+            local bb = tonumber(.0006 * ba)
+            a6.Text = bb
+        end
+        if t.Text == "fast punch" then
+            aL = true
+            aa.TextStrokeColor3 = C
+            game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Fast Punch", Text = "Activated"})
+        end
+        if t.Text == "unfast punch" then
+            aL = false
+            aa.TextStrokeColor3 = B
+            game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Fast Punch", Text = "Deactivated"})
+        end
+        if string.sub(t.Text, 1, 5) == "aura " then
+            aI = true
+            aJ = string.sub(t.Text, 6)
+            game:GetService("StarterGui"):SetCore(
+                "SendNotification",
+                {Title = "Kill Aura On", Text = "Distance: " .. aJ}
+            )
+        end
+        if t.Text == "unaura" then
+            aI = false
+            game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Kill Aura Off", Text = ""})
+        end
+        if t.Text == "unequip" then
+            t.Text = ""
+            game:GetService("StarterGui"):SetCore("SendNotification", {Title = "equip", Text = "deactivated"})
+            aE = false
+            G.TextStrokeColor3 = Color3.fromRGB(255, 0, 0)
+        end
+        if t.Text == "farm" then
+            if E.TextStrokeColor3 == B then
+                game:GetService("StarterGui"):SetCore(
+                    "SendNotification",
+                    {Title = "select your Weight and equip", Text = "type Double Weight or Dumbell"}
+                )
+            else
+            end
+            t.Text = ""
+            game:GetService("StarterGui"):SetCore("SendNotification", {Title = "farm", Text = "activated"})
+            aD = true
+            F.TextStrokeColor3 = C
+            while aD do
+                local bc = tonumber(a6.Text)
+                wait(bc)
+                for i, aR in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+                    if aR.Name == E.Text then
+                        aR:Activate()
+                    end
+                end
+            end
+        end
+        if t.Text == "unfarm" then
+            game:GetService("StarterGui"):SetCore("SendNotification", {Title = "farm", Text = "deactivated"})
+            aD = false
+            F.TextStrokeColor3 = B
+        end
+        if t.Text == "Double Weight" or t.Text == "fast setup" then
+            E.TextStrokeColor3 = C
+            E.Text = "Double Weight"
+            if t.Text == "Double Weight" then
+                game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Double Weight", Text = "selected"})
+            end
+        end
+        if t.Text == "Dumbell" then
+            game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Dumbell", Text = "selected"})
+            E.TextStrokeColor3 = C
+            E.Text = "Dumbell"
+        end
+        if t.Text == "del camera" then
+            game:GetService("Workspace").Camera:Destroy()
+            J.TextStrokeColor3 = C
+            game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Camera", Text = "Deleted"})
+        end
+        if t.Text == "del clouds" or t.Text == "fast setup" then
+            game:GetService("Workspace").Clouds:Destroy()
+            K.TextStrokeColor3 = C
+            if t.Text == "del clouds" then
+                game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Clouds", Text = "Deleted"})
+            end
+        end
+        if t.Text == "del fog" or t.Text == "fast setup" then
+            game:GetService("Lighting").FogEnd = 8999999488
+            L.TextStrokeColor3 = C
+            if t.Text == "del fog" then
+                game:GetService("StarterGui"):SetCore("SendNotification", {Title = "Fog", Text = "Deleted"})
+            end
+        end
+        if t.Text == "fps" or t.Text == "fast setup" then
+            M.TextStrokeColor3 = C
+            local bd = true
+            local g = game
+            local be = g.Workspace
+            local l = g.Lighting
+            local bf = be.Terrain
+            bf.WaterWaveSize = 0
+            bf.WaterWaveSpeed = 0
+            bf.WaterReflectance = 0
+            bf.WaterTransparency = 0
+            l.GlobalShadows = false
+            l.FogEnd = 9e9
+            l.Brightness = 0
+            settings().Rendering.QualityLevel = "Level01"
+            for i, aR in pairs(g:GetDescendants()) do
+                if
+                    aR:IsA("Part") or aR:IsA("Union") or aR:IsA("MeshPart") or aR:IsA("CornerWedgePart") or
+                        aR:IsA("TrussPart")
+                 then
+                    aR.Material = "Plastic"
+                    aR.Reflectance = 0
+                elseif aR:IsA("Decal") and bd then
+                    aR.Transparency = 1
+                elseif aR:IsA("ParticleEmitter") or aR:IsA("Trail") then
+                    aR.Lifetime = NumberRange.new(0)
+                elseif aR:IsA("Explosion") then
+                    aR.BlastPressure = 1
+                    aR.BlastRadius = 1
+                end
+            end
+            for i, e in pairs(l:GetChildren()) do
+                if
+                    e:IsA("BlurEffect") or e:IsA("SunRaysEffect") or e:IsA("ColorCorrectionEffect") or
+                        e:IsA("BloomEffect") or
+                        e:IsA("DepthOfFieldEffect")
+                 then
+                    e.Enabled = false
+                end
+            end
+            if t.Text == "fps" then
+                game:GetService("StarterGui"):SetCore("SendNotification", {Title = "fps", Text = "reduced"})
+            end
+        end
+        if t.Text == "stats" then
+            A = true
+            Z.TextColor3 = C
+            game:GetService("StarterGui"):SetCore("SendNotification", {Title = "ALL STATS ", Text = "ENABLED"})
+        end
+        if t.Text == "unstats" then
+            A = false
+            Z.TextColor3 = B
+            game:GetService("StarterGui"):SetCore("SendNotification", {Title = "ALL STATS ", Text = "DISABLED"})
+        end
+        if t.Text == "del hud" or t.Text == "fast setup" then
+            game:GetService("Players").LocalPlayer.PlayerGui.HUD:Destroy()
+            N.TextStrokeColor3 = C
+            if t.Text == "del hud" then
+                game:GetService("StarterGui"):SetCore("SendNotification", {Title = "hud", Text = "deleted"})
+            end
+        end
+        if t.Text == "del rumble" or t.Text == "fast setup" then
+            game:GetService("ReplicatedFirst").TourneyQ:Destroy()
+            O.TextStrokeColor3 = C
+            if t.Text == "del rumble" then
+                game:GetService("StarterGui"):SetCore("SendNotification", {Title = "rumble", Text = "deleted"})
+            end
+        end
+        if t.Text == "del sky" or t.Text == "fast setup" then
+            game:GetService("Lighting").NormalSky:Destroy()
+            P.TextStrokeColor3 = C
+            if t.Text == "del sky" then
+                game:GetService("StarterGui"):SetCore("SendNotification", {Title = "sky", Text = "deleted"})
+            end
+        end
+        if t.Text == "del chat" or t.Text == "fast setup" then
+            for i, aR in pairs(game.Chat:GetChildren()) do
+                aR:Destroy()
+                X.TextStrokeColor3 = C
+                if t.Text == "del chat" then
+                    game:GetService("StarterGui"):SetCore("SendNotification", {Title = "chat", Text = "deleted"})
+                end
+            end
+        end
+        if t.Text == "del playergui" or t.Text == "fast setup" then
+            game.Players.LocalPlayer.PlayerGui:Destroy()
+            Y.TextStrokeColor3 = C
+            if t.Text == "del playergui" then
+                game:GetService("StarterGui"):SetCore("SendNotification", {Title = "playergui", Text = "deleted"})
+            end
+        end
+        if t.Text == "del playerscript" or t.Text == "fast setup" then
+            Q.TextStrokeColor3 = C
+            for i, aR in pairs(plr.PlayerScripts:GetChildren()) do
+                aR:Destroy()
+            end
+            if t.Text == "del playerscript" then
+                game:GetService("StarterGui"):SetCore("SendNotification", {Title = "playerscript", Text = "deleted"})
+            end
+        end
+        if t.Text == "del workspace" or t.Text == "fast setup" then
+            R.TextStrokeColor3 = C
+            for i, aR in pairs(game:GetService("Workspace"):GetChildren()) do
+                if aR.ClassName == "Model" or "Part" then
+                    if
+                        aR.Name ~= game.Players.LocalPlayer.Name and aR.Name ~= "Terrain" and aR.Name ~= "Baseplate" and
+                            aR.Name ~= "Camera"
+                     then
+                        aR:Destroy()
+                    end
+                end
+            end
+            if t.Text == "del workspace" then
+                game:GetService("StarterGui"):SetCore("SendNotification", {Title = "workspace", Text = "deleted"})
+            end
+        end
+        if t.Text == "del replicated" or t.Text == "fast setup" then
+            S.TextStrokeColor3 = C
+            for i, aR in pairs(game:GetService("ReplicatedStorage"):GetChildren()) do
+                if aR.Name ~= "Data" then
+                    aR:Destroy()
+                end
+            end
+            if t.Text == "del replicated" then
+                game:GetService("StarterGui"):SetCore(
+                    "SendNotification",
+                    {Title = "replicated storage", Text = "deleted"}
+                )
+            end
+        end
+        if t.Text == "del corepackage" or t.Text == "fast setup" then
+            T.TextStrokeColor3 = C
+            for i, aR in pairs(game:GetService("CorePackages"):GetChildren()) do
+                aR:Destroy()
+            end
+            if t.Text == "del corepackage" then
+                game:GetService("StarterGui"):SetCore("SendNotification", {Title = "corepackages", Text = "deleted"})
+            end
+        end
+        if t.Text == "del water" or t.Text == "fast setup" then
+            U.TextStrokeColor3 = C
+            for i, aR in pairs(game:GetService("Workspace").Camera:GetChildren()) do
+                if aR.Name == "Water;" then
+                    aR:Destroy()
+                end
+            end
+            if t.Text == "del water" then
+                game:GetService("StarterGui"):SetCore("SendNotification", {Title = "water", Text = "deleted"})
+            end
+        end
+        if t.Text == "del coregui" or t.Text == "fast setup" then
+            V.TextStrokeColor3 = C
+            for i, aR in pairs(game:GetService("CoreGui"):GetChildren()) do
+                if aR.Name ~= "ScreenGui" then
+                    aR:Destroy()
+                end
+            end
+            if t.Text == "del coregui" then
+                game:GetService("StarterGui"):SetCore("SendNotification", {Title = "coregui", Text = "deleted"})
+            end
+        end
+        if t.Text == "del lighting" or t.Text == "fast setup" then
+            W.TextStrokeColor3 = C
+            for i, aR in pairs(game:GetService("Lighting"):GetChildren()) do
+                aR:Destroy()
+            end
+            if t.Text == "del lighting" then
+                game:GetService("StarterGui"):SetCore("SendNotification", {Title = "lighting", Text = "deleted"})
+            end
+        end
+        if t.Text == "tp sz" then
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1837.48, 155.321, -5427.79)
+            ae.TextStrokeColor3 = C
+        end
+        if t.Text == "tp high" then
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
+                game.Workspace.Terrain.CFrame + Vector3.new(0, 1000, 0)
+            baseplatee = Instance.new("Part", workspace)
+            baseplatee.Size = Vector3.new(1000, 1, 1000)
+            baseplatee.CFrame =
+                game.workspace[game.Players.LocalPlayer.Name].HumanoidRootPart.CFrame + Vector3.new(0, -4, 0)
+            baseplatee.Anchored = true
+            baseplatee.Transparency = 0.900
+            ag.TextStrokeColor3 = C
+        end
+        if t.Text == "tp high af" then
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame =
+                game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + Vector3.new(0, 50000, 0)
+            baseplatee = Instance.new("Part", workspace)
+            baseplatee.Size = Vector3.new(1000, 1, 1000)
+            baseplatee.CFrame =
+                game.workspace[game.Players.LocalPlayer.Name].HumanoidRootPart.CFrame + Vector3.new(0, -4, 0)
+            baseplatee.Anchored = true
+            baseplatee.Transparency = 0.900
+        end
+        if t.Text == "fast setup" then
+            game:GetService("StarterGui"):SetCore("SendNotification", {Title = "All lag reducers", Text = "enabled"})
+            I.TextColor3 = C
+        end
+        if string.sub(t.Text, 1, 5) == "kill " then
+            if string.sub(t.Text, 6) == "me" then
+                lplayer.Character.HumanoidRootPart.CFrame = CFrame.new(100000, 0, 100000)
+            else
+                for i, aR in pairs(GetPlayer(string.sub(t.Text, 6))) do
+                    local bg = lplayer.Character.HumanoidRootPart.CFrame
+                    lplayer.Character.Humanoid.Name = 1
+                    local l = lplayer.Character["1"]:Clone()
+                    l.Parent = lplayer.Character
+                    l.Name = "Humanoid"
+                    wait(0.1)
+                    lplayer.Character["1"]:Destroy()
+                    game:GetService("Workspace").CurrentCamera.CameraSubject = lplayer.Character
+                    lplayer.Character.Animate.Disabled = true
+                    wait(0.1)
+                    lplayer.Character.Animate.Disabled = false
+                    lplayer.Character.Humanoid.DisplayDistanceType = "None"
+                    for i, aR in pairs(game:GetService "Players".LocalPlayer.Backpack:GetChildren()) do
+                        if aR.Name == "Double Weight" then
+                            lplayer.Character:EquipTool(aR)
+                        end
+                        local function b7(b2, bh)
+                            local bi, bj = b2.Character, bh.Character
+                            if bi and bj then
+                                bi:MoveTo(bj.Head.Position)
+                            end
+                        end
+                        wait(0.1)
+                        lplayer.Character.HumanoidRootPart.CFrame =
+                            game:GetService("Players")[aR.Name].Character.HumanoidRootPart.CFrame
+                        wait(0.2)
+                        lplayer.Character.HumanoidRootPart.CFrame =
+                            game:GetService("Players")[aR.Name].Character.HumanoidRootPart.CFrame
+                        wait(0.5)
+                        lplayer.Character.HumanoidRootPart.CFrame = CFrame.new(Vector3.new(-100000, 10, -100000))
+                        wait(0.7)
+                        b7(lplayer, game:GetService("Players")[aR.Name])
+                        wait(0.7)
+                        lplayer.Character.HumanoidRootPart.CFrame = bg
+                        game:GetService("StarterGui"):SetCore(
+                            "SendNotification",
+                            {Title = "Tools needed!", Text = "You need a tool in your backpack for this command!"}
+                        )
+                    end
+                end
+            end
+        end
+        if string.sub(t.Text, 1, 6) == "bring " then
+            ah.TextStrokeColor3 = C
+            for i, aR in pairs(GetPlayer(string.sub(t.Text, 7))) do
+                local bg = lplayer.Character.HumanoidRootPart.CFrame
+                lplayer.Character.Humanoid.Name = 1
+                local l = lplayer.Character["1"]:Clone()
+                l.Parent = lplayer.Character
+                l.Name = "Humanoid"
+                wait(0.1)
+                lplayer.Character["1"]:Destroy()
+                game:GetService("Workspace").CurrentCamera.CameraSubject = lplayer.Character
+                lplayer.Character.Animate.Disabled = true
+                wait(0.1)
+                lplayer.Character.Animate.Disabled = false
+                lplayer.Character.Humanoid.DisplayDistanceType = "None"
+                for i, aR in pairs(game:GetService "Players".LocalPlayer.Backpack:GetChildren()) do
+                    lplayer.Character.Humanoid:EquipTool(aR)
+                end
+                local function b7(b2, bh)
+                    local bi, bj = b2.Character, bh.Character
+                    if bi and bj then
+                        bi.HumanoidRootPart.CFrame = bj.HumanoidRootPart.CFrame
+                    end
+                end
+                local function bk(b2, bh)
+                    local bi, bj = b2.Character, bh.Character
+                    if bi and bj then
+                        bi:MoveTo(bj.Head.Position)
+                    end
+                end
+                b7(game:GetService("Players")[aR.Name], lplayer)
+                wait(0.2)
+                b7(game:GetService("Players")[aR.Name], lplayer)
+                wait(0.5)
+                lplayer.Character.HumanoidRootPart.CFrame = bg
+                wait(0.5)
+                bk(lplayer, game:GetService("Players")[aR.Name])
+                wait(0.3)
+                lplayer.Character.HumanoidRootPart.CFrame = bg
+                game:GetService("StarterGui"):SetCore(
+                    "SendNotification",
+                    {Title = "Tools needed!", Text = "You need a tool in your backpack for this command!"}
+                )
+            end
+        end
+        if string.sub(t.Text, 1, 7) == "follow " then
+            ak.TextStrokeColor3 = C
+            for i, aR in pairs(GetPlayer(string.sub(t.Text, 8))) do
+                followed = true
+                flwplr = aR
+            end
+        end
+        if string.sub(t.Text, 1, 8) == "unfollow" then
+            ak.TextStrokeColor3 = B
+            followed = false
+        end
+        if string.sub(t.Text, 1, 6) == "trail " then
+            al.TextStrokeColor3 = C
+            for i, aR in pairs(GetPlayer(string.sub(t.Text, 7))) do
+                traill = true
+                trlplr = aR
+            end
+        end
+        if string.sub(t.Text, 1, 7) == "untrail" then
+            al.TextStrokeColor3 = B
+            traill = false
+        end
+        if string.sub(t.Text, 1, 6) == "orbit " then
+            am.TextStrokeColor3 = C
+            if string.sub(t.Text, 7) == "all" or string.sub(t.Text, 7) == "others" or string.sub(t.Text, 7) == "me" then
+                lplayer.Character.HumanoidRootPart.CFrame = lplayer.Character.HumanoidRootPart.CFrame
+            else
+                for i, aR in pairs(GetPlayer(string.sub(t.Text, 7))) do
+                    local bl = Instance.new("RocketPropulsion")
+                    bl.Parent = lplayer.Character.HumanoidRootPart
+                    bl.Name = "Orbit"
+                    bl.Target = game:GetService("Players")[aR.Name].Character.HumanoidRootPart
+                    bl:Fire()
+                    noclip = true
+                end
+            end
+        end
+        if string.sub(t.Text, 1, 7) == "unorbit" then
+            am.TextStrokeColor3 = B
+            lplayer.Character.HumanoidRootPart.Orbit:Destroy()
+            noclip = false
+        end
+        if string.sub(t.Text, 1, 6) == "noclip" then
+            an.TextStrokeColor3 = C
+            noclip = true
+            game:GetService("StarterGui"):SetCore(
+                "SendNotification",
+                {Title = "Noclip enabled", Text = "Type ;clip to disable"}
+            )
+        end
+        if string.sub(t.Text, 1, 4) == "clip" then
+            ao.TextStrokeColor3 = C
+            noclip = false
+            game:GetService("StarterGui"):SetCore(
+                "SendNotification",
+                {Title = "Noclip disabled", Text = "Type ;noclip to enable"}
+            )
+        end
+        if string.sub(t.Text, 1, 10) == "walkspeed " then
+            ap.TextStrokeColor3 = C
+            ap.Text = t.Text
+            local aK
+            local b2 = game.Players.LocalPlayer
+            aK =
+                hookmetamethod(
+                lplayer.Character,
+                "__index",
+                function(self, ...)
+                    if tostring(self) == "Humanoid" and tostring(...) == "WalkSpeed" then
+                        return
+                    end
+                    return aK(self, ...)
+                end
+            )
+            lplayer.Character.Humanoid.WalkSpeed = string.sub(t.Text, 10)
+        end
+        if string.sub(t.Text, 1, 3) == "ws " then
+            ap.TextStrokeColor3 = C
+            lplayer.Character.Humanoid.WalkSpeed = string.sub(t.Text, 4)
+        end
+        if string.sub(t.Text, 1, 5) == "jump " then
+            aq.TextStrokeColor3 = C
+            aq.Text = t.Text
+            lplayer.Character.Humanoid.JumpPower = string.sub(t.Text, 6)
+        end
+        if string.sub(t.Text, 1, 3) == "jp " then
+            aq.TextStrokeColor3 = C
+            lplayer.Character.Humanoid.JumpPower = string.sub(t.Text, 4)
+        end
+        if string.sub(t.Text, 1, 6) == "annoy " then
+            ar.TextStrokeColor3 = C
+            for i, aR in pairs(GetPlayer(string.sub(t.Text, 7))) do
+                annoying = true
+                annplr = aR
+            end
+        end
+        if string.sub(t.Text, 1, 7) == "unannoy" then
+            ar.TextStrokeColor3 = B
+            annoying = false
+        end
+        if string.sub(t.Text, 1, 9) == "headwalk " then
+            as.TextStrokeColor3 = C
+            for i, aR in pairs(GetPlayer(string.sub(t.Text, 10))) do
+                hwalk = true
+                hdwplr = aR
+            end
+        end
+        if string.sub(t.Text, 1, 10) == "unheadwalk" then
+            as.TextStrokeColor3 = C
+            hwalk = false
+        end
+        if t.Text == "god" then
+            at.TextStrokeColor3 = C
+            aG = true
+            game:GetService("StarterGui"):SetCore("SendNotification", {Title = "God Enabled", Text = "ungod to stop"})
+        end
+        if t.Text == "ungod" then
+            at.TextStrokeColor3 = B
+            game:GetService("StarterGui"):SetCore("SendNotification", {Title = "god", Text = "Disabled"})
+            aG = false
+        end
+        if t.Text == "strongest player" then
+            strength = {}
+            for i, aR in pairs(game.ReplicatedStorage.Data:GetChildren()) do
+                table.insert(strength, aR.Strength.Value)
+                table.sort(strength)
+            end
+            higheststrength = strength[table.getn(strength)]
+            spawn(
+                function()
+                    for i, aR in pairs(game.ReplicatedStorage.Data:GetDescendants()) do
+                        if string.find(aR.Name, "Strength") and aR.Value == higheststrength then
+                            plr = game.Players.LocalPlayer.Name
+                            number = higheststrength
+                            local bm = {K = 4, M = 7, B = 10}
+                            local bn = tostring(math.floor(number))
+                            local bo
+                            for bp, bq in pairs(bm) do
+                                if #bn >= bq and #bn < bq + 3 then
+                                    bo = bp
+                                    break
+                                end
+                            end
+                            if bo then
+                                local bq = bm[bo]
+                                local br = math.floor(number / 10 ^ (bq - 2)) * 10 ^ (bq - 2)
+                                bn = string.format("%.1f", br / 10 ^ (bq - 1)) .. bo
+                            else
+                                bn = number
+                            end
+                            game:GetService("StarterGui"):SetCore(
+                                "SendNotification",
+                                {Title = "\nStrongest Player\n " .. aR.Parent.Name .. "\n" .. bn, Text = ""}
+                            )
+                        end
+                    end
+                end
+            )
+        end
+        if string.sub(t.Text, 1, 9) == "invisible" then
+            au.TextStrokeColor3 = C
+            Local = game:GetService("Players").LocalPlayer
+            Char = Local.Character
+            touched, tpdback = false, false
+            box = Instance.new("Part", workspace)
+            box.Anchored = true
+            box.CanCollide = true
+            box.Size = Vector3.new(10, 1, 10)
+            box.Position = Vector3.new(0, 10000, 0)
+            box.Touched:connect(
+                function(b6)
+                    if b6.Parent.Name == Local.Name then
+                        if touched == false then
+                            touched = true
+                            function apply()
+                                if aN.Disabled ~= true then
+                                    no = Char.HumanoidRootPart:Clone()
+                                    wait(.25)
+                                    Char.HumanoidRootPart:Destroy()
+                                    no.Parent = Char
+                                    Char:MoveTo(loc)
+                                    touched = false
+                                end
+                            end
+                            if Char then
+                                apply()
+                            end
+                        end
+                    end
+                end
+            )
+            repeat
+                wait()
+            until Char
+            loc = Char.HumanoidRootPart.Position
+            Char:MoveTo(box.Position + Vector3.new(0, .5, 0))
+            game:GetService("StarterGui"):SetCore(
+                "SendNotification",
+                {Title = "Invisibility enabled!", Text = "Reset or use ;respawn to remove."}
+            )
+        end
+        if string.sub(t.Text, 1, 5) == "view " then
+            av.TextStrokeColor3 = C
+            for i, aR in pairs(GetPlayer(string.sub(t.Text, 6))) do
+                if game:GetService("Players")[aR.Name].Character.Humanoid then
+                    game:GetService("Workspace").CurrentCamera.CameraSubject =
+                        game:GetService("Players")[aR.Name].Character.Humanoid
+                else
+                    game:GetService("Workspace").CurrentCamera.CameraSubject =
+                        game:GetService("Players")[aR.Name].Character.Head
+                end
+            end
+        end
+        if string.sub(t.Text, 1, 6) == "unview" then
+            av.TextStrokeColor3 = B
+            if lplayer.Character.Humanoid then
+                game:GetService("Workspace").CurrentCamera.CameraSubject = lplayer.Character.Humanoid
+            else
+                game:GetService("Workspace").CurrentCamera.CameraSubject = lplayer.Character.Head
+            end
+        end
+        if string.sub(t.Text, 1, 5) == "goto " then
+            aw.TextStrokeColor3 = C
+            for i, aR in pairs(GetPlayer(string.sub(t.Text, 6))) do
+                lplayer.Character.HumanoidRootPart.CFrame =
+                    game:GetService("Players")[aR.Name].Character.HumanoidRootPart.CFrame
+            end
+        end
+        if string.sub(t.Text, 1, 3) == "fly" then
+            ax.TextStrokeColor3 = C
+            repeat
+                wait()
+            until lplayer and lplayer.Character and lplayer.Character:FindFirstChild("HumanoidRootPart") and
+                lplayer.Character:FindFirstChild("Humanoid")
+            repeat
+                wait()
+            until b1
+            local bs = lplayer.Character.HumanoidRootPart
+            local bt = {F = 0, B = 0, L = 0, R = 0}
+            local bu = {F = 0, B = 0, L = 0, R = 0}
+            local bv = speedget
+            local function bw()
+                flying = true
+                local bx = Instance.new("BodyGyro", bs)
+                local by = Instance.new("BodyVelocity", bs)
+                bx.P = 9e4
+                bx.maxTorque = Vector3.new(9e9, 9e9, 9e9)
+                bx.cframe = bs.CFrame
+                by.velocity = Vector3.new(0, 0.1, 0)
+                by.maxForce = Vector3.new(9e9, 9e9, 9e9)
+                spawn(
+                    function()
+                        repeat
+                            wait()
+                            lplayer.Character.Humanoid.PlatformStand = true
+                            if bt.L + bt.R ~= 0 or bt.F + bt.B ~= 0 then
+                                bv = 50
+                            elseif not (bt.L + bt.R ~= 0 or bt.F + bt.B ~= 0) and bv ~= 0 then
+                                bv = 0
+                            end
+                            if bt.L + bt.R ~= 0 or bt.F + bt.B ~= 0 then
+                                by.velocity =
+                                    (workspace.CurrentCamera.CoordinateFrame.lookVector * (bt.F + bt.B) +
+                                    workspace.CurrentCamera.CoordinateFrame *
+                                        CFrame.new(bt.L + bt.R, (bt.F + bt.B) * 0.2, 0).p -
+                                    workspace.CurrentCamera.CoordinateFrame.p) *
+                                    bv
+                                bu = {F = bt.F, B = bt.B, L = bt.L, R = bt.R}
+                            elseif bt.L + bt.R == 0 and bt.F + bt.B == 0 and bv ~= 0 then
+                                by.velocity =
+                                    (workspace.CurrentCamera.CoordinateFrame.lookVector * (bu.F + bu.B) +
+                                    workspace.CurrentCamera.CoordinateFrame *
+                                        CFrame.new(bu.L + bu.R, (bu.F + bu.B) * 0.2, 0).p -
+                                    workspace.CurrentCamera.CoordinateFrame.p) *
+                                    bv
+                            else
+                                by.velocity = Vector3.new(0, 0.1, 0)
+                            end
+                            bx.cframe = workspace.CurrentCamera.CoordinateFrame
+                        until not flying
+                        bt = {F = 0, B = 0, L = 0, R = 0}
+                        bu = {F = 0, B = 0, L = 0, R = 0}
+                        bv = 0
+                        bx:destroy()
+                        by:destroy()
+                        lplayer.Character.Humanoid.PlatformStand = false
+                    end
+                )
+            end
+            b1.KeyDown:connect(
+                function(bz)
+                    if bz:lower() == "w" then
+                        bt.F = speedfly
+                    elseif bz:lower() == "s" then
+                        bt.B = -speedfly
+                    elseif bz:lower() == "a" then
+                        bt.L = -speedfly
+                    elseif bz:lower() == "d" then
+                        bt.R = speedfly
+                    end
+                end
+            )
+            b1.KeyUp:connect(
+                function(bz)
+                    if bz:lower() == "w" then
+                        bt.F = 0
+                    elseif bz:lower() == "s" then
+                        bt.B = 0
+                    elseif bz:lower() == "a" then
+                        bt.L = 0
+                    elseif bz:lower() == "d" then
+                        bt.R = 0
+                    end
+                end
+            )
+            bw()
+        end
+        if string.sub(t.Text, 1, 5) == "unfly" then
+            ax.TextStrokeColor3 = B
+            flying = false
+            lplayer.Character.Humanoid.PlatformStand = false
+        end
+        if string.sub(t.Text, 1, 6) == "btools" then
+            dzu.TextStrokeColor3 = C
+            local bA = Instance.new("HopperBin", lplayer.Backpack)
+            bA.BinType = "Clone"
+            local bB = Instance.new("HopperBin", lplayer.Backpack)
+            bB.BinType = "Hammer"
+            local bC = Instance.new("HopperBin", lplayer.Backpack)
+            bC.BinType = "Grab"
+        end
+        if t.Text == "small" then
+            for i, aR in pairs(game.Players.LocalPlayer.Character.Humanoid:GetChildren()) do
+                if aR:IsA("NumberValue") then
+                    aR:Destroy()
+                end
+            end
+        end
+        if string.sub(t.Text, 1, 8) == "acsmall " then
+            for i, aR in pairs(game.Players.LocalPlayer.Character.Humanoid:GetChildren()) do
+                if aR:IsA("NumberValue") then
+                    aR.Value = string.sub(t.Text, 8)
+                end
+            end
+        end
+        if string.sub(t.Text, 1, 5) == "loop " then
+            a8.TextStrokeColor3 = C
+            for i, aR in pairs(GetPlayer(string.sub(t.Text, 6))) do
+                aC = aR.Name
+                a8.Text = "looping " .. aC
+            end
+            game:GetService("StarterGui"):SetCore("SendNotification", {Title = "looping ", Text = aC})
+            repeat
+                wait()
+                game.ReplicatedStorage.Remotes.Human_Punch:FireServer(
+                    game.Workspace[game.Players.LocalPlayer.Name].LeftHand,
+                    "LeftPunch",
+                    game.Workspace[aC].Head,
+                    5,
+                    true,
+                    "RightPunch",
+                    game.Players.LocalPlayer.Backpack.Boxing.Handle.Hit,
+                    5
+                )
+            until game.Players[aC].Character.Humanoid.Health == 0
+            a8.TextStrokeColor3 = B
+            a8.Text = "loop [plr]"
+            game:GetService("StarterGui"):SetCore("SendNotification", {Title = aC .. " is dead", Text = "R.I.P"})
+        end
+        if string.sub(t.Text, 1, 6) == "tp me " then
+            az.TextStrokeColor3 = C
+            for i, aR in pairs(GetPlayer(string.sub(t.Text, 7))) do
+                lplayer.Character.HumanoidRootPart.CFrame =
+                    game:GetService("Players")[aR.Name].Character.HumanoidRootPart.CFrame
+            end
+        end
+        if t.Text == "dex" then
+            aA.TextStrokeColor3 = C
+            loadstring(game:GetObjects("rbxassetid://418957341")[1].Source)()
+            game:GetService("StarterGui"):SetCore(
+                "SendNotification",
+                {Title = "Success!", Text = "DEX Explorer has loaded."}
+            )
+        end
+        if t.Text == "undex" then
+            aA.TextStrokeColor3 = B
+            for i, aR in pairs(game.CoreGui:GetChildren()) do
+                for l, bD in pairs(aR:GetChildren()) do
+                    if bD.Name == "PropertiesFrame" then
+                        bD.parent:Destroy()
+                    end
+                end
+            end
+        end
+        if string.sub(t.Text, 1, 9) == "del" then
+            n:Destroy()
+        end
+        if string.sub(t.Text, 1, 9) == "flyspeed " then
+            speedfly = string.sub(t.Text, 10)
+            wait()
+            change()
+        end
+        t.Text = ""
+    end
+)
