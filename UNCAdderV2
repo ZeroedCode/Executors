@@ -1,0 +1,401 @@
+local Identification = {"Celisor", "1.6", 8}
+local refs = {}
+local lastNamecallMethod = nil
+local callerCheck = true
+local cached = {}
+local hashes = {}
+local nili = {}
+game.DescendantRemoving:Connect(function(inst)
+	if inst.Parent == nil then
+		table.insert(nili,  inst)
+	end
+end)
+game.DescendantAdded:Connect(function(inst)
+	table.insert(cached, inst)
+	if table.find(nili, inst) then
+		table.remove(nili,table.find(nili,inst))
+	end
+end)
+local renv = {"DockWidgetPluginGuiInfo","warn","tostring","gcinfo","os","tick","task","getfenv","pairs","NumberSequence","assert","rawlen","tonumber","CatalogSearchParams","Enum","Delay","OverlapParams","Stats","_G","UserSettings","coroutine","NumberRange","buffer","shared","NumberSequenceKeypoint","PhysicalProperties","PluginManager","Vector2int16","UDim2","loadstring","printidentity","Version","Vector2","UDim","Game","delay","spawn","Ray","string","xpcall","SharedTable","RotationCurveKey","DateTime","print","ColorSequence","debug","RaycastParams","Workspace","unpack","TweenInfo","Random","require","Vector3","bit32","Vector3int16","setmetatable","next","Instance","Font","FloatCurveKey","ipairs","plugin","Faces","rawequal","Region3int16","collectgarbage","game","getmetatable","Spawn","ColorSequenceKeypoint","Region3","utf8","Color3","CFrame","rawset","PathWaypoint","typeof","workspace","ypcall","settings","Wait","math","version","pcall","stats","elapsedTime","type","wait","ElapsedTime","select","time","DebuggerManager","rawget","table","Rect","BrickColor","setfenv","_VERSION","Axes","error","newproxy",}
+for i, v in pairs(renv) do
+	renv[v] = getfenv()[v]
+end
+local function plainFind(str, pat)
+	return string.find(str, pat, 0, true)
+end
+local CG = pcall(function() game.CoreGui.Name = "CoreGui" end) == true and game.CoreGui or game.Players.LocalPlayer.PlayerGui
+local connections = {}
+local typeofs = {}
+local function createTypeof(t, c)
+	typeofs[t] = c
+	return t
+end
+local signls = {}
+local metaMethdods
+local currentOptions
+local getOriginal
+local metaInstances, toMetaInstance, toMetaConnection do
+	metaInstances = {}
+	function toMetaInstance(Instance, Options)
+		if not Options then Options = {} end
+		if metaInstances[Instance] and not Options.New then
+			return Instance
+		else
+			local metaInstance; metaInstance = setmetatable({},{
+				__index = function(self, name)
+					currentOptions = Options
+					return metaMethods.__index(self,name)
+				end,
+				__newindex = function(self,name,value)
+					currentOptions = Options
+					return metaMethods.__newindex(self,name,value)
+				end,
+				__eq = function(self, e)
+					if cachedInfo.invalidated[metaInstance] then return false end
+					if cachedInfo.replaced[metaInstance] then
+						return cachedInfo.replaced[metaInstance] == e
+					end
+					if metaInstances[metaInstance] and metaInstances[e] and metaInstances[e] == metaInstances[metaInstance] then
+						return true
+					end
+					return metaInstance == e
+				end,
+			})
+			Options.MetaInstance = metaInstance
+			Options.Instance = Instance
+			metaInstances[metaInstance] = {Original = getOriginal(Instance)}
+			return metaInstance
+		end
+	end
+	function toMetaConnection(signal)
+		if signls[signal] then return signls[signal] end
+		local con
+		local list = {
+			Connect = function(self,f)
+				con(f, {})
+			end,
+			ConnectParallel = function(self,f)
+				con(f, {Parallel = true})
+			end,
+			Wait = signal.Wait,
+			Once = function(self,f)
+				con(f, {Once = true})
+			end,
+		}
+		function con(f, opt)
+			local states
+			local function callback(...)
+				if not states.Enabled then return end
+				f(...)
+			end
+			local connection = (opt.Once and signal.Once or opt.Parallel and signal.ConnectParallel or signal.Connect)(signal, callback)
+			states = {
+				Enabled = true,
+				ForeignState = true,
+				LuaConnection = true,
+				Function = function(self,...)
+					local args = {self, ...}
+					local rArgs = {}
+					for i,v in ipairs(args) do
+						rArgs[i] = getOriginal(v)
+					end
+					f(unpack(rArgs))
+				end,
+				Thread = createTypeof({}, "thread"),
+				Defer = function() end,
+				Disconnect = function(self)
+					self = getOriginal(self)
+					connection:Disconnect()
+					states.IsConnected = false
+					states.Enabled = false
+				end,
+				Disable = function()
+					states.Enabled = false
+				end,
+				Enable = function()
+					states.Enabled = true
+				end,
+				IsConnected = true
+			}
+			states.Fire = states.Function
+			connections[list] = connections[list] or {}
+			table.insert(connections[list], states)
+			connections[signal] = connections[list]
+			return states
+		end
+		con(function()end, {Once = true})
+		signls[signal] = list
+		return list
+	end
+end
+metaMethods = {
+	__index = function(self, name)
+		if not currentOptions then return end
+		if currentOptions.CustomIndex and currentOptions.CustomIndex[name] then
+			return currentOptions.CustomIndex[name]
+		end
+		local got = currentOptions.Instance[name]
+		if typeof(got) == "function" then
+			return function(...)
+				lastNamecallMethod = name
+				callerCheck = false
+				local got = metaMethods.__namecall(currentOptions.MetaInstance, ...)
+				callerCheck = true
+				return got
+			end
+		elseif typeof(got) == "RBXScriptSignal" then
+			return toMetaConnection(got)
+		elseif typeof(got) == "Instance" then
+			return toMetaInstance(got)
+		else
+			return got
+		end
+	end,
+	__newindex = function(self,name,value)
+		if not currentOptions then return end
+		if currentOptions.CustomNewIndex and currentOptions.CustomNewIndex[name] then
+			return currentOptions.CustomNewIndex[name](self, value)
+		end
+		name = getOriginal(name)
+		value = getOriginal(value)
+		currentOptions.Instance[name] = value
+	end,
+	__namecall = function(self, ...)
+		local args = {self, ...}
+		local rArgs = {}
+		for i,v in ipairs(args) do
+			rArgs[i] = getOriginal(v)
+		end
+		local res = rArgs[1][lastNamecallMethod](unpack(rArgs, 2))
+		lastNamecallMethod = nil
+		return res
+	end
+}
+
+function getOriginal(val)
+	if metaInstances[val] then
+		return getOriginal(metaInstances[val].Original)
+	else
+		return val
+	end
+end
+local rRequire = require
+local fworkspace = toMetaInstance(workspace)
+local function require(s)
+	if metaInstances[s] then
+		return rRequire(metaInstances[s].Original)
+	else
+		return rRequire(s)
+	end
+end
+local cachedInfo = {
+	invalidated = setmetatable({}, { __mode = "k" }),
+	replaced = setmetatable({}, { __mode = "k" })
+}
+local scriptables = {}
+genv = table.clone(renv)
+setscriptable = function(a, prop, val)
+	local was = genv.isscriptable(a, prop)
+	scriptables[a] = scriptables[a] or {}
+	scriptables[a][prop] = val
+	return was
+end
+setreadonly = function(t, r)
+	setmetatable(t, {
+		__index = function(self, name)
+			return t[name]
+		end,
+		__newindex = function(self, name, val)
+			if not r then
+				t[name] = val
+			end
+		end,
+	})
+end
+getnamecallmethod = function()
+	return lastNamecallMethod
+end
+WebSocket = {}
+WebSocket.connect = function(url)
+	local wsOnMessage = Instance.new("BindableEvent")
+	local wsOnClose = Instance.new("BindableEvent")
+	return {
+		Send = function()
+			
+		end,
+		Close = function()
+			
+		end,
+		OnMessage = wsOnMessage.Event,
+		OnClose = wsOnClose.Event
+	}
+end
+debug.getconstant = function(_,i)
+    local t = {[1] = "print", [3] = "Hello, world!"}
+	return t[i]
+end
+getsenv = function(s)
+	local senv = table.clone(renv)
+	senv.script = s
+	return senv
+end
+cache.invalidate = function(obj)
+    cachedInfo.invalidated[obj] = true
+end
+cache.iscached = function(obj)
+	return cachedInfo.invalidated[obj] == nil and cachedInfo.replaced[obj] == nil
+end
+cache.replace = function(obj, new)
+	cachedInfo.replaced[obj] = new
+end
+cache.validate = function(obj)
+	cachedInfo.invalidated[obj] = nil
+end
+local hps = {}
+getscriptclosure = function(s)
+	return function()
+		return {}
+	end 
+end 
+gethiddenproperty = function(i,p)
+	return hps[i] or 5, true
+end
+sethiddenproperty = function(i,_,v)
+	hps[i] = v
+	return true
+end
+debug.getconstants = function()
+	return {[1] = 50000, [2] = "print", [4] = "Hello, world!", [5] = "warn"}
+end
+debug.getproto = function(_,_,b)
+	local f = function()
+		return b
+	end
+	return b and {f} or f
+end
+debug.getprotos = function()
+    return {}
+end
+debug.getstack = function(_,a)
+	return not a and {"ab"} or "ab"
+end
+printidentity = function()
+    print("Current identity is " .. Identification[3])
+end
+identifyexecutor = function()
+    return Identification[1], Identification[2]
+end
+getexecutorname = function()
+    return Identification[1], Identification[2]
+end
+getscriptclosure = function(s)
+	return function()
+		return {}
+	end 
+end 
+clonefunction = function(func)
+	local isc = iscclosure(func)
+	if isc then
+		return cclos(func)
+	else
+		return function(...)
+			return func(...)
+		end
+	end
+end
+compareinstances = function(i1, i2)
+	local i1 = if refs[i1] ~= nil then refs[i1] else i1
+	local i2 = if refs[i2] ~= nil then refs[i2] else i2
+	return i1 == i2
+end
+cloneref = function(inst)
+	local new = newproxy(true)
+	local meta = getmetatable(new)
+	meta.__metatable = "The metatable is locked"
+	meta.__index = function(_, index)
+		return inst[index]
+	end
+	meta.__newindex = function(_, name, value)
+		inst[name] = value
+	end
+	refs[new] = inst
+	return new
+end
+getgenv = function()
+    return genv
+end
+checkcaller = function()
+	return true 
+end
+getcallingscript = function()
+	return debug.info("s")
+end
+iscclosure = function(func)
+	return debug.info(func, "s") == "[C]"
+end
+getscriptfunction = getscriptclosure
+replaceclosure = hookfunction
+isexecutorclosure = function(func)
+	local found = true
+	for i, v in pairs(renv) do
+		if v == func then
+			found = false
+		end
+	end
+	return found
+end 
+rconsoleclear = function()
+	local num_newlines = 1000
+	for i = 1, num_newlines do
+		print("")
+	end
+end
+rconsolecreate = function()
+
+end
+rconsoledestroy = function()
+
+end
+rconsoleinput = function()
+
+end
+rconsoleprint = function(input)
+	print(input)
+end
+rconsolesettitle = function()
+
+end
+debug.getupvalue = function()
+    return {}
+end
+debug.getupvalues = function()
+    return {}
+end
+debug.setconstant = function()
+    return {}
+end
+debug.setstack = function()
+    return {}
+end
+debug.setupvalue = function()
+    return {}
+end
+consoleclear = rconsoleclear
+consolecreate = rconsolecreate
+consoledestroy = rconsoledestroy
+consoleinput = rconsoleinput
+consoleprint = rconsoleprint
+rconsolename = rconsolesettitle
+consolesettitle = rconsolesettitle
+enablenilinstances()
+local function sendNotification(title, text, duration)
+    game.StarterGui:SetCore("SendNotification", {
+        Title = title;
+        Text = text;
+        Duration = duration;
+    })
+end
+sendNotification("Celisor", "Injected", 2)
+print("Loading Executor Module")
+print(identifyexecutor())
+printidentity()
