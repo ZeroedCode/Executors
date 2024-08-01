@@ -332,7 +332,7 @@ local HookChat = function(Bar)
                         else
 	                        endnum = 0
                         end
-                        properties.Text = "(Dertix) Amount of rools: "..endnum
+                        properties.Text = "(Dertix) Amount of tools: "..endnum
                         StarterGui:SetCore("ChatMakeSystemMessage", properties)
                     elseif Message == ";s" then
                         local Strength = game.ReplicatedStorage.Data:FindFirstChild(plr.Name).Strength
