@@ -1,0 +1,444 @@
+local plr = game.Players.LocalPlayer
+local enabled = false
+local Still = false
+local ping = 1000
+local gained = 0
+local TimeStarted = nil
+local AvgStrength = 0
+local StrengthDe = false
+local LastStrength = 0
+
+local abbreviations = {'','K','M','B','T','Qd','Qn','Sx','Sp','O','N','D','Und','DD','Td','Qtd','QnD' ,'SxD' ,'SpD' ,'OcD' ,'NoD' ,'VgN' ,'UvG' ,'DvG' ,'TvG' ,'QtV'}
+	
+local function roundNumber(Amount)
+	local Text = tostring(Amount)
+	local chosenAbbreviation
+	
+	for i = 1, #abbreviations do
+		if tonumber(Amount) < 10^(i*3) then
+			Text = math.floor(Amount/((10^((i-1)*3))/100))/(100).. abbreviations[i]
+			break
+		end
+	end
+	return Text
+end
+
+function Lift(value)
+    if value == true then
+        enabled = true
+        repeat
+            local num = 0
+            local num2 = 0
+            local endnum
+            for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+	            if v:IsA("Tool") then
+		            num += 1
+	            end
+            end
+            for _,c in pairs(plr.Character:GetChildren()) do
+	            if c:IsA("Tool") then
+		            num2 += 1
+	            end
+            end
+            if num > num2 then
+	            endnum = num
+            elseif num < num2 then
+	            endnum = num2
+            else
+	            endnum = 0
+            end
+
+            local timer = 0.0006*endnum
+
+            local value = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValue()
+
+            if tonumber(value) < tonumber(ping) then
+                for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+                    if v:IsA("Tool") then
+                        v:Activate()
+                    else
+                        for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+                            if v:IsA("Tool") then
+                                if v.Name ~= "Boxing" then
+                                    v:Activate()
+                                    v.Parent = game.Players.LocalPlayer.Character
+                                end
+                            end
+                        end
+                    end
+                end
+            end
+            wait(timer)
+        until enabled == false
+    elseif value == false then
+        enabled = false
+    end
+end
+
+function DelHud()
+	game:GetService("Players").LocalPlayer.PlayerGui.HUD:Destroy()
+	game:GetService("ReplicatedFirst").TourneyQ:Destroy()
+    game:GetService("Workspace").Clouds:Destroy()
+	for i,v in pairs(plr.PlayerScripts:GetChildren()) do
+		if v.Name == "LocalScript" then
+			v:Destroy()
+		end
+	end
+    for i,v in pairs(game.Workspace.Camera:GetChildren()) do
+		if v:IsA("Part") then
+			v:Destroy()
+		end
+	end
+    game:GetService("Lighting").FogStart = 0
+    game:GetService("Lighting").FogEnd = 9999999999999
+    game:GetService("Lighting").Atmosphere:Destroy()
+end
+
+function Anchor(value)
+    if value == true then
+        Still = true
+        for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+            if v:IsA("Part") then
+                v.Anchored = true
+            end
+        end
+        for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+            if v:IsA("MeshPart") then
+                v.Anchored = true
+            end
+        end
+    elseif value == false then
+        Still = false
+        for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+            if v:IsA("Part") then
+                v.Anchored = false
+            end
+        end
+        for i,v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do
+            if v:IsA("MeshPart") then
+                v.Anchored = false
+            end
+        end
+    end
+end
+
+function getTime()
+	date = os.date("*t")
+	return ("%02d:%02d"):format(((date.hour % 24) - 1) % 12 + 1, date.min)
+end
+
+local StarterGui = game:GetService('StarterGui')
+
+local properties = {
+    Color = Color3.new(1);
+    Font = Enum.Font.FredokaOne;
+    TextSize = 18;
+}
+
+plr:GetMouse().KeyDown:Connect(function(K)
+	if K == "z" then
+		if enabled == false then
+            local num = 0
+            local num2 = 0
+            local endnum
+            for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+	            if v:IsA("Tool") then
+		            num += 1
+	            end
+            end
+            for _,c in pairs(plr.Character:GetChildren()) do
+	            if c:IsA("Tool") then
+		            num2 += 1
+	            end
+            end
+            if num > num2 then
+	            endnum = num
+            elseif num < num2 then
+	            endnum = num2
+            else
+	            endnum = 0
+            end
+
+            local timer = 0.0006*endnum
+
+            properties.Text = "(Dertix) Auto Lift Enabled! Lift Settings: wait("..timer..") Ping Limit = "..ping
+            StarterGui:SetCore("ChatMakeSystemMessage", properties)
+            Lift(true)
+        else
+            Lift(false)
+            properties.Text = "(Dertix) Auto Lift Disabled! Strength Earned During Session: "..roundNumber(gained)
+            StarterGui:SetCore("ChatMakeSystemMessage", properties)
+        end
+	elseif K == "h" then
+		DelHud()
+        properties.Text = "(Dertix) Removed Unneccesary Objects!"
+        StarterGui:SetCore("ChatMakeSystemMessage", properties)
+	elseif K == "t" then
+        local num = 0
+        local num2 = 0
+        local endnum
+        for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+	        if v:IsA("Tool") then
+		        num += 1
+	        end
+        end
+        for _,c in pairs(plr.Character:GetChildren()) do
+	        if c:IsA("Tool") then
+		        num2 += 1
+	        end
+        end
+        if num > num2 then
+	        endnum = num
+        elseif num < num2 then
+	        endnum = num2
+        else
+	        endnum = 0
+        end
+        properties.Text = "(Dertix) Amount Of Tools: "..endnum
+        StarterGui:SetCore("ChatMakeSystemMessage", properties)
+    elseif K == "q" then
+        if Still == true then
+            Anchor(false)
+            properties.Text = "(Dertix) UnAnchored Character!"
+            StarterGui:SetCore("ChatMakeSystemMessage", properties)
+        elseif Still == false then
+            Anchor(true)
+            properties.Text = "(Dertix) Anchored Character!"
+            StarterGui:SetCore("ChatMakeSystemMessage", properties)
+        end
+    elseif K == "u" then
+        local char = plr.Character
+		char.HumanoidRootPart.CFrame = CFrame.new(-1977.9436, 510, -5295.2124, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+    elseif K == "p" then
+        local value = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValue()
+        properties.Text = "(Dertix) Current Ping: "..math.floor(value).."!"
+        StarterGui:SetCore("ChatMakeSystemMessage", properties)
+	end
+end)
+
+game:GetService("StarterGui"):SetCore("SendNotification",
+    {
+        Title = "Synax Script (Dertix)",
+        Text = "Whitelisted! Welcome "..plr.DisplayName.."!",
+        Duration = 3
+    }
+)
+
+local Option = false
+local Pinging = false
+local Timing = false
+
+local CBar, CRemote, Connected = plr['PlayerGui']:WaitForChild('Chat')['Frame'].ChatBarParentFrame['Frame'].BoxFrame['Frame'].ChatBar, game:GetService('ReplicatedStorage').DefaultChatSystemChatEvents['SayMessageRequest'], {}
+
+local HookChat = function(Bar)
+    coroutine.wrap(function()
+        if not table.find(Connected,Bar) then
+            local Connect = Bar['FocusLost']:Connect(function(Enter)
+                if Enter ~= false and Bar['Text'] ~= '' then
+                    local Message = Bar['Text']
+                    Bar['Text'] = '';
+                    if Message == ";farm" then
+                        if enabled == false then
+                            enabled = true
+                            local num = 0
+                            local num2 = 0
+                            local endnum
+                            for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+	                            if v:IsA("Tool") then
+		                            num += 1
+	                            end
+                            end
+                            for _,c in pairs(plr.Character:GetChildren()) do
+	                            if c:IsA("Tool") then
+		                            num2 += 1
+	                            end
+                            end
+                            if num > num2 then
+	                            endnum = num
+                            elseif num < num2 then
+	                            endnum = num2
+                            else
+	                            endnum = 0
+                            end
+
+                            local timer = 0.0006*endnum
+
+                            properties.Text = "(Dertix) Auto Lift Enabled! Lift Settings: wait("..timer..") Ping Limit = "..ping
+                            StarterGui:SetCore("ChatMakeSystemMessage", properties)
+                            Lift(true)
+                        elseif enabled == true then
+                            enabled = false
+                            Lift(false)
+                            properties.Text = "(Dertix) Auto Lift Disabled! Strength Earned During Session: "..roundNumber(gained)
+                            StarterGui:SetCore("ChatMakeSystemMessage", properties)
+                        end
+                    elseif Message == ";hud" then
+                        properties.Text = "(Dertix) Removed Unneccesary Objects!"
+                        StarterGui:SetCore("ChatMakeSystemMessage", properties)
+                        DelHud()
+                    elseif Message == ";ping" then
+                        -- local value = "Not Set heh"
+                        -- for i,v in pairs(game:GetService("CoreGui").RobloxGui.PerformanceStats:GetChildren()) do
+                        --     if v:IsA("TextButton") then
+                        --         for _,p in pairs(v:GetChildren()) do
+                        --             if p.Name == "StatsMiniTextPanelClass" then
+                        --                 if p.TitleLabel.Text == "Ping" then
+                        --                     value = p.ValueLabel.Text
+                        --                 end
+                        --             end
+                        --         end
+                        --     end
+                        -- end
+        
+                        -- value = value:gsub("...?$","");
+                        local value = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValue()
+                        properties.Text = "(Dertix) Current Ping: "..math.floor(value).."!"
+                        StarterGui:SetCore("ChatMakeSystemMessage", properties)
+                    elseif Message == ";anchor" then
+                        if Still == false then
+                            Still = true
+                            Anchor(true)
+                            properties.Text = "(Dertix) Anchored Character!"
+                            StarterGui:SetCore("ChatMakeSystemMessage", properties)
+                        elseif Still == true then
+                            Still = false
+                            Anchor(false)
+                            properties.Text = "(Dertix) UnAnchored Character!"
+                            StarterGui:SetCore("ChatMakeSystemMessage", properties)
+                        end
+                    elseif Message == ";setping" then
+                        properties.Text = "(Dertix) Please Type The Limit!"
+                        StarterGui:SetCore("ChatMakeSystemMessage", properties)
+                        Option = true
+                        Pinging = true
+                    elseif Message == ";tools" then
+                        local num = 0
+                        local num2 = 0
+                        local endnum
+                        for i,v in pairs(game.Players.LocalPlayer.Backpack:GetChildren()) do
+	                        if v:IsA("Tool") then
+		                        num += 1
+	                        end
+                        end
+                        for _,c in pairs(plr.Character:GetChildren()) do
+	                        if c:IsA("Tool") then
+		                        num2 += 1
+	                        end
+                        end
+                        if num > num2 then
+	                        endnum = num
+                        elseif num < num2 then
+	                        endnum = num2
+                        else
+	                        endnum = 0
+                        end
+                        properties.Text = "(Dertix) Amount Of Tools: "..endnum
+                        StarterGui:SetCore("ChatMakeSystemMessage", properties)
+                    elseif Message == ";s" then
+                        local Strength = game.ReplicatedStorage.Data:FindFirstChild(plr.Name).Strength
+                        properties.Text = "(Dertix) Total Strength: "..roundNumber(Strength.Value)
+                        StarterGui:SetCore("ChatMakeSystemMessage", properties)
+                    elseif Message == ";se" then
+                        properties.Text = "(Dertix) Strenth Earned This Session: "..roundNumber(gained)
+                        StarterGui:SetCore("ChatMakeSystemMessage", properties)
+                    elseif Message == ";settime" then
+                        if TimeStarted == nil then
+                            TimeStarted = getTime()
+                            properties.Text = "(Dertix) Time Started At: "..getTime().."!"
+                            StarterGui:SetCore("ChatMakeSystemMessage", properties)
+                        else
+                            Option = true
+                            Timing = true
+                            properties.Text = "(Dertix) You Already Have A Time! Are You Sure You Want To Change It? Y or N"
+                            StarterGui:SetCore("ChatMakeSystemMessage", properties)
+                        end       
+                    elseif Message == ";t" then
+                        if TimeStarted ~= nil then
+                            properties.Text = "(Dertix) Time Started At: "..TimeStarted.."!"
+                            StarterGui:SetCore("ChatMakeSystemMessage", properties)
+                        else
+                            properties.Text = "(Dertix) You Have Not Started The Time!"
+                            StarterGui:SetCore("ChatMakeSystemMessage", properties)
+                        end
+                    elseif Message == ";sp" then
+                        if AvgStrength ~= 0 then
+                            properties.Text = "(Dertix) Strength Per Second: "..AvgStrength
+                            StarterGui:SetCore("ChatMakeSystemMessage", properties)
+                        else
+                            properties.Text = "(Dertix) Strength Per Second Is Not Detected Yet!"
+                            StarterGui:SetCore("ChatMakeSystemMessage", properties)
+                        end
+                    else
+                        if Option == true and Pinging == true then
+                            ping = Message
+                            Option = false
+                            Pinging = false
+                            properties.Text = "(Dertix) Set Ping Limit To "..ping.."!"
+                            StarterGui:SetCore("ChatMakeSystemMessage", properties)
+                        elseif Option == true and Timing == true then
+                            if Message == "Y" then
+                                TimeStarted = getTime()
+                                Option = false
+                                Timing = false
+                                properties.Text = "(Dertix) Successfully Reset Your Time! Time Set To: "..getTime()
+                                StarterGui:SetCore("ChatMakeSystemMessage", properties)
+                            elseif Message == "N" then
+                                Option = false
+                                Timing = false
+                                properties.Text = "(Dertix) Canceled Action!"
+                                StarterGui:SetCore("ChatMakeSystemMessage", properties)
+                            else
+                                properties.Text = "(Dertix) Not A Valid Action! Please Choose Y or N!"
+                                StarterGui:SetCore("ChatMakeSystemMessage", properties)
+                            end
+                        else
+                            CRemote:FireServer(Message,'All')
+                        end
+                    end
+                end
+            end)
+            Connected[#Connected+1] = Bar; Bar['AncestryChanged']:Wait(); Connect:Disconnect()
+        end
+    end)()
+end
+
+HookChat(CBar); local BindHook = Instance.new('BindableEvent')
+
+local MT = getrawmetatable(game); local NC = MT.__namecall; setreadonly(MT, false)
+
+MT.__namecall = newcclosure(function(...)
+    local Method, Args = getnamecallmethod(), {...}
+    if rawequal(tostring(Args[1]),'ChatBarFocusChanged') and rawequal(Args[2],true) then 
+        if plr['PlayerGui']:FindFirstChild('Chat') then
+            BindHook:Fire()
+        end
+    end
+    return NC(...)
+end)
+
+BindHook['Event']:Connect(function()
+    CBar = plr['PlayerGui'].Chat['Frame'].ChatBarParentFrame['Frame'].BoxFrame['Frame'].ChatBar
+    HookChat(CBar)
+end)
+
+local VirtualUser=game:service'VirtualUser'
+game:service'Players'.LocalPlayer.Idled:connect(function()
+	VirtualUser:CaptureController()
+	VirtualUser:ClickButton2(Vector2.new())
+end)
+
+    gained = value - strength
+    if StrengthDe == false then
+        StrengthDe = true
+        local UnderValue = gained - LastStrength
+        AvgStrength = UnderValue
+        LastStrength = gained
+        wait(1)
+        StrengthDe = false
+    end
+
+game:GetService("CoreGui").RobloxPromptGui.promptOverlay.ChildAdded:Connect(function(a)
+    if a.Name == 'ErrorPrompt' and a:FindFirstChild('MessageArea') then
+        rconsoleprint("U gained ".. gained)
+    end
+end)
