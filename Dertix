@@ -48,7 +48,7 @@ function Lift(value)
 	            endnum = 0
             end
 
-            local timer = 0.0006*endnum
+            local timer = 0.0002*endnum
 
             local value = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValue()
 
@@ -68,7 +68,7 @@ function Lift(value)
                     end
                 end
             end
-            wait(timer)
+            task.wait(timer)
         until enabled == false
     elseif value == false then
         enabled = false
@@ -132,7 +132,7 @@ local StarterGui = game:GetService('StarterGui')
 local properties = {
     Color = Color3.new(1);
     Font = Enum.Font.FredokaOne;
-    TextSize = 18;
+    TextSize = 16;
 }
 
 plr:GetMouse().KeyDown:Connect(function(K)
@@ -159,19 +159,19 @@ plr:GetMouse().KeyDown:Connect(function(K)
 	            endnum = 0
             end
 
-            local timer = 0.0006*endnum
+            local timer = 0.0002*endnum
 
-            properties.Text = "(Dertix) Auto Lift Enabled! Lift Settings: wait("..timer..") Ping Limit = "..ping
+            properties.Text = "(Dertix) Auto lift enabled! Lift settings: task.wait("..timer..") Ping limit = "..ping
             StarterGui:SetCore("ChatMakeSystemMessage", properties)
             Lift(true)
         else
             Lift(false)
-            properties.Text = "(Dertix) Auto Lift Disabled! Strength Earned During Session: "..roundNumber(gained)
+            properties.Text = "(Dertix) Auto lift disabled! Strength earned during session: "..roundNumber(gained)
             StarterGui:SetCore("ChatMakeSystemMessage", properties)
         end
 	elseif K == "h" then
 		DelHud()
-        properties.Text = "(Dertix) Removed Unneccesary Objects!"
+        properties.Text = "(Dertix) Deleted unnecessary objects."
         StarterGui:SetCore("ChatMakeSystemMessage", properties)
 	elseif K == "t" then
         local num = 0
@@ -194,16 +194,16 @@ plr:GetMouse().KeyDown:Connect(function(K)
         else
 	        endnum = 0
         end
-        properties.Text = "(Dertix) Amount Of Tools: "..endnum
+        properties.Text = "(Dertix) Amount of tools: "..endnum
         StarterGui:SetCore("ChatMakeSystemMessage", properties)
     elseif K == "q" then
         if Still == true then
             Anchor(false)
-            properties.Text = "(Dertix) UnAnchored Character!"
+            properties.Text = "(Dertix) Unanchored character."
             StarterGui:SetCore("ChatMakeSystemMessage", properties)
         elseif Still == false then
             Anchor(true)
-            properties.Text = "(Dertix) Anchored Character!"
+            properties.Text = "(Dertix) Character anchored."
             StarterGui:SetCore("ChatMakeSystemMessage", properties)
         end
     elseif K == "u" then
@@ -211,16 +211,16 @@ plr:GetMouse().KeyDown:Connect(function(K)
 		char.HumanoidRootPart.CFrame = CFrame.new(-1977.9436, 510, -5295.2124, 1, 0, 0, 0, 1, 0, 0, 0, 1)
     elseif K == "p" then
         local value = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValue()
-        properties.Text = "(Dertix) Current Ping: "..math.floor(value).."!"
+        properties.Text = "(Dertix) Current ping: "..math.floor(value).."!"
         StarterGui:SetCore("ChatMakeSystemMessage", properties)
 	end
 end)
 
 game:GetService("StarterGui"):SetCore("SendNotification",
     {
-        Title = "Synax Script (Dertix)",
+        Title = "Synax script (Dertix)",
         Text = "Whitelisted! Welcome "..plr.DisplayName.."!",
-        Duration = 3
+        Duration = 2
     }
 )
 
@@ -263,17 +263,17 @@ local HookChat = function(Bar)
 
                             local timer = 0.0006*endnum
 
-                            properties.Text = "(Dertix) Auto Lift Enabled! Lift Settings: wait("..timer..") Ping Limit = "..ping
+                            properties.Text = "(Dertix) Auto lift enabled! Lift settings: task.wait("..timer..") Ping Limit = "..ping
                             StarterGui:SetCore("ChatMakeSystemMessage", properties)
                             Lift(true)
                         elseif enabled == true then
                             enabled = false
                             Lift(false)
-                            properties.Text = "(Dertix) Auto Lift Disabled! Strength Earned During Session: "..roundNumber(gained)
+                            properties.Text = "(Dertix) Auto lift disabled! Strength earned during session: "..roundNumber(gained)
                             StarterGui:SetCore("ChatMakeSystemMessage", properties)
                         end
                     elseif Message == ";hud" then
-                        properties.Text = "(Dertix) Removed Unneccesary Objects!"
+                        properties.Text = "(Dertix) Deleted unnecessary objects."
                         StarterGui:SetCore("ChatMakeSystemMessage", properties)
                         DelHud()
                     elseif Message == ";ping" then
@@ -292,22 +292,22 @@ local HookChat = function(Bar)
         
                         -- value = value:gsub("...?$","");
                         local value = game:GetService("Stats").Network.ServerStatsItem["Data Ping"]:GetValue()
-                        properties.Text = "(Dertix) Current Ping: "..math.floor(value).."!"
+                        properties.Text = "(Dertix) Current ping: "..math.floor(value).."!"
                         StarterGui:SetCore("ChatMakeSystemMessage", properties)
                     elseif Message == ";anchor" then
                         if Still == false then
                             Still = true
                             Anchor(true)
-                            properties.Text = "(Dertix) Anchored Character!"
+                            properties.Text = "(Dertix) Anchored character!"
                             StarterGui:SetCore("ChatMakeSystemMessage", properties)
                         elseif Still == true then
                             Still = false
                             Anchor(false)
-                            properties.Text = "(Dertix) UnAnchored Character!"
+                            properties.Text = "(Dertix) Character unanchored."
                             StarterGui:SetCore("ChatMakeSystemMessage", properties)
                         end
                     elseif Message == ";setping" then
-                        properties.Text = "(Dertix) Please Type The Limit!"
+                        properties.Text = "(Dertix) Type the limit in the chat."
                         StarterGui:SetCore("ChatMakeSystemMessage", properties)
                         Option = true
                         Pinging = true
@@ -332,40 +332,40 @@ local HookChat = function(Bar)
                         else
 	                        endnum = 0
                         end
-                        properties.Text = "(Dertix) Amount Of Tools: "..endnum
+                        properties.Text = "(Dertix) Amount of rools: "..endnum
                         StarterGui:SetCore("ChatMakeSystemMessage", properties)
                     elseif Message == ";s" then
                         local Strength = game.ReplicatedStorage.Data:FindFirstChild(plr.Name).Strength
-                        properties.Text = "(Dertix) Total Strength: "..roundNumber(Strength.Value)
+                        properties.Text = "(Dertix) Total strength: "..roundNumber(Strength.Value)
                         StarterGui:SetCore("ChatMakeSystemMessage", properties)
                     elseif Message == ";se" then
-                        properties.Text = "(Dertix) Strenth Earned This Session: "..roundNumber(gained)
+                        properties.Text = "(Dertix) Strenth earned this session: "..roundNumber(gained)
                         StarterGui:SetCore("ChatMakeSystemMessage", properties)
                     elseif Message == ";settime" then
                         if TimeStarted == nil then
                             TimeStarted = getTime()
-                            properties.Text = "(Dertix) Time Started At: "..getTime().."!"
+                            properties.Text = "(Dertix) Time started at: "..getTime().."!"
                             StarterGui:SetCore("ChatMakeSystemMessage", properties)
                         else
                             Option = true
                             Timing = true
-                            properties.Text = "(Dertix) You Already Have A Time! Are You Sure You Want To Change It? Y or N"
+                            properties.Text = "(Dertix) Current time set already exists, so would you like to change it? Y or N"
                             StarterGui:SetCore("ChatMakeSystemMessage", properties)
                         end       
                     elseif Message == ";t" then
                         if TimeStarted ~= nil then
-                            properties.Text = "(Dertix) Time Started At: "..TimeStarted.."!"
+                            properties.Text = "(Dertix) Time started at: "..TimeStarted.."!"
                             StarterGui:SetCore("ChatMakeSystemMessage", properties)
                         else
-                            properties.Text = "(Dertix) You Have Not Started The Time!"
+                            properties.Text = "(Dertix) Time has not been initiated."
                             StarterGui:SetCore("ChatMakeSystemMessage", properties)
                         end
                     elseif Message == ";sp" then
                         if AvgStrength ~= 0 then
-                            properties.Text = "(Dertix) Strength Per Second: "..AvgStrength
+                            properties.Text = "(Dertix) Strength per second: "..AvgStrength
                             StarterGui:SetCore("ChatMakeSystemMessage", properties)
                         else
-                            properties.Text = "(Dertix) Strength Per Second Is Not Detected Yet!"
+                            properties.Text = "(Dertix) Strength per second hasn't been detected."
                             StarterGui:SetCore("ChatMakeSystemMessage", properties)
                         end
                     else
@@ -373,22 +373,22 @@ local HookChat = function(Bar)
                             ping = Message
                             Option = false
                             Pinging = false
-                            properties.Text = "(Dertix) Set Ping Limit To "..ping.."!"
+                            properties.Text = "(Dertix) Ping limit set to "..ping.."!"
                             StarterGui:SetCore("ChatMakeSystemMessage", properties)
                         elseif Option == true and Timing == true then
                             if Message == "Y" then
                                 TimeStarted = getTime()
                                 Option = false
                                 Timing = false
-                                properties.Text = "(Dertix) Successfully Reset Your Time! Time Set To: "..getTime()
+                                properties.Text = "(Dertix) Time successfully reset. Time defaulted to: "..getTime()
                                 StarterGui:SetCore("ChatMakeSystemMessage", properties)
                             elseif Message == "N" then
                                 Option = false
                                 Timing = false
-                                properties.Text = "(Dertix) Canceled Action!"
+                                properties.Text = "(Dertix) Action canceled."
                                 StarterGui:SetCore("ChatMakeSystemMessage", properties)
                             else
-                                properties.Text = "(Dertix) Not A Valid Action! Please Choose Y or N!"
+                                properties.Text = "(Dertix) Invalid action. Ensure you're typing Y or N."
                                 StarterGui:SetCore("ChatMakeSystemMessage", properties)
                             end
                         else
