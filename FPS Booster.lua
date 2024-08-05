@@ -13,7 +13,7 @@ end
 if _G.ConsoleLogs == nil then
     _G.ConsoleLogs = false -- Set to true if you want console logs (mainly for debugging)
 end
-
+game:GetService("Lighting").Atmosphere:Destroy()
 
 if not game:IsLoaded() then
     repeat
