@@ -569,7 +569,7 @@ SettingsTab:AddButton(
 
 SettingsTab:AddButton(
     {
-        Name = "Remove in-game music",
+        Name = "Turn off music",
         Callback = function()
             OrionLib:MakeNotification(
                 {
