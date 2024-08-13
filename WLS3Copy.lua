@@ -569,7 +569,7 @@ SettingsTab:AddButton(
 
 SettingsTab:AddButton(
     {
-        Name = "Rejoin",
+        Name = "Remove in-game music",
         Callback = function()
             OrionLib:MakeNotification(
                 {
