@@ -221,20 +221,18 @@ FarmingTab:AddToggle(
             if Value then
                 _G.Print = true
                 while _G.Print do
-                 while task.wait(0.001) do
-for i,v in pairs(workspace.LocalPlayer.Character.LowerTorso:GetChildren()) do
-if v:IsA("Sound") then
-v:Destroy()
-end
-end
-end
-
+                    while task.wait(0.001) do
+                        for i, v in pairs(workspace.LocalPlayer.Character.LowerTorso:GetChildren()) do
+                            if v:IsA("Sound") then
+                                v:Destroy()
+                            end
+                        end
                     end
-else
+                end
+            else
                 _G.Print = false
             end
-            end
-
+        end
     }
 )
 
@@ -255,10 +253,33 @@ FarmingTab:AddToggle(
                 _G.Print = true
                 while _G.Print do
                     while task.wait(0.00339) do
-local vim = game:service'VirtualInputManager'
-while wait(.75) do
-     vim:SendKeyEvent(true, "E", false, game)
+                        local vim = game:service "VirtualInputManager"
+                        while wait(.75) do
+                            vim:SendKeyEvent(true, "E", false, game)
+                        end
+                    end
+                end
+            else
+                _G.Print = false
+            end
+            -- The variable (Value) is a boolean on whether the toggle is true or false
+        end
+    }
+)
+
+FarmingTab:AddToggle(
+    {
+        Name = "Auto rebirth",
+        Default = false,
+        Save = false,
+        Callback = function(Value)
+            if Value then
+                _G.Print = true
+                while _G.Print do
+                   while task.wait(0.1) do
+game:GetService("ReplicatedStorage").rEvents.rebirthEvent:FireServer()
 end
+                        end
                     end
                 end
             else
@@ -270,7 +291,7 @@ end
 )
 
 
-                        
+
 FarmingTab:AddBind(
     {
         Name = "Unequip [for PC users]",
