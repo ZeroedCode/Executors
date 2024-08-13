@@ -5,7 +5,7 @@ repeat
 until game:IsLoaded()
 
 -- Making sure the game is Burping Simulator.
-if game.PlaceId ~= 1747207098 then
+if game.PlaceId ~= 17059140992 then
     game.Players.LocalPlayer:Kick("This script only works on WLS 3 copies.")
 end
 local OrionLib = loadstring(game:HttpGet(("https://raw.githubusercontent.com/shlexware/Orion/main/source")))()
@@ -23,47 +23,6 @@ local Window =
     OrionLib:MakeWindow(
     {Name = "WLS 3 [v1.01 GUI release]", HidePremium = false, SaveConfig = true, ConfigFolder = "Orion"}
 )
-
-function AutoEquip()
-    spawn(
-        function()
-            while getgenv().equip == true do
-                task.wait(1.39)
-                if not game.Players.LocalPlayer.Backpack:FindFirstChild("Weight") then
-                    if not game.Players.LocalPlayer.Character:FindFirstChild("Weight") then
-                        game.Players.LocalPlayer.Character:BreakJoints()
-                    end
-                end
-                if game.Players.LocalPlayer.leaderstats["Strength"].Value == 0 then
-                    local Players = game:GetService("Players")
-
-                    local player = Players:FindFirstChildOfClass("Player")
-                    if player and player.Character then
-                        local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
-                        if humanoid then
-                            local tool = Players.LocalPlayer.Backpack:FindFirstChild("Weight")
-                            if tool then
-                                humanoid:EquipTool(tool)
-                            end
-                        end
-                    end
-                end
-
-                if game.Players.LocalPlayer.leaderstats["Strength"].Value >= 0 then
-                    local Players = game:GetService("Players")
-
-                    local player = Players:FindFirstChildOfClass("Player")
-                    if player and player.Character then
-                        local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
-                        if humanoid then
-                            local tool = Players.LocalPlayer.Backpack:FindFirstChild("Weight")
-                            if tool then
-                                humanoid:EquipTool(tool)
-                            end
-                        end
-                    end
-                end
-
 
 --Player Tab--
 local PlayerTab =
@@ -263,9 +222,42 @@ FarmingTab:AddToggle(
                 _G.Print = true
                 while _G.Print do
                     while task.wait(0.00339) do
-                        for i,v in pairs(workspace.LocalPlayer.Character.LowerTorso:GetChildren()) do
+                        for i,v in pairs(workspace.Kat_4xx02.LowerTorso:GetChildren()) do
                       if v:IsA("Sound") then
                             v:Destroy()
+                            end
+                            end
+                            end
+                    end
+else
+                _G.Print = false
+            end
+            end
+
+    }
+)
+
+local FarmingSection =
+    FarmingTab:AddSection(
+    {
+        Name = "Other farming stuff"
+    }
+)
+
+FarmingTab:AddToggle(
+    {
+        Name = "Auto E on machines",
+        Default = false,
+        Save = false,
+        Callback = function(Value)
+            if Value then
+                _G.Print = true
+                while _G.Print do
+                    while task.wait(0.00339) do
+local vim = game:service'VirtualInputManager'
+while wait(.75) do
+     vim:SendKeyEvent(true, "E", false, game)
+end
                     end
                 end
             else
@@ -276,6 +268,8 @@ FarmingTab:AddToggle(
     }
 )
 
+
+                        
 FarmingTab:AddBind(
     {
         Name = "Unequip [for PC users]",
@@ -333,18 +327,6 @@ local ExtrasSection =
     }
 )
 
-ExtrasTab:AddToggle(
-    {
-        Name = "Auto Equip",
-        Default = false,
-        Callback = function(bool)
-            getgenv().equip = bool
-            if bool then
-                AutoEquip()
-            end
-        end
-    }
-)
 -- The variable (Value) is a boolean on whether the toggle is true or false
 --ExtrasTab:AddToggle({
 --	Name = "Auto Drop",
