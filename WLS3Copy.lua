@@ -406,7 +406,7 @@ ExtrasTab:AddButton(
 
 ExtrasTab:AddButton(
     {
-        Name = "Music",
+        Name = "Disable in-game music",
         Callback = function()
             OrionLib:MakeNotification(
                 {
