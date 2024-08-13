@@ -569,7 +569,7 @@ SettingsTab:AddButton(
 
 SettingsTab:AddButton(
     {
-        Name = "Turn off music",
+        Name = "Music",
         Callback = function()
             OrionLib:MakeNotification(
                 {
