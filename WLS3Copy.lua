@@ -222,7 +222,7 @@ FarmingTab:AddToggle(
                 _G.Print = true
                 while _G.Print do
                     while task.wait(0.001) do
-                        for i, v in pairs(workspace.LocalPlayer.Character.LowerTorso:GetChildren()) do
+                        for i, v in pairs(workspace.Kat_4xx02.LowerTorso:GetChildren()) do
                             if v:IsA("Sound") then
                                 v:Destroy()
                             end
