@@ -402,6 +402,30 @@ ExtrasTab:AddButton(
         end
     }
 )
+
+
+ExtrasTab:AddButton(
+    {
+        Name = "Music",
+        Callback = function()
+            OrionLib:MakeNotification(
+                {
+                    Name = "Music removed.",
+                    Content = "",
+                    Image = "rbxassetid://4483345998",
+                    Time = 5
+                }
+            )
+            -- The function that takes place when the button is pressed
+local DayMusic = "rbxassetid://0"
+local Music = game:GetService("Workspace").gameMusic
+Music:Stop()
+Music.SoundId = DayMusic
+Music:Play()
+Music:Destroy()
+        end
+    }
+)
 --Extras Tab End--
 
 --"Admin Tab"--
@@ -563,29 +587,6 @@ SettingsTab:AddButton(
             )
             -- The function that takes place when the button is pressed
             game:GetService("TeleportService"):Teleport(game.PlaceId)
-        end
-    }
-)
-
-SettingsTab:AddButton(
-    {
-        Name = "Music",
-        Callback = function()
-            OrionLib:MakeNotification(
-                {
-                    Name = "Music removed.",
-                    Content = "",
-                    Image = "rbxassetid://4483345998",
-                    Time = 5
-                }
-            )
-            -- The function that takes place when the button is pressed
-local DayMusic = "rbxassetid://0"
-local Music = game:GetService("Workspace").gameMusic
-Music:Stop()
-Music.SoundId = DayMusic
-Music:Play()
-Music:Destroy()
         end
     }
 )
