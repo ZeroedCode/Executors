@@ -1,4 +1,4 @@
--- DO NOT STEAL THIS SCRIPT.
+--\ DO NOT STEAL THIS SCRIPT./
 
 repeat
     wait()
@@ -276,10 +276,8 @@ FarmingTab:AddToggle(
             if Value then
                 _G.Print = true
                 while _G.Print do
-                   while task.wait(0.1) do
-game:GetService("ReplicatedStorage").rEvents.rebirthEvent:FireServer()
-end
-                        end
+                    while task.wait(0.1) do
+                        game:GetService("ReplicatedStorage").rEvents.rebirthEvent:FireServer()
                     end
                 end
             else
@@ -289,8 +287,6 @@ end
         end
     }
 )
-
-
 
 FarmingTab:AddBind(
     {
