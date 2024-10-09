@@ -52,7 +52,6 @@ Window:Seperator();
 
 
 Window:Text("Misc");
-Window:Seperator();
 Window:Button("Anti-AFK"):Connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/juywvm/-Roblox-Projects-/main/____Anti_Afk_Remastered_______", true))()       
 end)
@@ -63,6 +62,10 @@ end)
 
 Window:Button("Auto reset"):Connect(function()
 loadstring(game:HttpGet("https://pastefy.app/WGynR32L/raw"))()  
+end)
+
+Window:Button("IY Reborn"):Connect(function()
+loadstring(game:HttpGet("https://storage.iyr.lol/legacy-iyr/source"))()
 end)
 
 Window:End()
