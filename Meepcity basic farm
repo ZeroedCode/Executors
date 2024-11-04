@@ -1,0 +1,128 @@
+
+local ScreenGui = Instance.new("ScreenGui")
+local main = Instance.new("Frame")
+local label = Instance.new("TextLabel")
+local TextButton = Instance.new("TextButton")
+local infinitemoney = Instance.new("TextButton")
+local TextLabel = Instance.new("TextLabel")
+local boombox = Instance.new("TextButton")
+local chalk = Instance.new("TextButton")
+local FishAutofarm = Instance.new("TextButton")
+
+--Properties:
+
+ScreenGui.Parent = game.CoreGui
+
+main.Name = "main"
+main.Parent = ScreenGui
+main.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+main.Position = UDim2.new(0.00446760654, 0, 0.531288326, 0)
+main.Size = UDim2.new(0, 624, 0, 365)
+main.Active = true
+main.Draggable = true
+
+label.Name = "label"
+label.Parent = main
+label.BackgroundColor3 = Color3.fromRGB(170, 0, 0)
+label.Size = UDim2.new(0, 624, 0, 44)
+label.Font = Enum.Font.SourceSans
+label.Text = "meepcity gui from djalo#1857"
+label.TextColor3 = Color3.fromRGB(0, 0, 0)
+label.TextSize = 14.000
+
+TextButton.Parent = main
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.Position = UDim2.new(0.0384615399, 0, 0.282191783, 0)
+TextButton.Size = UDim2.new(0, 200, 0, 50)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Free PLUS"
+TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextButton.TextSize = 14.000
+TextButton.MouseButton1Down:connect(function()
+	game.ReplicatedStorage.PlayerData[game.Players.LocalPlayer.UserId].PLUS.Value = true
+end)
+
+infinitemoney.Name = "infinite money"
+infinitemoney.Parent = main
+infinitemoney.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+infinitemoney.Position = UDim2.new(0.633012831, 0, 0.282191783, 0)
+infinitemoney.Size = UDim2.new(0, 200, 0, 50)
+infinitemoney.Font = Enum.Font.SourceSans
+infinitemoney.Text = "Infinite money"
+infinitemoney.TextColor3 = Color3.fromRGB(0, 0, 0)
+infinitemoney.TextSize = 14.000
+infinitemoney.MouseButton1Down:connect(function()
+	for i,v in pairs(game.Workspace:GetDescendants()) do
+		if v:IsA("Part") then
+			local number_1 = 8;
+			local userdata_1 = v;
+			local number_2 = 5000;
+			local number_3 = math.huge;
+			local number_4 = 5000;
+			local Target = game:GetService("ReplicatedStorage").Connection;
+			Target:InvokeServer(number_1, userdata_1, number_2, number_3, number_4);
+		end
+	end
+end)
+
+TextLabel.Parent = main
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.Position = UDim2.new(-0.00160251523, 0, 0.797260284, 0)
+TextLabel.Size = UDim2.new(0, 371, 0, 50)
+TextLabel.Font = Enum.Font.SourceSans
+TextLabel.Text = "TO GET THE INFINITE MONEY GO INTO STAR BALL AND PRESS IT AND WAIT"
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 14.000
+
+boombox.Name = "boombox"
+boombox.Parent = main
+boombox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+boombox.Position = UDim2.new(0.0384615399, 0, 0.512328744, 0)
+boombox.Size = UDim2.new(0, 200, 0, 50)
+boombox.Font = Enum.Font.SourceSans
+boombox.Text = "Free Boombox"
+boombox.TextColor3 = Color3.fromRGB(0, 0, 0)
+boombox.TextSize = 14.000
+boombox.MouseButton1Down:connect(function()
+	game.ReplicatedStorage.PlayerData[game.Players.LocalPlayer.UserId].BoomBox.Value = true
+end)
+
+chalk.Name = "chalk"
+chalk.Parent = main
+chalk.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+chalk.Position = UDim2.new(0.633012831, 0, 0.512328744, 0)
+chalk.Size = UDim2.new(0, 200, 0, 50)
+chalk.Font = Enum.Font.SourceSans
+chalk.Text = "Free chalk"
+chalk.TextColor3 = Color3.fromRGB(0, 0, 0)
+chalk.TextSize = 14.000
+chalk.MouseButton1Down:connect(function()
+	game.ReplicatedStorage.PlayerData[game.Players.LocalPlayer.UserId].ChalkPass.Value = true
+end)
+
+FishAutofarm.Name = "Fish Autofarm"
+FishAutofarm.Parent = main
+FishAutofarm.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+FishAutofarm.Position = UDim2.new(0.633012831, 0, 0.797260284, 0)
+FishAutofarm.Size = UDim2.new(0, 200, 0, 50)
+FishAutofarm.Font = Enum.Font.SourceSans
+FishAutofarm.Text = "Fish autofarm"
+FishAutofarm.TextColor3 = Color3.fromRGB(0, 0, 0)
+FishAutofarm.TextSize = 14.000
+FishAutofarm.MouseButton1Down:connect(function()
+	game.ReplicatedStorage.Connection:InvokeServer(9, 1)
+	game:GetService("RunService").RenderStepped:Connect(function()
+		game.ReplicatedStorage.Connection:InvokeServer(49)
+		game.ReplicatedStorage.Connection:InvokeServer(50)
+		game.ReplicatedStorage.Connection:InvokeServer(51)
+		local ohNumber1 = 11
+		local ohTable2 = {
+			["FishingPolePos"] = game:GetService("Workspace").VW.TempFish.Position,
+			["Power"] = 1,
+			["Face"] = game:GetService("Workspace").VW.TempFish.Position,
+			["PlayerPos"] = game:GetService("Workspace").VW.TempFish.Position,
+			["FishingZonePos"] = Vector3.new(-5.29345703, -18.0412292, 43.7173767)
+		}
+		game:GetService("ReplicatedStorage").Connection:InvokeServer(ohNumber1, ohTable2)
+	end)
+end)
