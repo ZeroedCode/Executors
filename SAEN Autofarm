@@ -439,11 +439,36 @@ hum.WalkSpeed = 60
 end)
 
 Jump.MouseButton1Click:connect(function()
-	plr = game:service'Players'.LocalPlayer
-char = plr.Character
-hum = char:FindFirstChildOfClass'Humanoid'
-
-hum.JumpPower = 100
+local script = Instance.new('LocalScript', InfiniteJump)
+		game:GetService("StarterGui"):SetCore("SendNotification", {
+			Title = "[T] key = Enable inf. jumps",
+			Text = "To disable it, press the [T] key again."
+		})
+	_G.infinjump = false
+	
+	local Player = game:GetService("Players").LocalPlayer
+	local Mouse = Player:GetMouse()
+	Mouse.KeyDown:connect(function(k)
+		if _G.infinjump then
+			if k:byte() == 32 then
+				local Humanoid = game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
+				Humanoid:ChangeState("Jumping")
+				wait(0.1)
+			end
+		end
+	end)
+	local Player = game:GetService("Players").LocalPlayer
+	local Mouse = Player:GetMouse()
+	Mouse.KeyDown:connect(function(k)
+		k = k:lower()
+		if k == "t" then
+			if _G.infinjump == true then
+				_G.infinjump = false
+			else
+				_G.infinjump = true
+			end
+		end
+	end)
 end)
 
 AutoFarm.MouseButton1Click:connect(function()
