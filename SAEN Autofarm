@@ -12,7 +12,7 @@ local Frame_3 = Instance.new("Frame")
 local TextLabel_5 = Instance.new("TextLabel")
 local Frame_4 = Instance.new("Frame")
 local TextLabel_6 = Instance.new("TextLabel")
-local KillPlatform = Instance.new("TextButton")
+local AutoReset = Instance.new("TextButton")
 local StealKills = Instance.new("TextButton")
 local AutoFarm = Instance.new("TextButton")
 local NoRecoil = Instance.new("TextButton")
@@ -171,19 +171,19 @@ TextLabel_6.TextSize = 14
 TextLabel_6.TextWrapped = true
 TextLabel_6.TextXAlignment = Enum.TextXAlignment.Left
 
-KillPlatform.Name = "KillPlatform"
-KillPlatform.Parent = Main
-KillPlatform.BackgroundColor3 = Color3.new(1, 1, 1)
-KillPlatform.BackgroundTransparency = 1
-KillPlatform.Position = UDim2.new(0.0434782468, 0, 0.309297919, 0)
-KillPlatform.Size = UDim2.new(0.90476191, 0, 0.034155596, 0)
-KillPlatform.Font = Enum.Font.SourceSansSemibold
-KillPlatform.Text = "Kill Platform "
-KillPlatform.TextColor3 = Color3.new(1, 1, 1)
-KillPlatform.TextScaled = true
-KillPlatform.TextSize = 14
-KillPlatform.TextWrapped = true
-KillPlatform.TextXAlignment = Enum.TextXAlignment.Left
+AutoReset.Name = "AutoReset"
+AutoReset.Parent = Main
+AutoReset.BackgroundColor3 = Color3.new(1, 1, 1)
+AutoReset.BackgroundTransparency = 1
+AutoReset.Position = UDim2.new(0.0434782468, 0, 0.309297919, 0)
+AutoReset.Size = UDim2.new(0.90476191, 0, 0.034155596, 0)
+AutoReset.Font = Enum.Font.SourceSansSemibold
+AutoReset.Text = "Auto Reset"
+AutoReset.TextColor3 = Color3.new(1, 1, 1)
+AutoReset.TextScaled = true
+AutoReset.TextSize = 14
+AutoReset.TextWrapped = true
+AutoReset.TextXAlignment = Enum.TextXAlignment.Left
 
 StealKills.Name = "StealKills"
 StealKills.Parent = Main
@@ -384,48 +384,11 @@ end
 end
 end)
 
-KillPlatform.MouseButton1Click:connect(function()
-	plr = game:service'Players'.LocalPlayer
-char = plr.Character
-root = char.HumanoidRootPart
-iszombie = false
- 
-platform = Instance.new('Part', workspace)
-platform.Size = Vector3.new(100,0,100)
-platform.Anchored = true
-platform.Position = Vector3.new(555,555,555)
-root.CFrame = platform.CFrame * CFrame.new(0,4,0)
- 
-if workspace:FindFirstChild(plr.Name) then
-   iszombie = false
-   warn'You are not a zombie!'
-else
-   iszombie = true
-   warn'You are a zombie!'
-end
- 
-wait(.5)
- 
-if not iszombie then
-   for _, a in pairs(game.Workspace["#GAME"].Folders.HumanoidFolder.NPCFolder:GetChildren()) do
-       for _, b in pairs(a:children()) do
-           if b:IsA'Part' then
-               b.Anchored = true
-               b.CFrame = root.CFrame * CFrame.new(2,0,2)
-           end
-       end
-   end
-elseif iszombie then
-   for _, a in pairs(game:GetService("Players"):GetChildren()) do
-       if a.Character then
-           for _, b in pairs(a.Character:children()) do
-               if b:IsA'Part' and a.Name ~= plr.Name then
-                   b.Anchored = true
-                   b.CFrame =  root.CFrame * CFrame.new(2,0,2)
-               end
-           end
-       end
-   end
+AutoReset.MouseButton1Click:connect(function()
+	_G.Autoreset = true
+while _G.Autoreset do
+wait(41.9)
+game:GetService("Players").LocalPlayer.Character.Humanoid.Health = 0
 end
 end)
 
