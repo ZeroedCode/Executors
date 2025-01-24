@@ -23,7 +23,7 @@ local Noclip = Instance.new("TextButton")
 local Gravity = Instance.new("TextButton")
 local Speed = Instance.new("TextButton")
 local Jump = Instance.new("TextButton")
-local Btools = Instance.new("TextButton")
+local BringNPC = Instance.new("TextButton")
  
 ZombieAttackGUI.Name = "Shoot & Eat Noobs GUI"
 ZombieAttackGUI.Parent = game.CoreGui
@@ -325,19 +325,19 @@ Jump.TextSize = 14
 Jump.TextWrapped = true
 Jump.TextXAlignment = Enum.TextXAlignment.Left
 
-Btools.Name = "Btools"
-Btools.Parent = Main
-Btools.BackgroundColor3 = Color3.new(1, 1, 1)
-Btools.BackgroundTransparency = 1
-Btools.Position = UDim2.new(0.0434782468, 0, 0.946869016, 0)
-Btools.Size = UDim2.new(0.90476191, 0, 0.034155596, 0)
-Btools.Font = Enum.Font.SourceSansSemibold
-Btools.Text = "B-Tools"
-Btools.TextColor3 = Color3.new(1, 1, 1)
-Btools.TextScaled = true
-Btools.TextSize = 14
-Btools.TextWrapped = true
-Btools.TextXAlignment = Enum.TextXAlignment.Left
+BringNPC.Name = "Bring NPC"
+BringNPC.Parent = Main
+BringNPC.BackgroundColor3 = Color3.new(1, 1, 1)
+BringNPC.BackgroundTransparency = 1
+BringNPC.Position = UDim2.new(0.0434782468, 0, 0.946869016, 0)
+BringNPC.Size = UDim2.new(0.90476191, 0, 0.034155596, 0)
+BringNPC.Font = Enum.Font.SourceSansSemibold
+BringNPC.Text = "Bring NPCs"
+BringNPC.TextColor3 = Color3.new(1, 1, 1)
+BringNPC.TextScaled = true
+BringNPC.TextSize = 14
+BringNPC.TextWrapped = true
+BringNPC.TextXAlignment = Enum.TextXAlignment.Left
 -- scripts 
 Fly.MouseButton1Click:Connect(function()
 Console.Text = ("Press E to activate and deactivate flying mode\n\n ")
@@ -505,8 +505,8 @@ end
 end
 end)
 
-Btools.MouseButton1Click:connect(function()
-	loadstring(game:HttpGet("https://pastebin.com/raw/T0qaXjAR", true))()
+BringNPC.MouseButton1Click:connect(function()
+	loadstring(game:HttpGet("https://pastefy.app/bR4ltINI/raw", true))()
 end)
 
 Gravity.MouseButton1Click:connect(function()
