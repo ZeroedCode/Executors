@@ -1,0 +1,507 @@
+local Library = loadstring(game:HttpGetAsync("https://github.com/ActualMasterOogway/Fluent-Renewed/releases/latest/download/Fluent.luau"))()
+local SaveManager = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/SaveManager.luau"))()
+local InterfaceManager = loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/ActualMasterOogway/Fluent-Renewed/master/Addons/InterfaceManager.luau"))()
+ 
+local Window = Library:CreateWindow{
+    Title = "Burping Sim GUI v 1.1.0",
+    SubTitle = "by 01_pink",
+    TabWidth = 130,
+    Size = UDim2.fromOffset(630, 425),
+    Resize = true, -- Resize this ^ Size according to a 1920x1080 screen, good for mobile users but may look weird on some devices
+    MinSize = Vector2.new(470, 380),
+    Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
+    Theme = "Dark",
+    MinimizeKey = Enum.KeyCode.RightControl -- Used when theres no MinimizeKeybind
+}
+
+-- Logic for farming. --
+function AutoEquip()
+    spawn(
+        function()
+            while getgenv().equip == true do
+                task.wait(0.39)
+                if not game.Players.LocalPlayer.Backpack:FindFirstChild("Starter Drink") then
+                    if not game.Players.LocalPlayer.Character:FindFirstChild("Starter Drink") then
+                        game.Players.LocalPlayer.Character:BreakJoints()
+                    end
+                end
+                if game.Players.LocalPlayer.leaderstats["Burp points"].Value == 0 then
+                    local Players = game:GetService("Players")
+
+                    local player = Players:FindFirstChildOfClass("Player")
+                    if player and player.Character then
+                        local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+                        if humanoid then
+                            local tool = Players.LocalPlayer.Backpack:FindFirstChild("Starter Drink")
+                            if tool then
+                                humanoid:EquipTool(tool)
+                            end
+                        end
+                    end
+                end
+
+                if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 0 then
+                    local Players = game:GetService("Players")
+
+                    local player = Players:FindFirstChildOfClass("Player")
+                    if player and player.Character then
+                        local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+                        if humanoid then
+                            local tool = Players.LocalPlayer.Backpack:FindFirstChild("Starter Drink")
+                            if tool then
+                                humanoid:EquipTool(tool)
+                            end
+                        end
+                    end
+                end
+
+                if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 150 then
+                    local Players = game:GetService("Players")
+
+                    local player = Players:FindFirstChildOfClass("Player")
+                    if player and player.Character then
+                        local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+                        if humanoid then
+                            local tool = Players.LocalPlayer.Backpack:FindFirstChild("Second Drink")
+                            if tool then
+                                humanoid:EquipTool(tool)
+                            end
+                        end
+                    end
+                end
+                if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 500 then
+                    local Players = game:GetService("Players")
+
+                    local player = Players:FindFirstChildOfClass("Player")
+                    if player and player.Character then
+                        local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+                        if humanoid then
+                            local tool = Players.LocalPlayer.Backpack:FindFirstChild("Third Drink")
+                            if tool then
+                                humanoid:EquipTool(tool)
+                            end
+                        end
+                    end
+                end
+
+                if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 1600 then
+                    local Players = game:GetService("Players")
+
+                    local player = Players:FindFirstChildOfClass("Player")
+                    if player and player.Character then
+                        local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+                        if humanoid then
+                            local tool = Players.LocalPlayer.Backpack:FindFirstChild("Fourth Drink")
+                            if tool then
+                                humanoid:EquipTool(tool)
+                            end
+                        end
+                    end
+                end
+
+                if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 3500 then
+                    local Players = game:GetService("Players")
+
+                    local player = Players:FindFirstChildOfClass("Player")
+                    if player and player.Character then
+                        local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+                        if humanoid then
+                            local tool = Players.LocalPlayer.Backpack:FindFirstChild("Fifth Drink")
+                            if tool then
+                                humanoid:EquipTool(tool)
+                            end
+                        end
+                    end
+                end
+
+                if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 10000 then
+                    local Players = game:GetService("Players")
+
+                    local player = Players:FindFirstChildOfClass("Player")
+                    if player and player.Character then
+                        local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+                        if humanoid then
+                            local tool = Players.LocalPlayer.Backpack:FindFirstChild("Sixth Drink")
+                            if tool then
+                                humanoid:EquipTool(tool)
+                            end
+                        end
+                    end
+                end
+
+                if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 25000 then
+                    local Players = game:GetService("Players")
+
+                    local player = Players:FindFirstChildOfClass("Player")
+                    if player and player.Character then
+                        local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+                        if humanoid then
+                            local tool = Players.LocalPlayer.Backpack:FindFirstChild("Seventh Drink")
+                            if tool then
+                                humanoid:EquipTool(tool)
+                            end
+                        end
+                    end
+                end
+
+                if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 60000 then
+                    local Players = game:GetService("Players")
+
+                    local player = Players:FindFirstChildOfClass("Player")
+                    if player and player.Character then
+                        local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+                        if humanoid then
+                            local tool = Players.LocalPlayer.Backpack:FindFirstChild("Eighth Drink")
+                            if tool then
+                                humanoid:EquipTool(tool)
+                            end
+                        end
+                    end
+                end
+
+                if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 150000 then
+                    local Players = game:GetService("Players")
+
+                    local player = Players:FindFirstChildOfClass("Player")
+                    if player and player.Character then
+                        local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+                        if humanoid then
+                            local tool = Players.LocalPlayer.Backpack:FindFirstChild("Ninth Drink")
+                            if tool then
+                                humanoid:EquipTool(tool)
+                            end
+                        end
+                    end
+                end
+
+                if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 230000 then
+                    local Players = game:GetService("Players")
+
+                    local player = Players:FindFirstChildOfClass("Player")
+                    if player and player.Character then
+                        local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+                        if humanoid then
+                            local tool = Players.LocalPlayer.Backpack:FindFirstChild("Atomic Drink")
+                            if tool then
+                                humanoid:EquipTool(tool)
+                            end
+                        end
+                    end
+                end
+
+                if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 500000 then
+                    local Players = game:GetService("Players")
+
+                    local player = Players:FindFirstChildOfClass("Player")
+                    if player and player.Character then
+                        local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+                        if humanoid then
+                            local tool = Players.LocalPlayer.Backpack:FindFirstChild("Omega Burp Juice")
+                            if tool then
+                                humanoid:EquipTool(tool)
+                            end
+                        end
+                    end
+                end
+
+                if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 1000000 then
+                    local Players = game:GetService("Players")
+
+                    local player = Players:FindFirstChildOfClass("Player")
+                    if player and player.Character then
+                        local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+                        if humanoid then
+                            local tool = Players.LocalPlayer.Backpack:FindFirstChild("Thunder Fizz")
+                            if tool then
+                                humanoid:EquipTool(tool)
+                            end
+                        end
+                    end
+                end
+                if game.Players.LocalPlayer.leaderstats["Burp points"].Value >= 2000000 then
+                    local Players = game:GetService("Players")
+
+                    local player = Players:FindFirstChildOfClass("Player")
+                    if player and player.Character then
+                        local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+                        if humanoid then
+                            local tool = Players.LocalPlayer.Backpack:FindFirstChild("Garlic Juice")
+                            if tool then
+                                humanoid:EquipTool(tool)
+                            end
+                        end
+                    end
+                end
+            end
+        end
+    )
+end
+
+
+
+-- Sections go here. --
+local FunStuff = {
+    Fun = Window:CreateTab{
+        Title = "Fun Stuff",
+        Icon = "phosphor-smiley-bold"
+    },
+}
+
+local Farming = {
+    Farm = Window:CreateTab{
+        Title = "Farming",
+        Icon = "phosphor-piggy-bank-bold"
+    },
+}
+
+local Player = {
+    Main = Window:CreateTab{
+        Title = "Player",
+        Icon = "phosphor-user-bold"
+    },
+    Settings = Window:CreateTab{
+        Title = "Settings",
+        Icon = "settings"
+    }
+}
+
+local Options = Library.Options
+
+Library:Notify{
+    Title = "Script executed",
+    Content = "Some features may be added in the future, or removed.",
+    SubContent = "", -- Optional
+    Duration = 5 -- Set to nil to make the notification not disappear
+}
+
+local Paragraph = Player.Main:CreateParagraph("Paragraph", {
+    Title = "Basic stuff to mess with for the LocalPlayer.",
+    Content = ""
+})
+
+local Slider = Player.Main:CreateSlider("Slider", {
+    Title = "Walkspeed",
+    Description = "Change the speed here.",
+    Default = 2,
+    Min = 16,
+    Max = 1000,
+    Rounding = 1,
+    Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = Value
+    end
+})
+
+Slider:SetValue(3)
+
+local Slider = Player.Main:CreateSlider("Slider", {
+    Title = "Jump power",
+    Description = "Change the jump power here.",
+    Default = 3,
+    Min = 50,
+    Max = 1000,
+    Rounding = 1,
+    Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = Value
+    end
+})
+
+Slider:SetValue(3)
+--Player tab end--
+
+
+--FunStuff tab begin--
+FunStuff.Fun:CreateSection("Burps")
+
+FunStuff.Fun:CreateButton{
+    Title = "Spam the BURPS",
+    Description = "Once you begin burping, you cannot stop",
+    Callback = function()
+        Window:Dialog{
+            Title = "Troll burp time",
+            Content = "Are you sure you want to burp?",
+            Buttons = {
+                {
+                    Title = "Confirm",
+                    Callback = function()
+                        while true do
+                        task.wait()
+                        game:GetService("ReplicatedStorage").RemoteEvents.BurpEvent:FireServer()
+                    end
+                    end
+                },
+                {
+                    Title = "Cancel",
+                    Callback = function()
+                        print("Cancelled the dialog.")
+                    end
+                }
+            }
+        }
+    end
+}
+
+FunStuff.Fun:CreateSection("Teleport")
+
+FunStuff.Fun:CreateButton{
+    Title = "Teleport to safe zone",
+    Description = "",
+    Callback = function()
+     local New_CFrame = CFrame.new(-46, 48, -15)
+
+            local ts = game:GetService("TweenService")
+            local char = game.Players.LocalPlayer.Character
+
+            local part = char.HumanoidRootPart
+            local ti = TweenInfo.new(0.4, Enum.EasingStyle.Linear)
+            local tp = {CFrame = New_CFrame}
+            ts:Create(part, ti, tp):Play()
+    end
+}
+
+FunStuff.Fun:CreateButton{
+     Title = "Teleport to Pet Shop",
+        Callback = function()
+            local New_CFrame = CFrame.new(311, 52, 103)
+
+            local ts = game:GetService("TweenService")
+            local char = game.Players.LocalPlayer.Character
+
+            local part = char.HumanoidRootPart
+            local ti = TweenInfo.new(0.4, Enum.EasingStyle.Linear)
+            local tp = {CFrame = New_CFrame}
+            ts:Create(part, ti, tp):Play()
+        end
+}
+
+FunStuff.Fun:CreateButton{
+   Title = "Teleport to Sky Island",
+        Callback = function()
+            local New_CFrame = CFrame.new(2117.87109375, 1470.884765625, -1050.54296875)
+
+            local ts = game:GetService("TweenService")
+            local char = game.Players.LocalPlayer.Character
+
+            local part = char.HumanoidRootPart
+            local ti = TweenInfo.new(1, Enum.EasingStyle.Linear)
+            local tp = {CFrame = New_CFrame}
+            ts:Create(part, ti, tp):Play()
+        end
+}
+
+FunStuff.Fun:CreateButton{
+   Title = "Teleport to Hotel",
+        Callback = function()
+            local New_CFrame = CFrame.new(-1198.279052734375, 44.315752029418945, -5.583522319793701)
+
+            local ts = game:GetService("TweenService")
+            local char = game.Players.LocalPlayer.Character
+
+            local part = char.HumanoidRootPart
+            local ti = TweenInfo.new(1, Enum.EasingStyle.Linear)
+            local tp = {CFrame = New_CFrame}
+            ts:Create(part, ti, tp):Play()
+        end
+}
+
+FunStuff.Fun:CreateButton{
+   Title = "Teleport to First Cloud",
+        Callback = function()
+            local New_CFrame = CFrame.new(296, 566, 689)
+
+            local ts = game:GetService("TweenService")
+            local char = game.Players.LocalPlayer.Character
+
+            local part = char.HumanoidRootPart
+            local ti = TweenInfo.new(1, Enum.EasingStyle.Linear)
+            local tp = {CFrame = New_CFrame}
+            ts:Create(part, ti, tp):Play()
+        end
+}
+
+FunStuff.Fun:CreateButton{
+   Title = "Teleport to Second Cloud",
+        Callback = function()
+            local New_CFrame = CFrame.new(-1224, 557, -318)
+
+            local ts = game:GetService("TweenService")
+            local char = game.Players.LocalPlayer.Character
+
+            local part = char.HumanoidRootPart
+            local ti = TweenInfo.new(1, Enum.EasingStyle.Linear)
+            local tp = {CFrame = New_CFrame}
+            ts:Create(part, ti, tp):Play()
+        end
+}
+--FunStuff tab end--
+
+--Farming tab begin--
+Farming.Farm:CreateSection("Drinks")
+local Toggle = Farming.Farm:CreateToggle("Toggle1", {Title = "Starter Drink", Default = false })
+
+--Toggle:OnChanged(function()
+Callback = function(Value)
+            if Value then
+                _G.Print = true
+                while _G.Print do
+                    while task.wait(2.339) do
+                        game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Starter Drink")
+                    end
+                end
+            else
+                _G.Print = false
+            end
+            -- The variable (Value) is a boolean on whether the toggle is true or false
+        end
+
+--end)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+-- Addons:
+-- SaveManager (Allows you to have a configuration system)
+-- InterfaceManager (Allows you to have a interface managment system)
+
+-- Hand the library over to our managers
+SaveManager:SetLibrary(Library)
+InterfaceManager:SetLibrary(Library)
+
+-- Ignore keys that are used by ThemeManager.
+-- (we dont want configs to save themes, do we?)
+SaveManager:IgnoreThemeSettings()
+
+-- You can add indexes of elements the save manager should ignore
+SaveManager:SetIgnoreIndexes{}
+
+-- use case for doing it this way:
+-- a script hub could have themes in a global folder
+-- and game configs in a separate folder per game
+InterfaceManager:SetFolder("FluentScriptHub")
+SaveManager:SetFolder("FluentScriptHub/specific-game")
+
+InterfaceManager:BuildInterfaceSection(Player.Settings)
+SaveManager:BuildConfigSection(Player.Settings)
+
+
+Window:SelectTab(1)
+
+Library:Notify{
+    Title = "Keybind",
+    Content = "Press the Left Control key to hide or show the UI.",
+    Duration = 5
+}
+
+-- You can use the SaveManager:LoadAutoloadConfig() to load a config
+-- which has been marked to be one that auto loads!
+SaveManager:LoadAutoloadConfig()
