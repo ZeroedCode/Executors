@@ -20,11 +20,6 @@ function AutoEquip()
         function()
             while getgenv().equip == true do
                 task.wait(0.39)
-                if not game.Players.LocalPlayer.Backpack:FindFirstChild("Starter Drink") then
-                    if not game.Players.LocalPlayer.Character:FindFirstChild("Starter Drink") then
-                        game.Players.LocalPlayer.Character:BreakJoints()
-                    end
-                end
                 if game.Players.LocalPlayer.leaderstats["Burp points"].Value == 0 then
                     local Players = game:GetService("Players")
 
@@ -233,11 +228,8 @@ function AutoEquip()
                     end
                 end
             end
-        end
-    )
+end)
 end
-
-
 
 -- Sections go here. --
 local FunStuff = {
@@ -434,12 +426,22 @@ FunStuff.Fun:CreateButton{
 }
 --FunStuff tab end--
 
+
 --Farming tab begin--
+Farming.Farm:CreateSection("Farming")
+local Toggle = Farming.Farm:CreateToggle("FarmToggle", {Title = "Toggle farm", Default = false })
+
+Toggle:OnChanged(function(bool)
+            getgenv().equip = bool
+            if bool then
+                AutoEquip()
+            end
+        end)
+
 Farming.Farm:CreateSection("Drinks")
 local Toggle = Farming.Farm:CreateToggle("Toggle1", {Title = "Starter Drink", Default = false })
 
---Toggle:OnChanged(function()
-Callback = function(Value)
+Toggle:OnChanged(function(Value)
             if Value then
                 _G.Print = true
                 while _G.Print do
@@ -450,21 +452,187 @@ Callback = function(Value)
             else
                 _G.Print = false
             end
-            -- The variable (Value) is a boolean on whether the toggle is true or false
-        end
+        end)
 
---end)
+local Toggle = Farming.Farm:CreateToggle("Toggle2", {Title = "Second Drink", Default = false })
 
+Toggle:OnChanged(function(Value)
+            if Value then
+                _G.Print = true
+                while _G.Print do
+                    while task.wait(2.339) do
+                        game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Second Drink")
+                    end
+                end
+            else
+                _G.Print = false
+            end
+        end)
 
+local Toggle = Farming.Farm:CreateToggle("Toggle3", {Title = "Third Drink", Default = false })
 
+Toggle:OnChanged(function(Value)
+            if Value then
+                _G.Print = true
+                while _G.Print do
+                    while task.wait(2.339) do
+                        game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Third Drink")
+                    end
+                end
+            else
+                _G.Print = false
+            end
+        end)
 
+local Toggle = Farming.Farm:CreateToggle("Toggle4", {Title = "Fourth Drink", Default = false })
 
+Toggle:OnChanged(function(Value)
+            if Value then
+                _G.Print = true
+                while _G.Print do
+                    while task.wait(2.339) do
+                        game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Fourth Drink")
+                    end
+                end
+            else
+                _G.Print = false
+            end
+        end)
 
+local Toggle = Farming.Farm:CreateToggle("Toggle5", {Title = "Fifth Drink", Default = false })
 
+Toggle:OnChanged(function(Value)
+            if Value then
+                _G.Print = true
+                while _G.Print do
+                    while task.wait(2.339) do
+                        game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Fifth Drink")
+                    end
+                end
+            else
+                _G.Print = false
+            end
+        end)
 
+local Toggle = Farming.Farm:CreateToggle("Toggle6", {Title = "Sixth Drink", Default = false })
 
+Toggle:OnChanged(function(Value)
+            if Value then
+                _G.Print = true
+                while _G.Print do
+                    while task.wait(2.339) do
+                        game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Sixth Drink")
+                    end
+                end
+            else
+                _G.Print = false
+            end
+        end)
 
+local Toggle = Farming.Farm:CreateToggle("Toggle7", {Title = "Seventh Drink", Default = false })
 
+Toggle:OnChanged(function(Value)
+            if Value then
+                _G.Print = true
+                while _G.Print do
+                    while task.wait(2.339) do
+                        game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Seventh Drink")
+                    end
+                end
+            else
+                _G.Print = false
+            end
+        end)
+
+local Toggle = Farming.Farm:CreateToggle("Toggle8", {Title = "Eighth Drink", Default = false })
+
+Toggle:OnChanged(function(Value)
+            if Value then
+                _G.Print = true
+                while _G.Print do
+                    while task.wait(2.339) do
+                        game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Eighth Drink")
+                    end
+                end
+            else
+                _G.Print = false
+            end
+        end)
+
+local Toggle = Farming.Farm:CreateToggle("Toggle9", {Title = "Ninth Drink", Default = false })
+
+Toggle:OnChanged(function(Value)
+            if Value then
+                _G.Print = true
+                while _G.Print do
+                    while task.wait(2.339) do
+                        game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Ninth Drink")
+                    end
+                end
+            else
+                _G.Print = false
+            end
+        end)
+
+local Toggle = Farming.Farm:CreateToggle("Toggle10", {Title = "Atomic Drink", Default = false })
+
+Toggle:OnChanged(function(Value)
+            if Value then
+                _G.Print = true
+                while _G.Print do
+                    while task.wait(2.339) do
+                        game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Atomic Drink")
+                    end
+                end
+            else
+                _G.Print = false
+            end
+        end)
+
+local Toggle = Farming.Farm:CreateToggle("Toggle11", {Title = "Omega Burp Juice", Default = false })
+
+Toggle:OnChanged(function(Value)
+            if Value then
+                _G.Print = true
+                while _G.Print do
+                    while task.wait(2.339) do
+                        game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Omega Burp Juice")
+                    end
+                end
+            else
+                _G.Print = false
+            end
+        end)
+
+local Toggle = Farming.Farm:CreateToggle("Toggle12", {Title = "⚡ Thunder Fizz ⚡", Default = false })
+
+Toggle:OnChanged(function(Value)
+            if Value then
+                _G.Print = true
+                while _G.Print do
+                    while task.wait(2.339) do
+                        game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Thunder Fizz")
+                    end
+                end
+            else
+                _G.Print = false
+            end
+        end)
+
+local Toggle = Farming.Farm:CreateToggle("Toggle13", {Title = "🧄 Garlic Juice 🧄", Default = false })
+
+Toggle:OnChanged(function(Value)
+            if Value then
+                _G.Print = true
+                while _G.Print do
+                    while task.wait(2.339) do
+                        game.ReplicatedStorage.RemoteEvents.DrinkEvent:FireServer("Garlic Juice")
+                    end
+                end
+            else
+                _G.Print = false
+            end
+        end)
 
 
 
