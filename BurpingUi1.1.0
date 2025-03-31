@@ -257,6 +257,14 @@ local Player = {
     }
 }
 
+local Miscellaneous = {
+    Misc = Window:CreateTab{
+        Title = "Misc.",
+        Icon = "phosphor-terminal-window-bold"
+    },
+}
+
+
 local Options = Library.Options
 
 Library:Notify{
@@ -270,6 +278,7 @@ local Paragraph = Player.Main:CreateParagraph("Paragraph", {
     Title = "Basic stuff to mess with for the LocalPlayer.",
     Content = ""
 })
+Player.Main:CreateSection("")
 
 local Slider = Player.Main:CreateSlider("Slider", {
     Title = "Walkspeed",
@@ -437,6 +446,24 @@ Toggle:OnChanged(function(bool)
                 AutoEquip()
             end
         end)
+
+Farming.Farm:CreateButton{
+   Title = "Auto-prestige",
+        Callback = function()
+             while true do
+                task.wait(0.075)
+                game.ReplicatedStorage.RemoteEvents.PrestigeEvent:FireServer()
+            end
+        end
+}
+
+Farming.Farm:CreateButton{
+   Title = "UrMom Ui BPS edition",
+        Callback = function()
+            loadstring(game:HttpGet("https://pastefy.app/nqSs54Ez/raw"))()
+        end
+}
+
 
 Farming.Farm:CreateSection("Drinks")
 local Toggle = Farming.Farm:CreateToggle("Toggle1", {Title = "Starter Drink", Default = false })
@@ -633,7 +660,108 @@ Toggle:OnChanged(function(Value)
                 _G.Print = false
             end
         end)
+-- Farming tab end --
 
+
+-- Misc. tab begin --
+local Paragraph = Miscellaneous.Misc:CreateParagraph("Paragraph", {
+    Title = "Other options that are not related to Burping Simulator.",
+    Content = ""
+})
+Miscellaneous.Misc:CreateSection("Client-sided settings")
+
+Miscellaneous.Misc:CreateButton{
+   Title = "Load Anti-afk remastered",
+        Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/juywvm/-Roblox-Projects-/main/____Anti_Afk_Remastered_______"))()
+        end
+}
+
+
+Miscellaneous.Misc:CreateButton{
+   Title = "Uncap FPS limit",
+        Callback = function()
+            if setfpscap and type(setfpscap) == "function" then
+                local num = 100000 or 1e6
+                if num == "none" then
+                    return setfpscap(1e6)
+                elseif num > 0 then
+                    return setfpscap(num)
+                end
+            end
+        end
+}
+
+Miscellaneous.Misc:CreateButton{
+   Title = "Make a sky baseplate",
+        Callback = function()
+            game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-7000, 22000, -5000)
+            baseplatee = Instance.new("Part", workspace)
+            baseplatee.Size = Vector3.new(1000, 1, 1000)
+            baseplatee.CFrame =
+                game.workspace[game.Players.LocalPlayer.Name].HumanoidRootPart.CFrame + Vector3.new(0, -2, 0)
+            baseplatee.Anchored = true
+        end
+}
+
+Miscellaneous.Misc:CreateButton{
+   Title = "Client-sided Anti kick",
+        Callback = function()
+            Library:Notify{
+    Title = "Anti kick enabled.",
+    Content = "This should stop localscripts from kicking you.",
+    SubContent = "Warning: this can be detected by some anti-cheats.", -- Optional
+    Duration = 5 -- Set to nil to make the notification not disappear
+}
+local mt = getrawmetatable(game)
+            local old = mt.__namecall
+            local protect = newcclosure or protect_function
+
+            setreadonly(mt, false)
+            mt.__namecall =
+                protect(
+                function(self, ...)
+                    local method = getnamecallmethod()
+                    if method == "Kick" then
+                        wait(9e9)
+                        return
+                    end
+                    return old(self, ...)
+                end
+            )
+            hookfunction(
+                game.Players.LocalPlayer.Kick,
+                protect(
+                    function()
+                        wait(9e9)
+                    end
+                )
+            )
+        end
+}
+
+Miscellaneous.Misc:CreateSection("”Admin” <-- Pick & choose")
+
+Miscellaneous.Misc:CreateButton{
+   Title = "Load Fate's Admin",
+        Callback = function()
+           loadstring(game:HttpGet("https://raw.githubusercontent.com/ZeroedCode/Executors/main/Fate%20Admin.lua"))()
+        end
+}
+
+Miscellaneous.Misc:CreateButton{
+   Title = "Load IY FE",
+        Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+        end
+}
+
+Miscellaneous.Misc:CreateButton{
+   Title = "Load CMD-X",
+        Callback = function()
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source"))()
+        end
+}
 
 
 
