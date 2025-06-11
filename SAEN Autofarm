@@ -13,7 +13,7 @@ local TextLabel_5 = Instance.new("TextLabel")
 local Frame_4 = Instance.new("Frame")
 local TextLabel_6 = Instance.new("TextLabel")
 local AutoReset = Instance.new("TextButton")
-local StealKills = Instance.new("TextButton")
+local EatClick = Instance.new("TextButton")
 local AutoFarm = Instance.new("TextButton")
 local NoRecoil = Instance.new("TextButton")
 local Guns = Instance.new("TextButton")
@@ -185,19 +185,19 @@ AutoReset.TextSize = 14
 AutoReset.TextWrapped = true
 AutoReset.TextXAlignment = Enum.TextXAlignment.Left
 
-StealKills.Name = "StealKills"
-StealKills.Parent = Main
-StealKills.BackgroundColor3 = Color3.new(1, 1, 1)
-StealKills.BackgroundTransparency = 1
-StealKills.Position = UDim2.new(0.0434782468, 0, 0.354838729, 0)
-StealKills.Size = UDim2.new(0.90476191, 0, 0.034155596, 0)
-StealKills.Font = Enum.Font.SourceSansSemibold
-StealKills.Text = "Steal Kills"
-StealKills.TextColor3 = Color3.new(1, 1, 1)
-StealKills.TextScaled = true
-StealKills.TextSize = 14
-StealKills.TextWrapped = true
-StealKills.TextXAlignment = Enum.TextXAlignment.Left
+EatClick.Name = "EatClick"
+EatClick.Parent = Main
+EatClick.BackgroundColor3 = Color3.new(1, 1, 1)
+EatClick.BackgroundTransparency = 1
+EatClick.Position = UDim2.new(0.0434782468, 0, 0.354838729, 0)
+EatClick.Size = UDim2.new(0.90476191, 0, 0.034155596, 0)
+EatClick.Font = Enum.Font.SourceSansSemibold
+EatClick.Text = "Eat-click"
+EatClick.TextColor3 = Color3.new(1, 1, 1)
+EatClick.TextScaled = true
+EatClick.TextSize = 14
+EatClick.TextWrapped = true
+EatClick.TextXAlignment = Enum.TextXAlignment.Left
 
 AutoFarm.Name = "AutoFarm"
 AutoFarm.Parent = Main
@@ -500,6 +500,7 @@ end)
 Gravity.MouseButton1Click:connect(function()
 	game.Workspace.Gravity = 5
 end)
+
 EatClick.MouseButton1Click:connect(function()
 loadstring(game:HttpGet("https://pastefy.app/cOIKtlqT/raw", true))()
 end)
