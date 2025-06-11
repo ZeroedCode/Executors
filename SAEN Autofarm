@@ -488,7 +488,7 @@ if(_G.farm2==true)then
 local target = getNearest()
 if(target~=nil)then
 game:GetService("Workspace").CurrentCamera.CFrame = CFrame.new(game:GetService("Workspace").CurrentCamera.CFrame.p, target.Head.Position)
-game:GetService("Workspace")["#GAME"].Folders.HumanoidFolder.PlayerFolder.Car_ofCats.HumanoidRootPart.CFrame = (target.HumanoidRootPart.CFrame * CFrame.new(0, groundDistance, 9))
+game:GetService("Workspace")["#GAME"].Folders.HumanoidFolder.PlayerFolder.Ril3yH3roNinja.HumanoidRootPart.CFrame = (target.HumanoidRootPart.CFrame * CFrame.new(0, groundDistance, 9))
 _G.globalTarget = target
 end
 end
